@@ -72,6 +72,12 @@ function setupChrome() {
       sync: {
         get: vi.fn().mockResolvedValue({}),
       },
+      session: {
+        // Default: no pending query from the context menu, so the popup
+        // falls through to chrome.scripting.executeScript.
+        get: vi.fn().mockResolvedValue({}),
+        remove: vi.fn().mockResolvedValue(undefined),
+      },
     },
   });
 }
@@ -163,10 +169,10 @@ describe('App — State 5: Empty selection', () => {
     expect(screen.getByText(/Highlight some text/)).toBeDefined();
   });
 
-  it('returns the first non-empty frame across multiple frames (PDF case)', async () => {
+  it('returns the first non-empty frame across multiple frames (PDF.js / iframe case)', async () => {
     const matchResult: MatchResult = { kind: 'hits', high: [highHit], low: [] };
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com/file.pdf' }]);
-    // Frame 0 (top page) has nothing, frame 1 (PDF viewer iframe) has the
+    // Frame 0 (top page) has nothing, frame 1 (PDF.js iframe) has the
     // selected text. The popup should pick the non-empty result.
     scriptingExecuteScriptMock.mockResolvedValue([
       { frameId: 0, result: '' },
@@ -179,6 +185,31 @@ describe('App — State 5: Empty selection', () => {
     });
 
     expect(screen.getByText('numpy')).toBeDefined();
+  });
+
+  it('uses the context-menu pending query (PDFium/right-click case) and skips executeScript', async () => {
+    const matchResult: MatchResult = { kind: 'hits', high: [highHit], low: [] };
+    tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com/file.pdf' }]);
+
+    // Background script wrote the right-click selection here.
+    const sessionGet = vi.fn().mockResolvedValue({ pendingQuery: 'numpy' });
+    const sessionRemove = vi.fn().mockResolvedValue(undefined);
+    (chrome as unknown as { storage: { session: { get: typeof sessionGet; remove: typeof sessionRemove } } })
+      .storage.session.get = sessionGet;
+    (chrome as unknown as { storage: { session: { get: typeof sessionGet; remove: typeof sessionRemove } } })
+      .storage.session.remove = sessionRemove;
+
+    runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
+
+    await act(async () => {
+      await renderApp();
+    });
+
+    expect(screen.getByText('numpy')).toBeDefined();
+    // Selection was taken from session storage, not from executeScript.
+    expect(scriptingExecuteScriptMock).not.toHaveBeenCalled();
+    // And the cached query was consumed.
+    expect(sessionRemove).toHaveBeenCalledWith('pendingQuery');
   });
 });
 

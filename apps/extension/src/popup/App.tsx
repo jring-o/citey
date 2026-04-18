@@ -29,6 +29,10 @@ const RESTRICTED_INJECT_ERRORS = [
   'The extensions gallery cannot be scripted',
 ];
 
+/** Key the background service worker writes when the user clicks the
+ *  "Cite with Citey" context menu (the path used for Chrome's PDF viewer). */
+const PENDING_QUERY_KEY = 'pendingQuery';
+
 export function App() {
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -62,20 +66,40 @@ export function App() {
           return;
         }
 
-        // Run getSelection() in every frame of the active tab. allFrames:true
-        // is required for selections inside Chrome's PDF viewer, which lives
-        // in a nested document the regular content script can't reach.
-        const results = await chrome.scripting.executeScript({
-          target: { tabId: tab!.id!, allFrames: true },
-          func: () => window.getSelection()?.toString().trim() ?? '',
-        });
+        // 1. Check the context-menu pending-query cache first. The
+        //    background script writes this when the user picks "Cite with
+        //    Citey" from a right-click — the only supported path for
+        //    Chrome's built-in PDF viewer.
+        let text = '';
+        try {
+          const stored = await chrome.storage.session.get(PENDING_QUERY_KEY);
+          const pending = stored[PENDING_QUERY_KEY];
+          if (typeof pending === 'string' && pending !== '') {
+            text = pending;
+            // Consume the cached query so a subsequent toolbar click goes
+            // through the normal selection-reading path.
+            await chrome.storage.session.remove(PENDING_QUERY_KEY);
+          }
+        } catch {
+          /* session storage unsupported in test environments — fall through */
+        }
+
+        // 2. No cached query → read selection from every frame of the
+        //    active tab. allFrames:true is required for selections inside
+        //    HTML iframes (e.g. PDF.js renderings on Overleaf, arXiv HTML).
+        if (!text) {
+          const results = await chrome.scripting.executeScript({
+            target: { tabId: tab!.id!, allFrames: true },
+            func: () => window.getSelection()?.toString().trim() ?? '',
+          });
+          if (cancelled) return;
+          text =
+            results.find(
+              (r) => typeof r.result === 'string' && r.result !== '',
+            )?.result ?? '';
+        }
 
         if (cancelled) return;
-
-        // Pick the first non-empty selection across all frames.
-        const text =
-          results.find((r) => typeof r.result === 'string' && r.result !== '')
-            ?.result ?? '';
         dispatch({ type: 'SELECTION_RECEIVED', text });
 
         // If empty/oversized, done (reducer transitions to empty_selection)

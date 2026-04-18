@@ -32,7 +32,13 @@ export default defineManifest({
       run_at: "document_idle",
     },
   ],
-  permissions: ["activeTab", "scripting", "clipboardWrite", "storage"],
+  permissions: [
+    "activeTab",
+    "scripting",
+    "clipboardWrite",
+    "storage",
+    "contextMenus",
+  ],
   // host_permissions:
   //   - api.citeas.org for the online fallback
   //   - file:///* lets users opt in (via chrome://extensions → "Allow access

@@ -13,6 +13,68 @@ import { match } from '../match/engine';
 // ---------------------------------------------------------------------------
 
 initFallbackFlag();
+initContextMenu();
+
+// ---------------------------------------------------------------------------
+// Context-menu entry — "Cite with Citey"
+//
+// This is the only supported path for reading text selections inside
+// Chrome's built-in PDF viewer (PDFium). `info.selectionText` is populated
+// by Chrome itself for any selection, regardless of whether the container
+// is HTML or PDF, so we use it as the universal fallback.
+// ---------------------------------------------------------------------------
+
+const CONTEXT_MENU_ID = 'citey-cite-selection';
+const PENDING_QUERY_KEY = 'pendingQuery';
+
+function initContextMenu(): void {
+  // `contextMenus.create` is the idempotent entry point for both fresh
+  // installs and service-worker restarts. Wrap in a try/catch and ignore
+  // "duplicate id" errors that occur when the worker wakes up.
+  const create = () => {
+    chrome.contextMenus.create(
+      {
+        id: CONTEXT_MENU_ID,
+        title: 'Cite with Citey',
+        contexts: ['selection'],
+      },
+      () => {
+        // Swallow "Cannot create item with duplicate id" — harmless.
+        if (chrome.runtime.lastError) {
+          /* noop */
+        }
+      },
+    );
+  };
+
+  if (chrome.runtime.onInstalled) {
+    chrome.runtime.onInstalled.addListener(create);
+  }
+  // Also attempt on every service-worker boot in case onInstalled already fired.
+  create();
+}
+
+chrome.contextMenus.onClicked.addListener(async (info, tab) => {
+  if (info.menuItemId !== CONTEXT_MENU_ID) return;
+  const text = (info.selectionText ?? '').trim();
+  if (!text) return;
+
+  // Cache the selection for the popup to pick up, then open the popup.
+  await chrome.storage.session.set({ [PENDING_QUERY_KEY]: text });
+
+  // `chrome.action.openPopup` requires Chrome 127+. Fall back silently —
+  // the user can still click the toolbar icon manually if openPopup fails.
+  try {
+    if (tab?.windowId !== undefined) {
+      await chrome.action.openPopup({ windowId: tab.windowId });
+    } else {
+      await chrome.action.openPopup();
+    }
+  } catch {
+    /* openPopup unsupported or blocked — pendingQuery still waits in
+       session storage for the user to click the toolbar icon. */
+  }
+});
 
 // ---------------------------------------------------------------------------
 // Shared miss result (immutable — safe to reuse)
