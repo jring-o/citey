@@ -58,6 +58,11 @@ describe('Footer', () => {
     expect(container.querySelector('footer')).toBeNull();
   });
 
+  it('returns null for oversized_selection state (footer hidden)', () => {
+    const { container } = render(<Footer stateName="oversized_selection" />);
+    expect(container.querySelector('footer')).toBeNull();
+  });
+
   it('Did-we-miss link points to the hub landing page', () => {
     render(<Footer stateName="loading" />);
     const link = screen.getByRole('link');
@@ -70,32 +75,33 @@ describe('Footer', () => {
     expect(footer).not.toBeNull();
   });
 
-  // Verify all 10 states are covered: 8 visible + 2 hidden
-  it('covers all 10 popup states', () => {
+  // Verify all 11 states are covered: 8 visible + 3 hidden
+  it('covers all 11 popup states', () => {
     const allStates: PopupStateName[] = [
       'loading',
       'hits_high',
       'hits_mixed',
       'hits_low',
       'empty_selection',
+      'oversized_selection',
       'restricted_page',
       'fallback_in_flight',
       'citeas_hit',
       'total_miss',
       'error',
     ];
-    const visibleStates = allStates.filter(
-      (s) => s !== 'empty_selection' && s !== 'restricted_page',
-    );
-    const hiddenStates: PopupStateName[] = ['empty_selection', 'restricted_page'];
+    const hiddenStates: PopupStateName[] = [
+      'empty_selection',
+      'oversized_selection',
+      'restricted_page',
+    ];
+    const visibleStates = allStates.filter((s) => !hiddenStates.includes(s));
 
-    // Visible states render a footer
     for (const state of visibleStates) {
       const { container } = render(<Footer stateName={state} />);
       expect(container.querySelector('footer')).not.toBeNull();
     }
 
-    // Hidden states render nothing
     for (const state of hiddenStates) {
       const { container } = render(<Footer stateName={state} />);
       expect(container.querySelector('footer')).toBeNull();

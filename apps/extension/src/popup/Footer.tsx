@@ -8,6 +8,7 @@ import { DidWeMiss } from './DidWeMiss.js';
 /** States where the footer (Did-we-miss link) is hidden. */
 const HIDDEN_FOOTER_STATES: ReadonlySet<PopupStateName> = new Set([
   'empty_selection',
+  'oversized_selection',
   'restricted_page',
 ]);
 

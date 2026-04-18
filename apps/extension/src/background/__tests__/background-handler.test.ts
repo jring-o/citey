@@ -20,10 +20,19 @@ vi.stubGlobal('chrome', {
   runtime: {
     onMessage: { addListener: addListenerMock },
     getURL: vi.fn(() => 'chrome-extension://abc/db.json'),
+    onInstalled: { addListener: vi.fn() },
   },
   storage: {
     sync: { get: vi.fn(() => Promise.resolve({})) },
+    session: { set: vi.fn(() => Promise.resolve()) },
     onChanged: { addListener: vi.fn() },
+  },
+  contextMenus: {
+    create: vi.fn(),
+    onClicked: { addListener: vi.fn() },
+  },
+  action: {
+    openPopup: vi.fn(() => Promise.resolve()),
   },
 });
 

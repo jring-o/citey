@@ -14,19 +14,20 @@ export type PopupStateName =
   | 'hits_mixed'
   | 'hits_low'
   | 'empty_selection'
+  | 'oversized_selection'
   | 'restricted_page'
   | 'fallback_in_flight'
   | 'citeas_hit'
   | 'total_miss'
   | 'error';
 
-/** All 10 visual states enumerated in §5.1.1. */
 export const ALL_STATES: readonly PopupStateName[] = [
   'loading',
   'hits_high',
   'hits_mixed',
   'hits_low',
   'empty_selection',
+  'oversized_selection',
   'restricted_page',
   'fallback_in_flight',
   'citeas_hit',
@@ -40,6 +41,7 @@ export type PopupState =
   | { name: 'hits_mixed'; query: string; high: PackageHit[]; low: PackageHit[] }
   | { name: 'hits_low'; query: string; hits: PackageHit[] }
   | { name: 'empty_selection' }
+  | { name: 'oversized_selection'; length: number }
   | { name: 'restricted_page' }
   | { name: 'fallback_in_flight'; query: string }
   | { name: 'citeas_hit'; query: string; hits: PackageHit[] }
@@ -88,14 +90,30 @@ export function isRestrictedUrl(url: string): boolean {
 }
 
 // ---------------------------------------------------------------------------
-// Selection validation (§5.1.5)
+// Selection validation
 // ---------------------------------------------------------------------------
 
-const MAX_SELECTION_LENGTH = 8000;
+/**
+ * Hard cap on selection size, enforced before we send the text to the
+ * background matcher. We need *some* upper bound — the matcher tokenizes,
+ * fuzzy-scores, and runs through the alias index, all of which scale with
+ * input length, and chrome.runtime.sendMessage has its own message-size
+ * limits. 200k characters is comfortably larger than a full-paper Ctrl+A
+ * (which typically lands in the 30k–80k range).
+ */
+export const MAX_SELECTION_LENGTH = 200_000;
 
+export function isEmptySelection(text: string): boolean {
+  return text.trim().length === 0;
+}
+
+export function isOversizedSelection(text: string): boolean {
+  return text.trim().length > MAX_SELECTION_LENGTH;
+}
+
+/** Kept for callers that just want a yes/no on "we can't process this". */
 export function isEmptyOrOversizedSelection(text: string): boolean {
-  const trimmed = text.trim();
-  return trimmed.length === 0 || trimmed.length > MAX_SELECTION_LENGTH;
+  return isEmptySelection(text) || isOversizedSelection(text);
 }
 
 // ---------------------------------------------------------------------------
@@ -110,10 +128,14 @@ function queryFromState(state: PopupState): string {
 export function reducer(state: PopupState, event: PopupEvent): PopupState {
   switch (event.type) {
     case 'SELECTION_RECEIVED': {
-      if (isEmptyOrOversizedSelection(event.text)) {
+      const trimmed = event.text.trim();
+      if (trimmed.length === 0) {
         return { name: 'empty_selection' };
       }
-      return { name: 'loading', query: event.text.trim() };
+      if (trimmed.length > MAX_SELECTION_LENGTH) {
+        return { name: 'oversized_selection', length: trimmed.length };
+      }
+      return { name: 'loading', query: trimmed };
     }
 
     case 'MATCH_RECEIVED': {

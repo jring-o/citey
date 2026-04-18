@@ -175,6 +175,39 @@ export function App() {
 }
 
 // ---------------------------------------------------------------------------
+// Hit-count summary
+// ---------------------------------------------------------------------------
+
+function pluralize(n: number, singular: string, plural?: string): string {
+  return n === 1 ? singular : (plural ?? `${singular}s`);
+}
+
+function HitsSummary({
+  high,
+  low,
+  citeas,
+}: {
+  high: number;
+  low: number;
+  citeas: number;
+}) {
+  const parts: string[] = [];
+  if (high > 0) parts.push(`${high} high-confidence ${pluralize(high, 'match', 'matches')}`);
+  if (low > 0) parts.push(`${low} possible ${pluralize(low, 'match', 'matches')}`);
+  if (citeas > 0) parts.push(`${citeas} ${pluralize(citeas, 'match', 'matches')} via CiteAs`);
+
+  if (parts.length === 0) return null;
+
+  // Join with " and " for two parts, comma + " and " for three.
+  let text: string;
+  if (parts.length === 1) text = `Found ${parts[0]}.`;
+  else if (parts.length === 2) text = `Found ${parts[0]} and ${parts[1]}.`;
+  else text = `Found ${parts.slice(0, -1).join(', ')}, and ${parts[parts.length - 1]}.`;
+
+  return <p className="citey-hits-summary">{text}</p>;
+}
+
+// ---------------------------------------------------------------------------
 // Shared hit-list renderer (used by hits_high, hits_low, citeas_hit)
 // ---------------------------------------------------------------------------
 
@@ -183,9 +216,17 @@ function renderHitList(
   confidence: 'high' | 'low' | 'citeas',
   banner?: React.ReactNode,
 ) {
+  const summary = (
+    <HitsSummary
+      high={confidence === 'high' ? hits.length : 0}
+      low={confidence === 'low' ? hits.length : 0}
+      citeas={confidence === 'citeas' ? hits.length : 0}
+    />
+  );
   return (
     <div className="citey-state citey-state--hits">
       <ActionBar hits={hits} />
+      {summary}
       {banner}
       <div className="citey-results">
         {hits.map((hit) => (
@@ -229,6 +270,11 @@ function renderBody(
       return (
         <div className="citey-state citey-state--hits">
           <ActionBar hits={[...state.high, ...state.low]} />
+          <HitsSummary
+            high={state.high.length}
+            low={state.low.length}
+            citeas={0}
+          />
           <div className="citey-results">
             {state.high.map((hit) => (
               <CitationCard
@@ -266,6 +312,18 @@ function renderBody(
       return (
         <div className="citey-state citey-state--empty">
           <p>Highlight some text on the page first, then click Citey.</p>
+        </div>
+      );
+
+    // State 5b: Oversized selection
+    case 'oversized_selection':
+      return (
+        <div className="citey-state citey-state--empty">
+          <p>
+            That selection is too large ({state.length.toLocaleString()}{' '}
+            characters). Highlight just the software name &mdash; or a short
+            sentence containing it &mdash; and try again.
+          </p>
         </div>
       );
 

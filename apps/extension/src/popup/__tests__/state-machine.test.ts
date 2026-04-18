@@ -48,8 +48,8 @@ const lowHit = makeHit('numpyish', 'low');
 // ---------------------------------------------------------------------------
 
 describe('ALL_STATES', () => {
-  it('enumerates exactly 10 states', () => {
-    expect(ALL_STATES).toHaveLength(10);
+  it('enumerates exactly 11 states', () => {
+    expect(ALL_STATES).toHaveLength(11);
   });
 
   it('contains all expected state names', () => {
@@ -59,6 +59,7 @@ describe('ALL_STATES', () => {
       'hits_mixed',
       'hits_low',
       'empty_selection',
+      'oversized_selection',
       'restricted_page',
       'fallback_in_flight',
       'citeas_hit',
@@ -84,10 +85,13 @@ describe('reducer — SELECTION_RECEIVED', () => {
     expect(result.name).toBe('empty_selection');
   });
 
-  it('transitions to empty_selection when text exceeds 8000 chars', () => {
-    const longText = 'x'.repeat(8001);
+  it('transitions to oversized_selection when text exceeds 200,000 chars', () => {
+    const longText = 'x'.repeat(200_001);
     const result = reducer(INITIAL_STATE, { type: 'SELECTION_RECEIVED', text: longText });
-    expect(result.name).toBe('empty_selection');
+    expect(result.name).toBe('oversized_selection');
+    if (result.name === 'oversized_selection') {
+      expect(result.length).toBe(200_001);
+    }
   });
 
   it('stays in loading with query when text is valid', () => {
@@ -254,7 +258,7 @@ describe('reducer — FALLBACK_CANCELLED', () => {
 // ---------------------------------------------------------------------------
 
 describe('reducer — total state coverage', () => {
-  it('can produce every one of the 10 states', () => {
+  it('can produce every one of the 11 states', () => {
     const loadingState: PopupState = { name: 'loading', query: 'test' };
     const reachedStates = new Set<string>();
 
@@ -284,6 +288,14 @@ describe('reducer — total state coverage', () => {
       reducer(INITIAL_STATE, { type: 'SELECTION_RECEIVED', text: '' }).name,
     );
 
+    // 5b. oversized_selection
+    reachedStates.add(
+      reducer(INITIAL_STATE, {
+        type: 'SELECTION_RECEIVED',
+        text: 'x'.repeat(200_001),
+      }).name,
+    );
+
     // 6. restricted_page
     reachedStates.add(
       reducer(INITIAL_STATE, { type: 'RESTRICTED_DETECTED' }).name,
@@ -311,7 +323,7 @@ describe('reducer — total state coverage', () => {
       reducer(INITIAL_STATE, { type: 'ERROR', message: 'boom' }).name,
     );
 
-    expect(reachedStates.size).toBe(10);
+    expect(reachedStates.size).toBe(11);
     for (const stateName of ALL_STATES) {
       expect(reachedStates.has(stateName)).toBe(true);
     }
@@ -369,15 +381,15 @@ describe('isEmptyOrOversizedSelection', () => {
     expect(isEmptyOrOversizedSelection('   \n\t  ')).toBe(true);
   });
 
-  it('returns true for string > 8000 chars', () => {
-    expect(isEmptyOrOversizedSelection('a'.repeat(8001))).toBe(true);
+  it('returns true for string > 200,000 chars', () => {
+    expect(isEmptyOrOversizedSelection('a'.repeat(200_001))).toBe(true);
   });
 
   it('returns false for valid text', () => {
     expect(isEmptyOrOversizedSelection('numpy')).toBe(false);
   });
 
-  it('returns false for exactly 8000 chars', () => {
-    expect(isEmptyOrOversizedSelection('a'.repeat(8000))).toBe(false);
+  it('returns false for exactly 200,000 chars', () => {
+    expect(isEmptyOrOversizedSelection('a'.repeat(200_000))).toBe(false);
   });
 });

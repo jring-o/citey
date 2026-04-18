@@ -177,7 +177,7 @@ export function Options() {
           <a href="https://github.com/jring-o/citey" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          . For questions, contact <a href="mailto:citey@scios.tech">citey@scios.tech</a>.
+          . For questions, contact <a href="mailto:jon@scios.tech">jon@scios.tech</a>.
         </p>
       </section>
     </div>

@@ -104,6 +104,13 @@
 
 /* ── Results ──────────────────────────────────────────────────────────── */
 
+.citey-hits-summary {
+  margin: 0 0 var(--citey-space-2) 0;
+  font-size: var(--citey-font-size-sm);
+  color: var(--citey-color-text-muted);
+  font-weight: 500;
+}
+
 .citey-results {
   display: flex;
   flex-direction: column;
