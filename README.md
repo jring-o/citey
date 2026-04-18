@@ -38,15 +38,34 @@ pnpm dev:hub
 
 ## Contribute a package
 
-Citey ships with a curated seed database of software packages. You can contribute new entries via the hub at <https://citey.scios.tech> or by opening a pull request directly.
+Citey ships with a curated database of software packages. The fastest way to add yours is the hub:
 
-To add a package manually:
+### From the hub (recommended — no local clone needed)
 
-1. Choose the ecosystem the package belongs to (e.g. `python`, `r`, `julia`).
-2. Create a new YAML file in `data/seed/{ecosystem}/` named after the package (e.g. `data/seed/python/my-package.yaml`).
-3. Fill in the required fields following the schema used by existing seed files in that directory.
-4. Run `pnpm build` to validate the entry and rebuild the database.
-5. Open a pull request with your addition.
+Anyone with a GitHub account can contribute a package straight from <https://citey.scios.tech/packages>:
+
+1. **Make sure your repo has both `CITATION.cff` and `codemeta.json` at its root.** Don't have them yet? Generate them in your browser:
+   - <https://citey.scios.tech/cff> — produces a downloadable `CITATION.cff`
+   - <https://citey.scios.tech/codemeta> — produces a downloadable `codemeta.json`
+   - Commit both files to your repo.
+2. Go to <https://citey.scios.tech/packages> → click **+ Add package**.
+3. Paste your GitHub repo URL → **Submit**.
+4. Citey reads your `CITATION.cff` and `codemeta.json`, builds a citation in our model, and opens a prefilled pull request against this repo. GitHub forks the repo for you if needed.
+5. CI validates the schema. A maintainer reviews and merges.
+
+That's the whole flow — paste a URL, click submit, the PR is opened for you. The hub at <https://citey.scios.tech> walks through it as a numbered checklist on the landing page.
+
+Citey enforces an opinionated software-citation model (per [FORCE11](https://doi.org/10.7717/peerj-cs.86)): every entry needs a title, ≥1 author, a 4-digit year, and either a DOI or a stable URL. See the [whitepaper](https://citey.scios.tech/whitepaper) for the full rationale.
+
+### Manually via PR
+
+If you'd rather edit YAML directly:
+
+1. Choose the ecosystem (`pypi`, `cran`, `npm`, `julia`, or `generic`).
+2. Copy `data/seed/_template.yaml` to `data/seed/{ecosystem}/{your-package-id}.yaml`.
+3. Fill in the required fields. The template documents the schema.
+4. Run `pnpm --filter db-build build` to validate and regenerate `db.json`.
+5. Open a pull request.
 
 ## License
 
