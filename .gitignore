@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 .next/
+*.tsbuildinfo
 
 # Release artifacts (auto-built by CI on v* tags)
 *.zip

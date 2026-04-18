@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "pnpm --filter @citey/citation-model build && next dev",
+    "build": "pnpm --filter @citey/citation-model build && next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
