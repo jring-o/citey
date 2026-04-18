@@ -83,12 +83,6 @@ export default function Landing() {
 					</li>
 				))}
 			</ol>
-
-			<p className="mx-auto mt-14 max-w-prose text-center text-sm leading-relaxed text-text-muted">
-				All processing happens locally in your browser. Nothing is uploaded to a
-				server. Citey is free, open-source software built for the research
-				community.
-			</p>
 		</main>
 	);
 }
