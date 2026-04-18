@@ -13,7 +13,7 @@ import {
 } from './state-machine.js';
 import type { PackageHit } from '@citey/citation-model';
 import { newRequestId } from '../shared/messages.js';
-import type { MatchResultMessage, SelectionResultMessage } from '../shared/messages.js';
+import type { MatchResultMessage } from '../shared/messages.js';
 import { Header } from './Header.js';
 import { Footer } from './Footer.js';
 import { ActionBar } from './ActionBar.js';
@@ -21,8 +21,13 @@ import { DidWeMiss } from './DidWeMiss.js';
 
 const TIMEOUT_MS = 4500;
 
-/** Connection-error message Chrome gives when content script is unreachable. */
-const CONNECTION_ERROR = 'Could not establish connection. Receiving end does not exist.';
+/** Substrings in chrome.scripting errors that indicate a page we can't inject into. */
+const RESTRICTED_INJECT_ERRORS = [
+  'Cannot access',           // e.g., "Cannot access a chrome:// URL"
+  'Cannot access contents',  // older Chrome wording
+  'Extension manifest must request permission',
+  'The extensions gallery cannot be scripted',
+];
 
 export function App() {
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
@@ -57,16 +62,20 @@ export function App() {
           return;
         }
 
-        // Send GET_SELECTION to the active tab's content script
-        const requestId = newRequestId();
-        const response = (await chrome.tabs.sendMessage(tab!.id!, {
-          type: 'GET_SELECTION',
-          requestId,
-        })) as SelectionResultMessage;
+        // Run getSelection() in every frame of the active tab. allFrames:true
+        // is required for selections inside Chrome's PDF viewer, which lives
+        // in a nested document the regular content script can't reach.
+        const results = await chrome.scripting.executeScript({
+          target: { tabId: tab!.id!, allFrames: true },
+          func: () => window.getSelection()?.toString().trim() ?? '',
+        });
 
         if (cancelled) return;
 
-        const text = response?.text ?? '';
+        // Pick the first non-empty selection across all frames.
+        const text =
+          results.find((r) => typeof r.result === 'string' && r.result !== '')
+            ?.result ?? '';
         dispatch({ type: 'SELECTION_RECEIVED', text });
 
         // If empty/oversized, done (reducer transitions to empty_selection)
@@ -101,8 +110,8 @@ export function App() {
 
         const message = err instanceof Error ? err.message : String(err);
 
-        // Content script unreachable → restricted page
-        if (message.includes(CONNECTION_ERROR)) {
+        // chrome.scripting refused to inject (chrome://, web store, etc.)
+        if (RESTRICTED_INJECT_ERRORS.some((s) => message.includes(s))) {
           dispatch({ type: 'RESTRICTED_DETECTED' });
           return;
         }

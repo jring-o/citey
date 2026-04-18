@@ -33,5 +33,9 @@ export default defineManifest({
     },
   ],
   permissions: ["activeTab", "scripting", "clipboardWrite", "storage"],
-  host_permissions: ["https://api.citeas.org/*"],
+  // host_permissions:
+  //   - api.citeas.org for the online fallback
+  //   - file:///* lets users opt in (via chrome://extensions → "Allow access
+  //     to file URLs") to selecting text from PDFs they open locally
+  host_permissions: ["https://api.citeas.org/*", "file:///*"],
 });

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Package } from "@citey/citation-model";
 import { Button } from "../_ui/primitives";
 import { AddPackageModal } from "./_components/AddPackageModal";
+import { AddAliasModal } from "./_components/AddAliasModal";
 
 interface DbArtifact {
 	schemaVersion: number;
@@ -65,6 +66,7 @@ export default function Packages() {
 	const [sortField, setSortField] = useState<SortField>("canonicalName");
 	const [sortDir, setSortDir] = useState<SortDir>("asc");
 	const [addOpen, setAddOpen] = useState(false);
+	const [aliasOpen, setAliasOpen] = useState(false);
 
 	useEffect(() => {
 		fetch("/db.json")
@@ -110,11 +112,21 @@ export default function Packages() {
 		<>
 			<div className="mb-2 flex flex-wrap items-start justify-between gap-4">
 				<h1 className="text-3xl font-bold text-text">Package Browser</h1>
-				<Button variant="primary" onClick={() => setAddOpen(true)}>
-					+ Add package
-				</Button>
+				<div className="flex flex-wrap gap-2">
+					<Button variant="primary" onClick={() => setAddOpen(true)}>
+						+ Add package
+					</Button>
+					<Button variant="secondary" onClick={() => setAliasOpen(true)}>
+						+ Add alias
+					</Button>
+				</div>
 			</div>
 			<AddPackageModal open={addOpen} onClose={() => setAddOpen(false)} />
+			<AddAliasModal
+				open={aliasOpen}
+				onClose={() => setAliasOpen(false)}
+				packages={packages}
+			/>
 		</>
 	);
 

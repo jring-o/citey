@@ -8,10 +8,6 @@ import type { PackageHit, MatchResult } from '@citey/citation-model';
 // chrome APIs, we stub chrome and control responses.
 // ---------------------------------------------------------------------------
 
-// ---------------------------------------------------------------------------
-// Fixtures
-// ---------------------------------------------------------------------------
-
 const makeHit = (id: string, confidence: 'high' | 'low'): PackageHit => ({
   package: {
     id,
@@ -46,19 +42,26 @@ const lowHit = makeHit('numpyish', 'low');
 // ---------------------------------------------------------------------------
 
 let tabsQueryMock: ReturnType<typeof vi.fn>;
-let tabsSendMessageMock: ReturnType<typeof vi.fn>;
+let scriptingExecuteScriptMock: ReturnType<typeof vi.fn>;
 let runtimeSendMessageMock: ReturnType<typeof vi.fn>;
+
+/** Helper: build a fake executeScript result (mimics InjectionResult[]). */
+function execResult(text: string) {
+  return [{ frameId: 0, result: text }];
+}
 
 function setupChrome() {
   tabsQueryMock = vi.fn();
-  tabsSendMessageMock = vi.fn();
+  scriptingExecuteScriptMock = vi.fn();
   runtimeSendMessageMock = vi.fn();
 
   vi.stubGlobal('chrome', {
     tabs: {
       query: tabsQueryMock,
-      sendMessage: tabsSendMessageMock,
       create: vi.fn(),
+    },
+    scripting: {
+      executeScript: scriptingExecuteScriptMock,
     },
     runtime: {
       sendMessage: runtimeSendMessageMock,
@@ -83,20 +86,13 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
-// Dynamic import after chrome is stubbed
 async function renderApp() {
-  // Clear module cache to get fresh App with our chrome mock
   const mod = await import('../App');
   return render(<mod.App />);
 }
 
-// ---------------------------------------------------------------------------
-// State 1: Loading
-// ---------------------------------------------------------------------------
-
 describe('App — State 1: Loading', () => {
   it('shows loading spinner and text on mount', async () => {
-    // tabs.query never resolves — keeps us in loading
     tabsQueryMock.mockReturnValue(new Promise(() => {}));
 
     await act(async () => {
@@ -107,15 +103,11 @@ describe('App — State 1: Loading', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 2: Hits — high confidence
-// ---------------------------------------------------------------------------
-
 describe('App — State 2: Hits high confidence', () => {
   it('renders citation cards for high-confidence hits', async () => {
     const matchResult: MatchResult = { kind: 'hits', high: [highHit], low: [] };
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockResolvedValue({ type: 'SELECTION_RESULT', requestId: '1', text: 'numpy' });
+    scriptingExecuteScriptMock.mockResolvedValue(execResult('numpy'));
     runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
 
     await act(async () => {
@@ -126,15 +118,11 @@ describe('App — State 2: Hits high confidence', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 3: Hits — mixed
-// ---------------------------------------------------------------------------
-
 describe('App — State 3: Hits mixed', () => {
   it('renders high and low hits with divider', async () => {
     const matchResult: MatchResult = { kind: 'hits', high: [highHit], low: [lowHit] };
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockResolvedValue({ type: 'SELECTION_RESULT', requestId: '1', text: 'numpy' });
+    scriptingExecuteScriptMock.mockResolvedValue(execResult('numpy'));
     runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
 
     await act(async () => {
@@ -147,15 +135,11 @@ describe('App — State 3: Hits mixed', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 4: Hits — low confidence only
-// ---------------------------------------------------------------------------
-
 describe('App — State 4: Hits low only', () => {
   it('renders low-confidence hits with banner', async () => {
     const matchResult: MatchResult = { kind: 'hits', high: [], low: [lowHit] };
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockResolvedValue({ type: 'SELECTION_RESULT', requestId: '1', text: 'numpyish' });
+    scriptingExecuteScriptMock.mockResolvedValue(execResult('numpyish'));
     runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
 
     await act(async () => {
@@ -167,14 +151,10 @@ describe('App — State 4: Hits low only', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 5: Empty selection
-// ---------------------------------------------------------------------------
-
 describe('App — State 5: Empty selection', () => {
   it('shows empty selection message when text is empty', async () => {
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockResolvedValue({ type: 'SELECTION_RESULT', requestId: '1', text: '' });
+    scriptingExecuteScriptMock.mockResolvedValue(execResult(''));
 
     await act(async () => {
       await renderApp();
@@ -182,11 +162,25 @@ describe('App — State 5: Empty selection', () => {
 
     expect(screen.getByText(/Highlight some text/)).toBeDefined();
   });
-});
 
-// ---------------------------------------------------------------------------
-// State 6: Restricted page
-// ---------------------------------------------------------------------------
+  it('returns the first non-empty frame across multiple frames (PDF case)', async () => {
+    const matchResult: MatchResult = { kind: 'hits', high: [highHit], low: [] };
+    tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com/file.pdf' }]);
+    // Frame 0 (top page) has nothing, frame 1 (PDF viewer iframe) has the
+    // selected text. The popup should pick the non-empty result.
+    scriptingExecuteScriptMock.mockResolvedValue([
+      { frameId: 0, result: '' },
+      { frameId: 99, result: 'numpy' },
+    ]);
+    runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
+
+    await act(async () => {
+      await renderApp();
+    });
+
+    expect(screen.getByText('numpy')).toBeDefined();
+  });
+});
 
 describe('App — State 6: Restricted page', () => {
   it('shows restricted message for chrome:// URL', async () => {
@@ -199,10 +193,10 @@ describe('App — State 6: Restricted page', () => {
     expect(screen.getByText(/Chrome restricts access/)).toBeDefined();
   });
 
-  it('shows restricted message when content script is unreachable', async () => {
+  it('shows restricted message when scripting cannot inject', async () => {
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockRejectedValue(
-      new Error('Could not establish connection. Receiving end does not exist.'),
+    scriptingExecuteScriptMock.mockRejectedValue(
+      new Error('Cannot access contents of the page.'),
     );
 
     await act(async () => {
@@ -213,15 +207,11 @@ describe('App — State 6: Restricted page', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 7: No hits, fallback in flight
-// ---------------------------------------------------------------------------
-
 describe('App — State 7: Fallback in flight', () => {
   it('shows "Asking CiteAs" when miss with no-local reason', async () => {
     const matchResult: MatchResult = { kind: 'miss', reason: 'no-local' };
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockResolvedValue({ type: 'SELECTION_RESULT', requestId: '1', text: 'obscure-pkg' });
+    scriptingExecuteScriptMock.mockResolvedValue(execResult('obscure-pkg'));
     runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
 
     await act(async () => {
@@ -232,15 +222,11 @@ describe('App — State 7: Fallback in flight', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 8: No hits, CiteAs hit
-// ---------------------------------------------------------------------------
-
 describe('App — State 8: CiteAs hit', () => {
   it('renders CiteAs hit with citeas confidence', async () => {
     const matchResult: MatchResult = { kind: 'fallback', source: 'citeas', hits: [highHit] };
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockResolvedValue({ type: 'SELECTION_RESULT', requestId: '1', text: 'numpy' });
+    scriptingExecuteScriptMock.mockResolvedValue(execResult('numpy'));
     runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
 
     await act(async () => {
@@ -252,15 +238,11 @@ describe('App — State 8: CiteAs hit', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 9: No hits, total miss
-// ---------------------------------------------------------------------------
-
 describe('App — State 9: Total miss', () => {
   it('renders Did-we-miss full state', async () => {
     const matchResult: MatchResult = { kind: 'miss', reason: 'fallback-disabled' };
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockResolvedValue({ type: 'SELECTION_RESULT', requestId: '1', text: 'unknown-pkg' });
+    scriptingExecuteScriptMock.mockResolvedValue(execResult('unknown-pkg'));
     runtimeSendMessageMock.mockResolvedValue({ type: 'MATCH_RESULT', requestId: '2', result: matchResult });
 
     await act(async () => {
@@ -271,20 +253,14 @@ describe('App — State 9: Total miss', () => {
   });
 });
 
-// ---------------------------------------------------------------------------
-// State 10: Error (timeout)
-// ---------------------------------------------------------------------------
-
 describe('App — State 10: Error', () => {
   it('shows error state on timeout', async () => {
-    // tabs.query never resolves, so the 4500ms timer fires
     tabsQueryMock.mockReturnValue(new Promise(() => {}));
 
     await act(async () => {
       await renderApp();
     });
 
-    // Advance past the 4500ms timeout
     await act(async () => {
       vi.advanceTimersByTime(5000);
     });
@@ -295,7 +271,7 @@ describe('App — State 10: Error', () => {
 
   it('shows error state on generic error', async () => {
     tabsQueryMock.mockResolvedValue([{ id: 1, url: 'https://example.com' }]);
-    tabsSendMessageMock.mockRejectedValue(new Error('Network error'));
+    scriptingExecuteScriptMock.mockRejectedValue(new Error('Network error'));
 
     await act(async () => {
       await renderApp();
@@ -304,10 +280,6 @@ describe('App — State 10: Error', () => {
     expect(screen.getByText(/Something went wrong/)).toBeDefined();
   });
 });
-
-// ---------------------------------------------------------------------------
-// aria-live on results region
-// ---------------------------------------------------------------------------
 
 describe('App — a11y', () => {
   it('has aria-live="polite" on the results region', async () => {
