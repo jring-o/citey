@@ -9,13 +9,6 @@ import { normalize } from '../match/normalize';
 import { match } from '../match/engine';
 
 // ---------------------------------------------------------------------------
-// Boot
-// ---------------------------------------------------------------------------
-
-initFallbackFlag();
-initContextMenu();
-
-// ---------------------------------------------------------------------------
 // Context-menu entry — "Cite with Citey"
 //
 // This is the only supported path for reading text selections inside
@@ -26,6 +19,13 @@ initContextMenu();
 
 const CONTEXT_MENU_ID = 'citey-cite-selection';
 const PENDING_QUERY_KEY = 'pendingQuery';
+
+// ---------------------------------------------------------------------------
+// Boot
+// ---------------------------------------------------------------------------
+
+initFallbackFlag();
+initContextMenu();
 
 function initContextMenu(): void {
   // `contextMenus.create` is the idempotent entry point for both fresh
