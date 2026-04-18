@@ -11,6 +11,13 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# Workspace TypeScript packages compile to gitignored dist/. Consumer
+# packages (extension, hub) need these built before tsc / lint / vite see
+# them. Centralised here so each job that needs them runs the same step.
+#
+# Reusable composite actions would be cleaner; for now we just inline the
+# step in each job.
+
 jobs:
   lint:
     name: Lint
@@ -26,6 +33,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+      - name: Build workspace packages
+        run: pnpm --filter "./packages/*" build
       - run: pnpm -r lint
 
   typecheck:
@@ -42,6 +51,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+      - name: Build workspace packages
+        run: pnpm --filter "./packages/*" build
       - run: pnpm -r typecheck
 
   test:
@@ -58,7 +69,9 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
-      - run: pnpm -r test --run
+      - name: Build workspace packages
+        run: pnpm --filter "./packages/*" build
+      - run: pnpm -r test
 
   db-build:
     name: DB build
@@ -90,6 +103,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+      - name: Build workspace packages
+        run: pnpm --filter "./packages/*" build
       - run: pnpm --filter extension build
       - name: Assert dist exists
         run: test -d apps/extension/dist
@@ -109,6 +124,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+      - name: Build workspace packages
+        run: pnpm --filter "./packages/*" build
       - run: pnpm --filter extension build
       - name: Check bundle size
         run: node scripts/check-bundle-size.mjs apps/extension/dist 2097152
@@ -131,6 +148,9 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+
+      - name: Build workspace packages
+        run: pnpm --filter "./packages/*" build
 
       - name: Build extension
         run: pnpm --filter extension build
