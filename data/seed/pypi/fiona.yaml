@@ -1,0 +1,25 @@
+id: fiona
+canonicalName: Fiona
+aliases:
+  - fiona
+ecosystem: pypi
+description: Pythonic interface to OGR for reading and writing geospatial data.
+homepage: https://fiona.readthedocs.io
+repository: https://github.com/Toblerity/Fiona
+license: BSD-3-Clause
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Fiona
+  authors:
+    - family: Gillies
+      given: Sean
+      kind: person
+  year: "2024"
+  url: https://fiona.readthedocs.io

@@ -1,0 +1,16 @@
+id: astropy-io-fits
+canonicalName: astropy.io.fits
+aliases:
+  - astropy.io.fits
+  - astropy-io-fits
+ecosystem: pypi
+description: FITS file I/O sub-package of Astropy; cite Astropy.
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2026-04-18
+  lastReviewed: 2026-04-18
+versionPolicy: unversioned
+citeAs: astropy

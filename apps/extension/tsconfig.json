@@ -1,0 +1,32 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": ".",
+    "outDir": "dist-tsc",
+    "jsx": "react-jsx",
+    "paths": {
+      "@citey/ui": [
+        "../../packages/ui/src/index.ts"
+      ],
+      "@citey/citation-model": [
+        "../../packages/citation-model/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "manifest.config.ts",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "package.json"
+  ],
+  "references": [
+    {
+      "path": "../../packages/ui"
+    },
+    {
+      "path": "../../packages/citation-model"
+    }
+  ]
+}

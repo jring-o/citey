@@ -1,0 +1,25 @@
+id: sunpy
+canonicalName: SunPy
+aliases:
+  - sunpy
+ecosystem: pypi
+description: Python library for solar physics data analysis.
+homepage: https://sunpy.org
+repository: https://github.com/sunpy/sunpy
+license: BSD-2-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: SunPy
+  authors:
+    - family: SunPy Community
+      given: ""
+      kind: organization
+  year: "2020"
+  doi: 10.3847/1538-4357/ab4f7a

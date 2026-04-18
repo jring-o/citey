@@ -1,0 +1,25 @@
+id: repo2docker
+canonicalName: repo2docker
+aliases:
+  - repo2docker
+ecosystem: generic
+description: Tool for building Docker images from source code repositories for reproducible research.
+homepage: https://repo2docker.readthedocs.io
+repository: https://github.com/jupyterhub/repo2docker
+license: BSD-3-Clause
+tags:
+  - reproducibility
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: repo2docker
+  authors:
+    - family: Project Jupyter
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://repo2docker.readthedocs.io

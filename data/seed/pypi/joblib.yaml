@@ -1,0 +1,25 @@
+id: joblib
+canonicalName: joblib
+aliases:
+  - joblib
+ecosystem: pypi
+description: Set of tools for lightweight pipelining and parallel computing in Python.
+homepage: https://joblib.readthedocs.io
+repository: https://github.com/joblib/joblib
+license: BSD-3-Clause
+tags:
+  - performance
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: joblib
+  authors:
+    - family: Varoquaux
+      given: Gael
+      kind: person
+  year: "2024"
+  url: https://joblib.readthedocs.io

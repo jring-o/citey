@@ -1,0 +1,25 @@
+id: lightkurve
+canonicalName: Lightkurve
+aliases:
+  - lightkurve
+ecosystem: pypi
+description: Python package for Kepler and TESS time series analysis in astronomy.
+homepage: https://docs.lightkurve.org
+repository: https://github.com/lightkurve/lightkurve
+license: MIT
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Lightkurve
+  authors:
+    - family: Lightkurve Collaboration
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://docs.lightkurve.org

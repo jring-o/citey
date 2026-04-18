@@ -1,0 +1,25 @@
+id: forcats
+canonicalName: forcats
+aliases:
+  - forcats
+ecosystem: cran
+description: Tools for working with categorical variables (factors) in R.
+homepage: https://forcats.tidyverse.org
+repository: https://github.com/tidyverse/forcats
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: forcats
+  authors:
+    - family: Wickham
+      given: Hadley
+      kind: person
+  year: "2024"
+  url: https://forcats.tidyverse.org

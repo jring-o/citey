@@ -1,0 +1,25 @@
+id: cartopy
+canonicalName: Cartopy
+aliases:
+  - cartopy
+ecosystem: pypi
+description: Cartographic library for Python with Matplotlib support for map projections.
+homepage: https://scitools.org.uk/cartopy
+repository: https://github.com/SciTools/cartopy
+license: BSD-3-Clause
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Cartopy
+  authors:
+    - family: Met Office
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://scitools.org.uk/cartopy

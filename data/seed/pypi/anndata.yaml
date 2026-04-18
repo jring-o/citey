@@ -1,0 +1,25 @@
+id: anndata
+canonicalName: AnnData
+aliases:
+  - anndata
+ecosystem: pypi
+description: Annotated data matrices for single-cell genomics in Python.
+homepage: https://anndata.readthedocs.io
+repository: https://github.com/scverse/anndata
+license: BSD-3-Clause
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: AnnData
+  authors:
+    - family: Virshup
+      given: Isaac
+      kind: person
+  year: "2024"
+  url: https://anndata.readthedocs.io

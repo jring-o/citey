@@ -1,0 +1,25 @@
+id: statsmodels
+canonicalName: statsmodels
+aliases:
+  - statsmodels
+ecosystem: pypi
+description: Statistical modeling and econometrics in Python.
+homepage: https://www.statsmodels.org
+repository: https://github.com/statsmodels/statsmodels
+license: BSD-3-Clause
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: statsmodels
+  authors:
+    - family: Seabold
+      given: Skipper
+      kind: person
+  year: "2010"
+  doi: 10.25080/Majora-92bf1922-011

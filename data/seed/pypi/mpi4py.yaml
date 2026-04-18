@@ -1,0 +1,25 @@
+id: mpi4py
+canonicalName: mpi4py
+aliases:
+  - mpi4py
+ecosystem: pypi
+description: Python bindings for the Message Passing Interface (MPI) standard.
+homepage: https://mpi4py.readthedocs.io
+repository: https://github.com/mpi4py/mpi4py
+license: BSD-2-Clause
+tags:
+  - performance
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: mpi4py
+  authors:
+    - family: Dalcin
+      given: Lisandro
+      kind: person
+  year: "2021"
+  doi: 10.1109/MCSE.2021.3083216

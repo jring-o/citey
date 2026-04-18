@@ -1,0 +1,26 @@
+id: tensorflow
+canonicalName: TensorFlow
+aliases:
+  - tensorflow
+  - tf
+ecosystem: pypi
+description: Open source platform for machine learning and deep neural networks.
+homepage: https://www.tensorflow.org
+repository: https://github.com/tensorflow/tensorflow
+license: Apache-2.0
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: TensorFlow
+  authors:
+    - family: Abadi
+      given: Martin
+      kind: person
+  year: "2015"
+  url: https://www.tensorflow.org

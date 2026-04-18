@@ -1,0 +1,25 @@
+id: pyvo
+canonicalName: PyVO
+aliases:
+  - pyvo
+ecosystem: pypi
+description: Python library for accessing Virtual Observatory data and services.
+homepage: https://pyvo.readthedocs.io
+repository: https://github.com/astropy/pyvo
+license: BSD-3-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PyVO
+  authors:
+    - family: Demleitner
+      given: Markus
+      kind: person
+  year: "2024"
+  url: https://pyvo.readthedocs.io

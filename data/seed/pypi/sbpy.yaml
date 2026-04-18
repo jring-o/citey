@@ -1,0 +1,25 @@
+id: sbpy
+canonicalName: sbpy
+aliases:
+  - sbpy
+ecosystem: pypi
+description: Python module for small-body planetary astronomy.
+homepage: https://sbpy.org
+repository: https://github.com/NASA-Planetary-Science/sbpy
+license: BSD-3-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: sbpy
+  authors:
+    - family: Mommert
+      given: Michael
+      kind: person
+  year: "2019"
+  doi: 10.21105/joss.01426

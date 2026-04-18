@@ -1,0 +1,25 @@
+id: samtools
+canonicalName: SAMtools
+aliases:
+  - samtools
+ecosystem: generic
+description: Suite of programs for interacting with high-throughput sequencing data (SAM/BAM/CRAM).
+homepage: https://www.htslib.org
+repository: https://github.com/samtools/samtools
+license: MIT
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: SAMtools
+  authors:
+    - family: Li
+      given: Heng
+      kind: person
+  year: "2009"
+  doi: 10.1093/bioinformatics/btp352

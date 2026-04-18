@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+pnpm-lock.yaml
+apps/extension/public/db.json
+.agent-teams-v2/
+docs/

@@ -1,0 +1,25 @@
+id: cython
+canonicalName: Cython
+aliases:
+  - cython
+ecosystem: pypi
+description: Optimising static compiler for Python that makes writing C extensions easy.
+homepage: https://cython.org
+repository: https://github.com/cython/cython
+license: Apache-2.0
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Cython
+  authors:
+    - family: Behnel
+      given: Stefan
+      kind: person
+  year: "2011"
+  doi: 10.1109/MCSE.2010.118

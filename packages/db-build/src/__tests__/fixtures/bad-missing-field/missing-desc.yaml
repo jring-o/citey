@@ -1,0 +1,20 @@
+id: bad-pkg
+canonicalName: bad-pkg
+aliases:
+  - bad-pkg
+ecosystem: pypi
+homepage: https://example.com
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: bad-pkg
+  authors:
+    - family: Doe
+      given: Jane
+      kind: person
+  year: "2024"
+  url: https://example.com

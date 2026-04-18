@@ -1,0 +1,25 @@
+id: pyarrow
+canonicalName: PyArrow
+aliases:
+  - pyarrow
+ecosystem: pypi
+description: Python bindings for Apache Arrow, a cross-language columnar memory format.
+homepage: https://arrow.apache.org/docs/python/
+repository: https://github.com/apache/arrow
+license: Apache-2.0
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PyArrow
+  authors:
+    - family: Apache Arrow Developers
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://arrow.apache.org/docs/python/

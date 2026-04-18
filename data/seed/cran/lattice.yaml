@@ -1,0 +1,26 @@
+id: lattice
+canonicalName: lattice
+aliases:
+  - lattice
+ecosystem: cran
+description: Trellis graphics for R, implementing multi-panel conditioning plots.
+homepage: https://lattice.r-forge.r-project.org
+repository: https://github.com/deepayan/lattice
+license: GPL-2.0-only
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: lattice
+  authors:
+    - family: Sarkar
+      given: Deepayan
+      kind: person
+  year: "2008"
+  doi: 10.1007/978-0-387-75969-2
+  publisher: Springer

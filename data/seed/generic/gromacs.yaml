@@ -1,0 +1,25 @@
+id: gromacs
+canonicalName: GROMACS
+aliases:
+  - gromacs
+ecosystem: generic
+description: Versatile package for molecular dynamics simulation of biomolecular systems.
+homepage: https://www.gromacs.org
+repository: https://gitlab.com/gromacs/gromacs
+license: LGPL-2.1-only
+tags:
+  - cheminformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: GROMACS
+  authors:
+    - family: Abraham
+      given: Mark James
+      kind: person
+  year: "2015"
+  doi: 10.1016/j.softx.2015.06.001

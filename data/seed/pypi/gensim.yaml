@@ -1,0 +1,25 @@
+id: gensim
+canonicalName: Gensim
+aliases:
+  - gensim
+ecosystem: pypi
+description: Topic modelling, document indexing and similarity retrieval with large corpora.
+homepage: https://radimrehurek.com/gensim/
+repository: https://github.com/piskvorky/gensim
+license: LGPL-2.1-only
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Gensim
+  authors:
+    - family: Rehurek
+      given: Radim
+      kind: person
+  year: "2010"
+  url: https://radimrehurek.com/gensim/

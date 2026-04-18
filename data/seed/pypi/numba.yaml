@@ -1,0 +1,25 @@
+id: numba
+canonicalName: Numba
+aliases:
+  - numba
+ecosystem: pypi
+description: JIT compiler that translates Python and NumPy code into fast machine code.
+homepage: https://numba.pydata.org
+repository: https://github.com/numba/numba
+license: BSD-2-Clause
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Numba
+  authors:
+    - family: Lam
+      given: Siu Kwan
+      kind: person
+  year: "2015"
+  doi: 10.1145/2833157.2833162

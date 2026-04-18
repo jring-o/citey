@@ -1,0 +1,25 @@
+id: ray
+canonicalName: Ray
+aliases:
+  - ray
+ecosystem: pypi
+description: Framework for scaling AI and Python applications.
+homepage: https://www.ray.io
+repository: https://github.com/ray-project/ray
+license: Apache-2.0
+tags:
+  - performance
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Ray
+  authors:
+    - family: Moritz
+      given: Philipp
+      kind: person
+  year: "2018"
+  url: https://www.ray.io

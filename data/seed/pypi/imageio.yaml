@@ -1,0 +1,25 @@
+id: imageio
+canonicalName: imageio
+aliases:
+  - imageio
+ecosystem: pypi
+description: Library for reading and writing a wide range of image, video, and scientific formats.
+homepage: https://imageio.readthedocs.io
+repository: https://github.com/imageio/imageio
+license: BSD-2-Clause
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: imageio
+  authors:
+    - family: Klein
+      given: Almar
+      kind: person
+  year: "2024"
+  url: https://imageio.readthedocs.io

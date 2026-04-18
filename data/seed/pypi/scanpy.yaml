@@ -1,0 +1,25 @@
+id: scanpy
+canonicalName: Scanpy
+aliases:
+  - scanpy
+ecosystem: pypi
+description: Single-cell analysis in Python for large-scale genomics datasets.
+homepage: https://scanpy.readthedocs.io
+repository: https://github.com/scverse/scanpy
+license: BSD-3-Clause
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Scanpy
+  authors:
+    - family: Wolf
+      given: F. Alexander
+      kind: person
+  year: "2018"
+  doi: 10.1186/s13059-017-1382-0

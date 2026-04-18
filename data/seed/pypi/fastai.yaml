@@ -1,0 +1,25 @@
+id: fastai
+canonicalName: fastai
+aliases:
+  - fastai
+ecosystem: pypi
+description: Deep learning library providing high-level components for practitioners.
+homepage: https://docs.fast.ai
+repository: https://github.com/fastai/fastai
+license: Apache-2.0
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: fastai
+  authors:
+    - family: Howard
+      given: Jeremy
+      kind: person
+  year: "2020"
+  doi: 10.3390/info11020108

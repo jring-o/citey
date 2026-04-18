@@ -1,0 +1,26 @@
+id: geopandas
+canonicalName: GeoPandas
+aliases:
+  - geopandas
+  - gpd
+ecosystem: pypi
+description: Extension of pandas for geospatial data operations in Python.
+homepage: https://geopandas.org
+repository: https://github.com/geopandas/geopandas
+license: BSD-3-Clause
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: GeoPandas
+  authors:
+    - family: Jordahl
+      given: Kelsey
+      kind: person
+  year: "2024"
+  url: https://geopandas.org

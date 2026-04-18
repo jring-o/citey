@@ -1,0 +1,25 @@
+id: specutils
+canonicalName: specutils
+aliases:
+  - specutils
+ecosystem: pypi
+description: Astropy package for spectroscopic analysis in astronomy.
+homepage: https://specutils.readthedocs.io
+repository: https://github.com/astropy/specutils
+license: BSD-3-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: specutils
+  authors:
+    - family: Earl
+      given: Nicholas
+      kind: person
+  year: "2024"
+  url: https://specutils.readthedocs.io

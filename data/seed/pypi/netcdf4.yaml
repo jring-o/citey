@@ -1,0 +1,25 @@
+id: netcdf4
+canonicalName: netCDF4
+aliases:
+  - netcdf4
+ecosystem: pypi
+description: Python interface to the netCDF C library for reading and writing scientific data.
+homepage: https://unidata.github.io/netcdf4-python/
+repository: https://github.com/Unidata/netcdf4-python
+license: MIT
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: netCDF4
+  authors:
+    - family: Whitaker
+      given: Jeff
+      kind: person
+  year: "2023"
+  url: https://unidata.github.io/netcdf4-python/

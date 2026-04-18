@@ -1,0 +1,25 @@
+id: fastparquet
+canonicalName: fastparquet
+aliases:
+  - fastparquet
+ecosystem: pypi
+description: Python implementation of the Parquet columnar file format.
+homepage: https://fastparquet.readthedocs.io
+repository: https://github.com/dask/fastparquet
+license: Apache-2.0
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: fastparquet
+  authors:
+    - family: Durant
+      given: Martin
+      kind: person
+  year: "2024"
+  url: https://fastparquet.readthedocs.io

@@ -1,0 +1,25 @@
+id: polyglot
+canonicalName: Polyglot
+aliases:
+  - polyglot
+ecosystem: pypi
+description: Natural language pipeline supporting multilingual text processing.
+homepage: https://polyglot.readthedocs.io
+repository: https://github.com/aboSamoor/polyglot
+license: GPL-3.0-only
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Polyglot
+  authors:
+    - family: Al-Rfou
+      given: Rami
+      kind: person
+  year: "2024"
+  url: https://polyglot.readthedocs.io

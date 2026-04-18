@@ -1,0 +1,25 @@
+id: pystan
+canonicalName: PyStan
+aliases:
+  - pystan
+ecosystem: pypi
+description: Python interface to Stan for Bayesian inference.
+homepage: https://pystan.readthedocs.io
+repository: https://github.com/stan-dev/pystan
+license: ISC
+tags:
+  - bayesian
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PyStan
+  authors:
+    - family: Riddell
+      given: Allen
+      kind: person
+  year: "2024"
+  url: https://pystan.readthedocs.io

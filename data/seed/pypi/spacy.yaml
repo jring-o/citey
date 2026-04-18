@@ -1,0 +1,25 @@
+id: spacy
+canonicalName: spaCy
+aliases:
+  - spacy
+ecosystem: pypi
+description: Industrial-strength Natural Language Processing library for Python.
+homepage: https://spacy.io
+repository: https://github.com/explosion/spaCy
+license: MIT
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: spaCy
+  authors:
+    - family: Honnibal
+      given: Matthew
+      kind: person
+  year: "2024"
+  doi: 10.5281/zenodo.1212303

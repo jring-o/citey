@@ -1,0 +1,22 @@
+id: bad-orcid-pkg
+canonicalName: bad-orcid-pkg
+aliases:
+  - bad-orcid-pkg
+ecosystem: pypi
+description: A package with an author whose ORCID has an invalid checksum.
+homepage: https://example.com
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: bad-orcid-pkg
+  authors:
+    - family: Doe
+      given: Jane
+      orcid: 0000-0002-1825-0090
+      kind: person
+  year: "2024"
+  url: https://example.com

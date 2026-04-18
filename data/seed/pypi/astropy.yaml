@@ -1,0 +1,25 @@
+id: astropy
+canonicalName: Astropy
+aliases:
+  - astropy
+ecosystem: pypi
+description: Community Python library for astronomy and astrophysics.
+homepage: https://www.astropy.org
+repository: https://github.com/astropy/astropy
+license: BSD-3-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Astropy
+  authors:
+    - family: Astropy Collaboration
+      given: ""
+      kind: organization
+  year: "2022"
+  doi: 10.3847/1538-4357/ac7c74

@@ -1,0 +1,26 @@
+id: snap-py
+canonicalName: SNAP.py
+aliases:
+  - snap-py
+  - snap.py
+ecosystem: pypi
+description: Python interface for Stanford Network Analysis Platform (SNAP) for graph analysis.
+homepage: https://snap.stanford.edu/snappy/
+repository: https://github.com/snap-stanford/snap-python
+license: BSD-3-Clause
+tags:
+  - networks
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: SNAP.py
+  authors:
+    - family: Leskovec
+      given: Jure
+      kind: person
+  year: "2024"
+  url: https://snap.stanford.edu/snappy/

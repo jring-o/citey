@@ -1,0 +1,25 @@
+id: altair
+canonicalName: Altair
+aliases:
+  - altair
+ecosystem: pypi
+description: Declarative statistical visualization library for Python based on Vega-Lite.
+homepage: https://altair-viz.github.io
+repository: https://github.com/vega/altair
+license: BSD-3-Clause
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Altair
+  authors:
+    - family: VanderPlas
+      given: Jake
+      kind: person
+  year: "2018"
+  doi: 10.21105/joss.01057

@@ -1,0 +1,25 @@
+id: pydantic
+canonicalName: Pydantic
+aliases:
+  - pydantic
+ecosystem: pypi
+description: Data validation using Python type annotations.
+homepage: https://docs.pydantic.dev
+repository: https://github.com/pydantic/pydantic
+license: MIT
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Pydantic
+  authors:
+    - family: Colvin
+      given: Samuel
+      kind: person
+  year: "2024"
+  url: https://docs.pydantic.dev

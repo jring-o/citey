@@ -1,0 +1,25 @@
+id: ipython
+canonicalName: IPython
+aliases:
+  - ipython
+ecosystem: pypi
+description: Powerful interactive Python shell and kernel for Jupyter.
+homepage: https://ipython.org
+repository: https://github.com/ipython/ipython
+license: BSD-3-Clause
+tags:
+  - reproducibility
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: IPython
+  authors:
+    - family: Perez
+      given: Fernando
+      kind: person
+  year: "2007"
+  doi: 10.1109/MCSE.2007.53

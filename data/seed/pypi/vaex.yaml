@@ -1,0 +1,25 @@
+id: vaex
+canonicalName: Vaex
+aliases:
+  - vaex
+ecosystem: pypi
+description: Out-of-core DataFrames for lazy and fast visualization and exploration of big datasets.
+homepage: https://vaex.io
+repository: https://github.com/vaexio/vaex
+license: MIT
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Vaex
+  authors:
+    - family: Breddels
+      given: Maarten
+      kind: person
+  year: "2018"
+  doi: 10.1051/0004-6361/201732493

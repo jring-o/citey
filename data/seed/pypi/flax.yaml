@@ -1,0 +1,25 @@
+id: flax
+canonicalName: Flax
+aliases:
+  - flax
+ecosystem: pypi
+description: Neural network library for JAX designed for flexibility.
+homepage: https://flax.readthedocs.io
+repository: https://github.com/google/flax
+license: Apache-2.0
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Flax
+  authors:
+    - family: Heek
+      given: Jonathan
+      kind: person
+  year: "2024"
+  url: https://github.com/google/flax

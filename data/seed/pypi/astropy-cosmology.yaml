@@ -1,0 +1,16 @@
+id: astropy-cosmology
+canonicalName: astropy.cosmology
+aliases:
+  - astropy.cosmology
+  - astropy-cosmology
+ecosystem: pypi
+description: Cosmology calculations sub-package of Astropy; cite Astropy.
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2026-04-18
+  lastReviewed: 2026-04-18
+versionPolicy: unversioned
+citeAs: astropy

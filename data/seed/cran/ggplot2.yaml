@@ -1,0 +1,26 @@
+id: ggplot2
+canonicalName: ggplot2
+aliases:
+  - ggplot2
+ecosystem: cran
+description: System for declaratively creating graphics based on the Grammar of Graphics in R.
+homepage: https://ggplot2.tidyverse.org
+repository: https://github.com/tidyverse/ggplot2
+license: MIT
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: ggplot2
+  authors:
+    - family: Wickham
+      given: Hadley
+      kind: person
+  year: "2016"
+  doi: 10.1007/978-3-319-24277-4
+  publisher: Springer-Verlag New York

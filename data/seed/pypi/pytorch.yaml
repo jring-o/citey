@@ -1,0 +1,26 @@
+id: pytorch
+canonicalName: PyTorch
+aliases:
+  - pytorch
+  - torch
+ecosystem: pypi
+description: Tensors and dynamic neural networks in Python with strong GPU acceleration.
+homepage: https://pytorch.org
+repository: https://github.com/pytorch/pytorch
+license: BSD-3-Clause
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PyTorch
+  authors:
+    - family: Paszke
+      given: Adam
+      kind: person
+  year: "2019"
+  url: https://pytorch.org

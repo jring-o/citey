@@ -1,0 +1,26 @@
+id: pymc
+canonicalName: PyMC
+aliases:
+  - pymc
+  - pymc3
+ecosystem: pypi
+description: Probabilistic programming framework for Bayesian statistical modeling in Python.
+homepage: https://www.pymc.io
+repository: https://github.com/pymc-devs/pymc
+license: Apache-2.0
+tags:
+  - bayesian
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PyMC
+  authors:
+    - family: Salvatier
+      given: John
+      kind: person
+  year: "2016"
+  doi: 10.7717/peerj-cs.55

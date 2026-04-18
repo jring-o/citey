@@ -1,0 +1,125 @@
+/*
+ * Citey Design Tokens
+ * Functional, scientific, calm, trustworthy.
+ * System-stack typography. Light by default, dark via prefers-color-scheme.
+ */
+
+:root {
+  /* ── Typography ────────────────────────────────── */
+  --citey-font-family: -apple-system, 'Segoe UI', 'Inter', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --citey-font-size-xs: 0.75rem;   /* 12px */
+  --citey-font-size-sm: 0.8125rem; /* 13px */
+  --citey-font-size-md: 0.875rem;  /* 14px */
+  --citey-font-size-lg: 1rem;      /* 16px */
+  --citey-font-size-xl: 1.25rem;   /* 20px */
+  --citey-font-weight-normal: 400;
+  --citey-font-weight-medium: 500;
+  --citey-font-weight-bold: 600;
+  --citey-line-height-tight: 1.25;
+  --citey-line-height-normal: 1.5;
+
+  /* ── Spacing ───────────────────────────────────── */
+  --citey-space-1: 0.25rem;  /* 4px */
+  --citey-space-2: 0.5rem;   /* 8px */
+  --citey-space-3: 0.75rem;  /* 12px */
+  --citey-space-4: 1rem;     /* 16px */
+  --citey-space-5: 1.5rem;   /* 24px */
+  --citey-space-6: 2rem;     /* 32px */
+  --citey-space-8: 3rem;     /* 48px */
+
+  /* ── Radii ─────────────────────────────────────── */
+  --citey-radius-sm: 4px;
+  --citey-radius-md: 6px;
+  --citey-radius-lg: 8px;
+  --citey-radius-full: 9999px;
+
+  /* ── Focus ring ────────────────────────────────── */
+  --citey-focus-ring-width: 2px;
+  --citey-focus-ring-offset: 2px;
+  --citey-focus-ring-color: var(--citey-color-primary);
+
+  /* ── Light-theme colors (default) ──────────────── */
+  --citey-color-bg: #ffffff;
+  --citey-color-bg-subtle: #f7f8fa;
+  --citey-color-surface: #ffffff;
+  --citey-color-border: #d0d5dd;
+  --citey-color-border-subtle: #e4e7ec;
+
+  --citey-color-text: #1a1d23;
+  --citey-color-text-secondary: #475467;
+  --citey-color-text-muted: #98a2b3;
+
+  --citey-color-primary: #2b7a8e;
+  --citey-color-primary-hover: #236879;
+  --citey-color-primary-text: #ffffff;
+
+  --citey-color-secondary: #e9ecf0;
+  --citey-color-secondary-hover: #dce0e6;
+  --citey-color-secondary-text: #344054;
+
+  /* Confidence chip colors */
+  --citey-color-confidence-high-bg: #d1fadf;
+  --citey-color-confidence-high-text: #054f31;
+  --citey-color-confidence-low-bg: #fef0c7;
+  --citey-color-confidence-low-text: #7a2e0e;
+  --citey-color-confidence-citeas-bg: #d1e9ff;
+  --citey-color-confidence-citeas-text: #1849a9;
+
+  /* Status colors */
+  --citey-color-error: #d92d20;
+  --citey-color-error-bg: #fef3f2;
+  --citey-color-success: #079455;
+  --citey-color-success-bg: #ecfdf3;
+  --citey-color-info: #2b7a8e;
+  --citey-color-info-bg: #eaf6f9;
+
+  /* Banner */
+  --citey-color-banner-bg: var(--citey-color-info-bg);
+  --citey-color-banner-text: var(--citey-color-text);
+  --citey-color-banner-border: var(--citey-color-primary);
+}
+
+/* ── Dark theme ────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --citey-color-bg: #111318;
+    --citey-color-bg-subtle: #1a1d24;
+    --citey-color-surface: #1e2028;
+    --citey-color-border: #333842;
+    --citey-color-border-subtle: #292d38;
+
+    --citey-color-text: #ececf1;
+    --citey-color-text-secondary: #a1a6b4;
+    --citey-color-text-muted: #6b7280;
+
+    --citey-color-primary: #4db8cc;
+    --citey-color-primary-hover: #3da3b5;
+    --citey-color-primary-text: #111318;
+
+    --citey-color-secondary: #292d38;
+    --citey-color-secondary-hover: #333842;
+    --citey-color-secondary-text: #d0d5dd;
+
+    /* Confidence chip colors (dark) */
+    --citey-color-confidence-high-bg: #053321;
+    --citey-color-confidence-high-text: #75e0a7;
+    --citey-color-confidence-low-bg: #4e1d09;
+    --citey-color-confidence-low-text: #fec84b;
+    --citey-color-confidence-citeas-bg: #102a56;
+    --citey-color-confidence-citeas-text: #84adff;
+
+    /* Status colors (dark) */
+    --citey-color-error: #f97066;
+    --citey-color-error-bg: #3b1219;
+    --citey-color-success: #75e0a7;
+    --citey-color-success-bg: #053321;
+    --citey-color-info: #4db8cc;
+    --citey-color-info-bg: #0d2d35;
+
+    /* Banner (dark) */
+    --citey-color-banner-bg: var(--citey-color-info-bg);
+    --citey-color-banner-text: var(--citey-color-text);
+    --citey-color-banner-border: var(--citey-color-primary);
+  }
+}

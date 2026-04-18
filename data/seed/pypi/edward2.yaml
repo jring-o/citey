@@ -1,0 +1,25 @@
+id: edward2
+canonicalName: Edward2
+aliases:
+  - edward2
+ecosystem: pypi
+description: Probabilistic programming language for expressing and training Bayesian models.
+homepage: https://github.com/google/edward2
+repository: https://github.com/google/edward2
+license: Apache-2.0
+tags:
+  - bayesian
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Edward2
+  authors:
+    - family: Tran
+      given: Dustin
+      kind: person
+  year: "2024"
+  url: https://github.com/google/edward2

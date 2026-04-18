@@ -1,0 +1,26 @@
+id: networkx
+canonicalName: NetworkX
+aliases:
+  - networkx
+  - nx
+ecosystem: pypi
+description: Python package for the creation, manipulation, and study of complex networks.
+homepage: https://networkx.org
+repository: https://github.com/networkx/networkx
+license: BSD-3-Clause
+tags:
+  - networks
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: NetworkX
+  authors:
+    - family: Hagberg
+      given: Aric A.
+      kind: person
+  year: "2008"
+  url: https://networkx.org

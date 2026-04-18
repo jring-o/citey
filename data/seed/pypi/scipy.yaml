@@ -1,0 +1,25 @@
+id: scipy
+canonicalName: SciPy
+aliases:
+  - scipy
+ecosystem: pypi
+description: Fundamental algorithms for scientific computing in Python.
+homepage: https://scipy.org
+repository: https://github.com/scipy/scipy
+license: BSD-3-Clause
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: SciPy
+  authors:
+    - family: Virtanen
+      given: Pauli
+      kind: person
+  year: "2020"
+  doi: 10.1038/s41592-019-0686-2

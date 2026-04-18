@@ -1,0 +1,27 @@
+id: opencv-python
+canonicalName: OpenCV
+aliases:
+  - opencv
+  - opencv-python
+  - cv2
+ecosystem: pypi
+description: Open source computer vision and machine learning software library.
+homepage: https://opencv.org
+repository: https://github.com/opencv/opencv
+license: Apache-2.0
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: OpenCV
+  authors:
+    - family: Bradski
+      given: Gary
+      kind: person
+  year: "2000"
+  url: https://opencv.org

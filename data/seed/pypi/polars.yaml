@@ -1,0 +1,26 @@
+id: polars
+canonicalName: Polars
+aliases:
+  - polars
+  - pl
+ecosystem: pypi
+description: Blazingly fast DataFrame library for Rust and Python.
+homepage: https://pola.rs
+repository: https://github.com/pola-rs/polars
+license: MIT
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Polars
+  authors:
+    - family: Vink
+      given: Ritchie
+      kind: person
+  year: "2024"
+  url: https://pola.rs

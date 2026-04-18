@@ -1,0 +1,22 @@
+id: pkg-b
+canonicalName: pkg-b
+aliases:
+  - pkg-b
+  - shared-alias
+ecosystem: pypi
+description: Package B that shares an alias with Package A.
+homepage: https://example.com/b
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: pkg-b
+  authors:
+    - family: Smith
+      given: John
+      kind: person
+  year: "2024"
+  url: https://example.com/b

@@ -1,0 +1,25 @@
+id: mdanalysis
+canonicalName: MDAnalysis
+aliases:
+  - mdanalysis
+ecosystem: pypi
+description: Python library for analysis of molecular dynamics simulations.
+homepage: https://www.mdanalysis.org
+repository: https://github.com/MDAnalysis/mdanalysis
+license: GPL-2.0-only
+tags:
+  - cheminformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: MDAnalysis
+  authors:
+    - family: Michaud-Agrawal
+      given: Naveen
+      kind: person
+  year: "2011"
+  doi: 10.1002/jcc.21787

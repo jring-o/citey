@@ -1,0 +1,25 @@
+id: mmcv
+canonicalName: MMCV
+aliases:
+  - mmcv
+ecosystem: pypi
+description: Foundational library for computer vision research from OpenMMLab.
+homepage: https://mmcv.readthedocs.io
+repository: https://github.com/open-mmlab/mmcv
+license: Apache-2.0
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: MMCV
+  authors:
+    - family: Chen
+      given: Kai
+      kind: person
+  year: "2024"
+  url: https://github.com/open-mmlab/mmcv

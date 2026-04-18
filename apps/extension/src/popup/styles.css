@@ -1,0 +1,250 @@
+/* ---------------------------------------------------------------------------
+ * Popup styles — 400 px width, max-height 600 px, light + dark, a11y
+ * --------------------------------------------------------------------------- */
+
+/* ── Root popup container ─────────────────────────────────────────────── */
+
+.citey-popup {
+  width: 400px;
+  max-height: 600px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--citey-font-family);
+  font-size: var(--citey-font-size-md);
+  line-height: var(--citey-line-height-normal);
+  color: var(--citey-color-text);
+  background-color: var(--citey-color-bg);
+}
+
+/* ── Header (sticky) ──────────────────────────────────────────────────── */
+
+.citey-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--citey-space-3) var(--citey-space-4);
+  border-bottom: 1px solid var(--citey-color-border-subtle);
+  position: sticky;
+  top: 0;
+  background-color: var(--citey-color-bg);
+  z-index: 10;
+}
+
+.citey-header__logo {
+  font-size: var(--citey-font-size-lg);
+  font-weight: var(--citey-font-weight-bold);
+  color: var(--citey-color-primary);
+}
+
+.citey-header__settings {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--citey-space-1);
+  border: none;
+  background: transparent;
+  color: var(--citey-color-text-muted);
+  cursor: pointer;
+  border-radius: var(--citey-radius-sm);
+}
+
+.citey-header__settings:hover {
+  color: var(--citey-color-text);
+  background-color: var(--citey-color-bg-subtle);
+}
+
+/* ── Body ─────────────────────────────────────────────────────────────── */
+
+.citey-body {
+  flex: 1 1 auto;
+  padding: var(--citey-space-4);
+  overflow-y: auto;
+}
+
+/* ── State containers ─────────────────────────────────────────────────── */
+
+.citey-state {
+  display: flex;
+  flex-direction: column;
+  gap: var(--citey-space-3);
+}
+
+.citey-state--loading {
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  text-align: center;
+  color: var(--citey-color-text-secondary);
+}
+
+.citey-state--empty,
+.citey-state--restricted {
+  text-align: center;
+  color: var(--citey-color-text-secondary);
+  padding: var(--citey-space-5) 0;
+}
+
+.citey-state--restricted a {
+  color: var(--citey-color-primary);
+  text-decoration: underline;
+}
+
+.citey-state--error {
+  align-items: center;
+  text-align: center;
+  color: var(--citey-color-text-secondary);
+  padding: var(--citey-space-4) 0;
+}
+
+.citey-state--miss {
+  text-align: center;
+  padding: var(--citey-space-4) 0;
+}
+
+/* ── Results ──────────────────────────────────────────────────────────── */
+
+.citey-results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--citey-space-3);
+}
+
+.citey-divider {
+  text-align: center;
+  font-size: var(--citey-font-size-sm);
+  color: var(--citey-color-text-muted);
+  padding: var(--citey-space-2) 0;
+  border-top: 1px solid var(--citey-color-border-subtle);
+  margin-top: var(--citey-space-1);
+}
+
+/* ── Action bar ───────────────────────────────────────────────────────── */
+
+.citey-action-bar {
+  display: flex;
+  gap: var(--citey-space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--citey-space-3);
+}
+
+.citey-action-bar__error {
+  display: block;
+  width: 100%;
+  font-size: var(--citey-font-size-sm);
+  color: var(--citey-color-error);
+  margin-top: var(--citey-space-1);
+}
+
+/* ── Fallback status ──────────────────────────────────────────────────── */
+
+.citey-fallback-status {
+  display: flex;
+  align-items: center;
+  gap: var(--citey-space-2);
+  font-size: var(--citey-font-size-sm);
+  color: var(--citey-color-text-secondary);
+}
+
+.citey-fallback-cancel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: var(--citey-font-size-lg);
+  color: var(--citey-color-text-muted);
+  padding: 0 var(--citey-space-1);
+  border-radius: var(--citey-radius-sm);
+}
+
+.citey-fallback-cancel:hover {
+  color: var(--citey-color-text);
+  background-color: var(--citey-color-bg-subtle);
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+
+.citey-footer {
+  padding: var(--citey-space-2) var(--citey-space-4);
+  border-top: 1px solid var(--citey-color-border-subtle);
+  text-align: center;
+}
+
+/* ── Did We Miss ──────────────────────────────────────────────────────── */
+
+.citey-did-we-miss {
+  font-size: var(--citey-font-size-sm);
+}
+
+.citey-did-we-miss a,
+.citey-did-we-miss__link {
+  color: var(--citey-color-primary);
+  text-decoration: underline;
+}
+
+.citey-did-we-miss--full {
+  display: flex;
+  flex-direction: column;
+  gap: var(--citey-space-2);
+  align-items: center;
+}
+
+.citey-did-we-miss__text {
+  margin: 0;
+  color: var(--citey-color-text-secondary);
+}
+
+.citey-did-we-miss__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--citey-space-1);
+  color: var(--citey-color-primary);
+  font-weight: var(--citey-font-weight-medium);
+  text-decoration: none;
+  padding: var(--citey-space-2) var(--citey-space-4);
+  border: 1px solid var(--citey-color-primary);
+  border-radius: var(--citey-radius-md);
+  margin-top: var(--citey-space-2);
+}
+
+.citey-did-we-miss__cta:hover {
+  background-color: var(--citey-color-primary);
+  color: var(--citey-color-primary-text);
+}
+
+/* ── Error boundary ───────────────────────────────────────────────────── */
+
+.citey-error-boundary {
+  padding: var(--citey-space-5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--citey-space-3);
+  color: var(--citey-color-text-secondary);
+}
+
+.citey-error-message {
+  margin: 0;
+}
+
+/* ── Focus ring (a11y — contrast >= 3:1) ──────────────────────────────── */
+
+.citey-popup *:focus-visible {
+  outline: var(--citey-focus-ring-width) solid var(--citey-focus-ring-color);
+  outline-offset: var(--citey-focus-ring-offset);
+}
+
+/* ── Reduced motion ───────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .citey-popup *,
+  .citey-popup *::before,
+  .citey-popup *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

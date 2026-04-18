@@ -1,0 +1,26 @@
+id: matplotlib
+canonicalName: Matplotlib
+aliases:
+  - matplotlib
+  - mpl
+ecosystem: pypi
+description: Comprehensive library for creating static, animated, and interactive visualizations in Python.
+homepage: https://matplotlib.org
+repository: https://github.com/matplotlib/matplotlib
+license: PSF-2.0
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Matplotlib
+  authors:
+    - family: Hunter
+      given: John D.
+      kind: person
+  year: "2007"
+  doi: 10.1109/MCSE.2007.55

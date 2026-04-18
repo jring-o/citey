@@ -1,0 +1,25 @@
+id: pyproj
+canonicalName: pyproj
+aliases:
+  - pyproj
+ecosystem: pypi
+description: Python interface to PROJ for cartographic projections and coordinate transformations.
+homepage: https://pyproj4.github.io/pyproj
+repository: https://github.com/pyproj4/pyproj
+license: MIT
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: pyproj
+  authors:
+    - family: Snow
+      given: Alan D.
+      kind: person
+  year: "2024"
+  url: https://pyproj4.github.io/pyproj

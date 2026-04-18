@@ -1,0 +1,25 @@
+id: keras
+canonicalName: Keras
+aliases:
+  - keras
+ecosystem: pypi
+description: Deep learning API written in Python, running on top of TensorFlow.
+homepage: https://keras.io
+repository: https://github.com/keras-team/keras
+license: Apache-2.0
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Keras
+  authors:
+    - family: Chollet
+      given: Francois
+      kind: person
+  year: "2015"
+  url: https://keras.io

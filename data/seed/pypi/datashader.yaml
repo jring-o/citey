@@ -1,0 +1,25 @@
+id: datashader
+canonicalName: Datashader
+aliases:
+  - datashader
+ecosystem: pypi
+description: Accurately render large datasets into images quickly.
+homepage: https://datashader.org
+repository: https://github.com/holoviz/datashader
+license: BSD-3-Clause
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Datashader
+  authors:
+    - family: Bednar
+      given: James A.
+      kind: person
+  year: "2024"
+  url: https://datashader.org

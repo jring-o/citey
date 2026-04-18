@@ -1,0 +1,25 @@
+id: stringr
+canonicalName: stringr
+aliases:
+  - stringr
+ecosystem: cran
+description: Consistent wrappers for common string operations in R.
+homepage: https://stringr.tidyverse.org
+repository: https://github.com/tidyverse/stringr
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: stringr
+  authors:
+    - family: Wickham
+      given: Hadley
+      kind: person
+  year: "2024"
+  url: https://stringr.tidyverse.org

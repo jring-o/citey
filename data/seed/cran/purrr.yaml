@@ -1,0 +1,25 @@
+id: purrr
+canonicalName: purrr
+aliases:
+  - purrr
+ecosystem: cran
+description: Functional programming tools for R enhancing iteration and list manipulation.
+homepage: https://purrr.tidyverse.org
+repository: https://github.com/tidyverse/purrr
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: purrr
+  authors:
+    - family: Wickham
+      given: Hadley
+      kind: person
+  year: "2024"
+  url: https://purrr.tidyverse.org

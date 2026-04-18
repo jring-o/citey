@@ -1,0 +1,26 @@
+id: igraph
+canonicalName: igraph
+aliases:
+  - igraph
+  - python-igraph
+ecosystem: pypi
+description: High performance graph library with interfaces in R, Python, and C.
+homepage: https://igraph.org
+repository: https://github.com/igraph/python-igraph
+license: GPL-2.0-only
+tags:
+  - networks
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: igraph
+  authors:
+    - family: Csardi
+      given: Gabor
+      kind: person
+  year: "2006"
+  url: https://igraph.org

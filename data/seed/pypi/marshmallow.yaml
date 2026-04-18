@@ -1,0 +1,25 @@
+id: marshmallow
+canonicalName: marshmallow
+aliases:
+  - marshmallow
+ecosystem: pypi
+description: Lightweight library for converting complex datatypes to and from native Python datatypes.
+homepage: https://marshmallow.readthedocs.io
+repository: https://github.com/marshmallow-code/marshmallow
+license: MIT
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: marshmallow
+  authors:
+    - family: Loria
+      given: Steven
+      kind: person
+  year: "2024"
+  url: https://marshmallow.readthedocs.io

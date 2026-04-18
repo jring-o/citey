@@ -1,0 +1,25 @@
+id: fuzzywuzzy
+canonicalName: FuzzyWuzzy
+aliases:
+  - fuzzywuzzy
+ecosystem: pypi
+description: Fuzzy string matching in Python using Levenshtein distance.
+homepage: https://github.com/seatgeek/fuzzywuzzy
+repository: https://github.com/seatgeek/fuzzywuzzy
+license: GPL-2.0-only
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: FuzzyWuzzy
+  authors:
+    - family: Cohen
+      given: Adam
+      kind: person
+  year: "2024"
+  url: https://github.com/seatgeek/fuzzywuzzy

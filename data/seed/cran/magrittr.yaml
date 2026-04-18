@@ -1,0 +1,25 @@
+id: magrittr
+canonicalName: magrittr
+aliases:
+  - magrittr
+ecosystem: cran
+description: Forward-pipe operator for R enabling cleaner and more readable code.
+homepage: https://magrittr.tidyverse.org
+repository: https://github.com/tidyverse/magrittr
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: magrittr
+  authors:
+    - family: Bache
+      given: Stefan Milton
+      kind: person
+  year: "2024"
+  url: https://magrittr.tidyverse.org

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "composite": false
+  },
+  "references": [
+    {
+      "path": "packages/ui"
+    }
+  ],
+  "include": []
+}

@@ -1,0 +1,25 @@
+id: dplyr
+canonicalName: dplyr
+aliases:
+  - dplyr
+ecosystem: cran
+description: Grammar of data manipulation in R providing a consistent set of verbs.
+homepage: https://dplyr.tidyverse.org
+repository: https://github.com/tidyverse/dplyr
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: dplyr
+  authors:
+    - family: Wickham
+      given: Hadley
+      kind: person
+  year: "2024"
+  url: https://dplyr.tidyverse.org

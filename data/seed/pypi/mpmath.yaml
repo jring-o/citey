@@ -1,0 +1,25 @@
+id: mpmath
+canonicalName: mpmath
+aliases:
+  - mpmath
+ecosystem: pypi
+description: Library for arbitrary-precision floating-point arithmetic in Python.
+homepage: https://mpmath.org
+repository: https://github.com/mpmath/mpmath
+license: BSD-3-Clause
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: mpmath
+  authors:
+    - family: Johansson
+      given: Fredrik
+      kind: person
+  year: "2023"
+  url: https://mpmath.org

@@ -1,0 +1,25 @@
+id: h5py
+canonicalName: h5py
+aliases:
+  - h5py
+ecosystem: pypi
+description: Pythonic interface to the HDF5 binary data format.
+homepage: https://www.h5py.org
+repository: https://github.com/h5py/h5py
+license: BSD-3-Clause
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: h5py
+  authors:
+    - family: Collette
+      given: Andrew
+      kind: person
+  year: "2023"
+  url: https://www.h5py.org

@@ -1,0 +1,25 @@
+id: bcftools
+canonicalName: BCFtools
+aliases:
+  - bcftools
+ecosystem: generic
+description: Utilities for variant calling and manipulating VCF and BCF files.
+homepage: https://www.htslib.org
+repository: https://github.com/samtools/bcftools
+license: MIT
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: BCFtools
+  authors:
+    - family: Danecek
+      given: Petr
+      kind: person
+  year: "2021"
+  doi: 10.1093/gigascience/giab008

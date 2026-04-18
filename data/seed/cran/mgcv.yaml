@@ -1,0 +1,25 @@
+id: mgcv
+canonicalName: mgcv
+aliases:
+  - mgcv
+ecosystem: cran
+description: Generalized additive models and generalized additive mixed models in R.
+homepage: https://cran.r-project.org/package=mgcv
+license: GPL-2.0-only
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: mgcv
+  authors:
+    - family: Wood
+      given: Simon N.
+      kind: person
+  year: "2017"
+  doi: 10.1201/9781315370279
+  publisher: Chapman and Hall/CRC

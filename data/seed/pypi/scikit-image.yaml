@@ -1,0 +1,26 @@
+id: scikit-image
+canonicalName: scikit-image
+aliases:
+  - scikit-image
+  - skimage
+ecosystem: pypi
+description: Image processing algorithms for SciPy in Python.
+homepage: https://scikit-image.org
+repository: https://github.com/scikit-image/scikit-image
+license: BSD-3-Clause
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: scikit-image
+  authors:
+    - family: van der Walt
+      given: Stefan
+      kind: person
+  year: "2014"
+  doi: 10.7717/peerj.453

@@ -1,0 +1,25 @@
+id: openbabel
+canonicalName: OpenBabel
+aliases:
+  - openbabel
+ecosystem: generic
+description: Chemical toolbox for speaking the many languages of chemical data.
+homepage: https://openbabel.org
+repository: https://github.com/openbabel/openbabel
+license: GPL-2.0-only
+tags:
+  - cheminformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: OpenBabel
+  authors:
+    - family: O'Boyle
+      given: Noel M.
+      kind: person
+  year: "2011"
+  doi: 10.1186/1758-2946-3-33

@@ -1,0 +1,25 @@
+id: nextflow
+canonicalName: Nextflow
+aliases:
+  - nextflow
+ecosystem: generic
+description: Data-driven computational pipelines for scalable and reproducible scientific workflows.
+homepage: https://www.nextflow.io
+repository: https://github.com/nextflow-io/nextflow
+license: Apache-2.0
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Nextflow
+  authors:
+    - family: Di Tommaso
+      given: Paolo
+      kind: person
+  year: "2017"
+  doi: 10.1038/nbt.3820

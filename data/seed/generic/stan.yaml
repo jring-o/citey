@@ -1,0 +1,25 @@
+id: stan
+canonicalName: Stan
+aliases:
+  - stan
+ecosystem: generic
+description: Platform for statistical modeling and high-performance statistical computation.
+homepage: https://mc-stan.org
+repository: https://github.com/stan-dev/stan
+license: BSD-3-Clause
+tags:
+  - bayesian
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Stan
+  authors:
+    - family: Carpenter
+      given: Bob
+      kind: person
+  year: "2017"
+  doi: 10.18637/jss.v076.i01

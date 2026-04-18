@@ -1,0 +1,25 @@
+id: bokeh
+canonicalName: Bokeh
+aliases:
+  - bokeh
+ecosystem: pypi
+description: Interactive visualization library for modern web browsers.
+homepage: https://bokeh.org
+repository: https://github.com/bokeh/bokeh
+license: BSD-3-Clause
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Bokeh
+  authors:
+    - family: Bokeh Development Team
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://bokeh.org

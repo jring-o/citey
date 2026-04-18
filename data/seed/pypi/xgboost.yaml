@@ -1,0 +1,25 @@
+id: xgboost
+canonicalName: XGBoost
+aliases:
+  - xgboost
+ecosystem: pypi
+description: Scalable and flexible gradient boosting library.
+homepage: https://xgboost.readthedocs.io
+repository: https://github.com/dmlc/xgboost
+license: Apache-2.0
+tags:
+  - machine-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: XGBoost
+  authors:
+    - family: Chen
+      given: Tianqi
+      kind: person
+  year: "2016"
+  doi: 10.1145/2939672.2939785

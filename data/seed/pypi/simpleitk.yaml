@@ -1,0 +1,25 @@
+id: simpleitk
+canonicalName: SimpleITK
+aliases:
+  - simpleitk
+ecosystem: pypi
+description: Simplified interface to the Insight Toolkit for image analysis.
+homepage: https://simpleitk.org
+repository: https://github.com/SimpleITK/SimpleITK
+license: Apache-2.0
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: SimpleITK
+  authors:
+    - family: Lowekamp
+      given: Bradley C.
+      kind: person
+  year: "2013"
+  doi: 10.3389/fninf.2013.00045

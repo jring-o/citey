@@ -1,0 +1,26 @@
+id: mybinder
+canonicalName: mybinder
+aliases:
+  - mybinder
+  - binder
+ecosystem: generic
+description: Service for sharing reproducible interactive computing environments from repositories.
+homepage: https://mybinder.org
+repository: https://github.com/jupyterhub/binderhub
+license: BSD-3-Clause
+tags:
+  - reproducibility
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: mybinder
+  authors:
+    - family: Project Jupyter
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://mybinder.org

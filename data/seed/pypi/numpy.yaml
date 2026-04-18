@@ -1,0 +1,27 @@
+id: numpy
+canonicalName: NumPy
+aliases:
+  - numpy
+ecosystem: pypi
+description: Fundamental package for scientific computing with Python.
+homepage: https://numpy.org
+repository: https://github.com/numpy/numpy
+license: BSD-3-Clause
+dois:
+  - 10.1038/s41586-020-2649-2
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: NumPy
+  authors:
+    - family: Harris
+      given: Charles R.
+      kind: person
+  year: "2020"
+  doi: 10.1038/s41586-020-2649-2

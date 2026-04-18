@@ -1,0 +1,25 @@
+id: lightgbm
+canonicalName: LightGBM
+aliases:
+  - lightgbm
+ecosystem: pypi
+description: Fast, distributed, high performance gradient boosting framework.
+homepage: https://lightgbm.readthedocs.io
+repository: https://github.com/microsoft/LightGBM
+license: MIT
+tags:
+  - machine-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: LightGBM
+  authors:
+    - family: Ke
+      given: Guolin
+      kind: person
+  year: "2017"
+  url: https://lightgbm.readthedocs.io

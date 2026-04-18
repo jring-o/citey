@@ -1,0 +1,26 @@
+id: seaborn
+canonicalName: seaborn
+aliases:
+  - seaborn
+  - sns
+ecosystem: pypi
+description: Statistical data visualization library based on Matplotlib.
+homepage: https://seaborn.pydata.org
+repository: https://github.com/mwaskom/seaborn
+license: BSD-3-Clause
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: seaborn
+  authors:
+    - family: Waskom
+      given: Michael
+      kind: person
+  year: "2021"
+  doi: 10.21105/joss.03021

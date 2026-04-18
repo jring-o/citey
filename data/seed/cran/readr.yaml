@@ -1,0 +1,25 @@
+id: readr
+canonicalName: readr
+aliases:
+  - readr
+ecosystem: cran
+description: Fast and friendly way to read rectangular data in R.
+homepage: https://readr.tidyverse.org
+repository: https://github.com/tidyverse/readr
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: readr
+  authors:
+    - family: Wickham
+      given: Hadley
+      kind: person
+  year: "2024"
+  url: https://readr.tidyverse.org

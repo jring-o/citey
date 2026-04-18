@@ -1,0 +1,25 @@
+id: pyranges
+canonicalName: PyRanges
+aliases:
+  - pyranges
+ecosystem: pypi
+description: Genomic interval operations in Python for bioinformatics.
+homepage: https://pyranges.readthedocs.io
+repository: https://github.com/pyranges/pyranges
+license: MIT
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PyRanges
+  authors:
+    - family: Stovner
+      given: Endre Bakken
+      kind: person
+  year: "2020"
+  doi: 10.1093/bioinformatics/btz615

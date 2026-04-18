@@ -1,0 +1,25 @@
+id: openmm
+canonicalName: OpenMM
+aliases:
+  - openmm
+ecosystem: pypi
+description: High performance toolkit for molecular simulation using GPUs.
+homepage: https://openmm.org
+repository: https://github.com/openmm/openmm
+license: MIT
+tags:
+  - cheminformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: OpenMM
+  authors:
+    - family: Eastman
+      given: Peter
+      kind: person
+  year: "2017"
+  doi: 10.1371/journal.pcbi.1005659

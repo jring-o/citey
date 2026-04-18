@@ -1,0 +1,25 @@
+id: rasterio
+canonicalName: Rasterio
+aliases:
+  - rasterio
+ecosystem: pypi
+description: Python access to geospatial raster data via GDAL.
+homepage: https://rasterio.readthedocs.io
+repository: https://github.com/rasterio/rasterio
+license: BSD-3-Clause
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Rasterio
+  authors:
+    - family: Gillies
+      given: Sean
+      kind: person
+  year: "2024"
+  url: https://rasterio.readthedocs.io

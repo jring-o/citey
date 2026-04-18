@@ -1,0 +1,25 @@
+id: xesmf
+canonicalName: xESMF
+aliases:
+  - xesmf
+ecosystem: pypi
+description: Universal regridder for geospatial data using xarray and ESMPy.
+homepage: https://xesmf.readthedocs.io
+repository: https://github.com/pangeo-data/xESMF
+license: MIT
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: xESMF
+  authors:
+    - family: Zhuang
+      given: Jiawei
+      kind: person
+  year: "2024"
+  url: https://xesmf.readthedocs.io

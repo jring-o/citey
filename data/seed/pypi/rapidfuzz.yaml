@@ -1,0 +1,25 @@
+id: rapidfuzz
+canonicalName: RapidFuzz
+aliases:
+  - rapidfuzz
+ecosystem: pypi
+description: Fast fuzzy string matching library for Python and C++ using Levenshtein distance.
+homepage: https://rapidfuzz.github.io/RapidFuzz/
+repository: https://github.com/rapidfuzz/RapidFuzz
+license: MIT
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: RapidFuzz
+  authors:
+    - family: Bachmann
+      given: Max
+      kind: person
+  year: "2024"
+  url: https://github.com/rapidfuzz/RapidFuzz

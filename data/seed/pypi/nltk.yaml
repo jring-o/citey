@@ -1,0 +1,26 @@
+id: nltk
+canonicalName: NLTK
+aliases:
+  - nltk
+ecosystem: pypi
+description: Leading platform for building Python programs to work with human language data.
+homepage: https://www.nltk.org
+repository: https://github.com/nltk/nltk
+license: Apache-2.0
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: NLTK
+  authors:
+    - family: Bird
+      given: Steven
+      kind: person
+  year: "2009"
+  url: https://www.nltk.org
+  publisher: O'Reilly Media

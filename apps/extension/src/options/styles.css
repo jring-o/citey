@@ -1,0 +1,132 @@
+/* ---------------------------------------------------------------------------
+ * Options page styles — full-tab layout, light + dark, a11y focus rings
+ * --------------------------------------------------------------------------- */
+
+/* ── Page root ────────────────────────────────────────────────────────────── */
+
+.citey-options {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--citey-space-6) var(--citey-space-5);
+  font-family: var(--citey-font-family);
+  font-size: var(--citey-font-size-md);
+  line-height: var(--citey-line-height-normal);
+  color: var(--citey-color-text);
+  background-color: var(--citey-color-bg);
+  min-height: 100vh;
+}
+
+/* ── Page title ───────────────────────────────────────────────────────────── */
+
+.citey-options__title {
+  font-size: var(--citey-font-size-xl);
+  font-weight: var(--citey-font-weight-bold);
+  color: var(--citey-color-primary);
+  margin: 0 0 var(--citey-space-6) 0;
+}
+
+/* ── Section ──────────────────────────────────────────────────────────────── */
+
+.citey-options__section {
+  margin-bottom: var(--citey-space-6);
+}
+
+.citey-options__section-title {
+  font-size: var(--citey-font-size-lg);
+  font-weight: var(--citey-font-weight-bold);
+  color: var(--citey-color-text);
+  margin: 0 0 var(--citey-space-4) 0;
+  padding-bottom: var(--citey-space-2);
+  border-bottom: 1px solid var(--citey-color-border-subtle);
+}
+
+/* ── DB info ──────────────────────────────────────────────────────────────── */
+
+.citey-options__version {
+  margin: 0 0 var(--citey-space-2) 0;
+  font-weight: var(--citey-font-weight-medium);
+}
+
+.citey-options__db-info {
+  margin: 0 0 var(--citey-space-3) 0;
+  color: var(--citey-color-text-secondary);
+}
+
+.citey-options__link {
+  color: var(--citey-color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.citey-options__link:hover {
+  color: var(--citey-color-primary-hover);
+}
+
+/* ── Settings fields ──────────────────────────────────────────────────────── */
+
+.citey-options__field {
+  margin-bottom: var(--citey-space-5);
+}
+
+.citey-options__field-row {
+  display: flex;
+  align-items: center;
+  gap: var(--citey-space-3);
+}
+
+.citey-options__field-label {
+  font-weight: var(--citey-font-weight-medium);
+  color: var(--citey-color-text);
+  cursor: pointer;
+}
+
+.citey-options__field-help {
+  margin: var(--citey-space-2) 0 0 0;
+  font-size: var(--citey-font-size-sm);
+  color: var(--citey-color-text-muted);
+  line-height: var(--citey-line-height-normal);
+}
+
+.citey-options__field-help a {
+  color: var(--citey-color-primary);
+  text-decoration: underline;
+}
+
+/* ── About paragraph ──────────────────────────────────────────────────────── */
+
+.citey-options__about {
+  margin: 0;
+  color: var(--citey-color-text-secondary);
+  line-height: var(--citey-line-height-normal);
+}
+
+.citey-options__about a {
+  color: var(--citey-color-primary);
+  text-decoration: underline;
+}
+
+/* ── Loading / error states ───────────────────────────────────────────────── */
+
+.citey-options__loading {
+  color: var(--citey-color-text-muted);
+  padding: var(--citey-space-4) 0;
+}
+
+/* ── Focus ring (a11y) ────────────────────────────────────────────────────── */
+
+.citey-options *:focus-visible {
+  outline: var(--citey-focus-ring-width) solid var(--citey-focus-ring-color);
+  outline-offset: var(--citey-focus-ring-offset);
+}
+
+/* ── Reduced motion ───────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .citey-options *,
+  .citey-options *::before,
+  .citey-options *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+		monospace;
+
+	--color-bg: #fafbfc;
+	--color-surface: #ffffff;
+	--color-text: #1e293b;
+	--color-text-muted: #64748b;
+	--color-accent: #0f766e;
+	--color-accent-hover: #0d655e;
+	--color-border: #e2e8f0;
+	--color-code-bg: #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-bg: #0f172a;
+		--color-surface: #1e293b;
+		--color-text: #e2e8f0;
+		--color-text-muted: #94a3b8;
+		--color-accent: #5eead4;
+		--color-accent-hover: #99f6e4;
+		--color-border: #334155;
+		--color-code-bg: #1e293b;
+	}
+}
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family: var(--font-sans);
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.6;
+}

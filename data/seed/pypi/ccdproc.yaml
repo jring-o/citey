@@ -1,0 +1,25 @@
+id: ccdproc
+canonicalName: ccdproc
+aliases:
+  - ccdproc
+ecosystem: pypi
+description: Astropy package for basic data reductions of CCD images.
+homepage: https://ccdproc.readthedocs.io
+repository: https://github.com/astropy/ccdproc
+license: BSD-3-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: ccdproc
+  authors:
+    - family: Craig
+      given: Matt
+      kind: person
+  year: "2024"
+  url: https://ccdproc.readthedocs.io

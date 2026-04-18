@@ -1,0 +1,5739 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-04-18T13:23:07.169Z",
+  "dbVersion": "e68e09bd4646",
+  "packageCount": 152,
+  "packages": [
+    {
+      "id": "albumentations",
+      "canonicalName": "Albumentations",
+      "aliases": [
+        "albumentations"
+      ],
+      "ecosystem": "pypi",
+      "description": "Fast image augmentation library for machine learning and deep learning.",
+      "homepage": "https://albumentations.ai",
+      "repository": "https://github.com/albumentations-team/albumentations",
+      "license": "MIT",
+      "citation": {
+        "title": "Albumentations",
+        "authors": [
+          {
+            "family": "Buslaev",
+            "given": "Alexander",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "doi": "10.3390/info11020125"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "altair",
+      "canonicalName": "Altair",
+      "aliases": [
+        "altair"
+      ],
+      "ecosystem": "pypi",
+      "description": "Declarative statistical visualization library for Python based on Vega-Lite.",
+      "homepage": "https://altair-viz.github.io",
+      "repository": "https://github.com/vega/altair",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Altair",
+        "authors": [
+          {
+            "family": "VanderPlas",
+            "given": "Jake",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "doi": "10.21105/joss.01057"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "anndata",
+      "canonicalName": "AnnData",
+      "aliases": [
+        "anndata"
+      ],
+      "ecosystem": "pypi",
+      "description": "Annotated data matrices for single-cell genomics in Python.",
+      "homepage": "https://anndata.readthedocs.io",
+      "repository": "https://github.com/scverse/anndata",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "AnnData",
+        "authors": [
+          {
+            "family": "Virshup",
+            "given": "Isaac",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://anndata.readthedocs.io"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "arviz",
+      "canonicalName": "ArviZ",
+      "aliases": [
+        "arviz"
+      ],
+      "ecosystem": "pypi",
+      "description": "Exploratory analysis of Bayesian models with visualization and diagnostics.",
+      "homepage": "https://python.arviz.org",
+      "repository": "https://github.com/arviz-devs/arviz",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "ArviZ",
+        "authors": [
+          {
+            "family": "Kumar",
+            "given": "Ravin",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "doi": "10.21105/joss.01143"
+      },
+      "tags": [
+        "bayesian"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "ase",
+      "canonicalName": "ASE",
+      "aliases": [
+        "ase"
+      ],
+      "ecosystem": "pypi",
+      "description": "Atomic Simulation Environment for setting up, running, and analyzing atomistic simulations.",
+      "homepage": "https://wiki.fysik.dtu.dk/ase/",
+      "repository": "https://gitlab.com/ase/ase",
+      "license": "LGPL-2.1-only",
+      "citation": {
+        "title": "ASE",
+        "authors": [
+          {
+            "family": "Larsen",
+            "given": "Ask Hjorth",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.1088/1361-648X/aa680e"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "astropy",
+      "canonicalName": "Astropy",
+      "aliases": [
+        "astropy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Community Python library for astronomy and astrophysics.",
+      "homepage": "https://www.astropy.org",
+      "repository": "https://github.com/astropy/astropy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Astropy",
+        "authors": [
+          {
+            "family": "Astropy Collaboration",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2022",
+        "doi": "10.3847/1538-4357/ac7c74"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "astropy-cosmology",
+      "canonicalName": "astropy.cosmology",
+      "aliases": [
+        "astropy.cosmology",
+        "astropy-cosmology"
+      ],
+      "ecosystem": "pypi",
+      "description": "Cosmology calculations sub-package of Astropy; cite Astropy.",
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2026-04-18",
+        "lastReviewed": "2026-04-18"
+      },
+      "versionPolicy": "unversioned",
+      "citeAs": "astropy"
+    },
+    {
+      "id": "astropy-io-fits",
+      "canonicalName": "astropy.io.fits",
+      "aliases": [
+        "astropy.io.fits",
+        "astropy-io-fits"
+      ],
+      "ecosystem": "pypi",
+      "description": "FITS file I/O sub-package of Astropy; cite Astropy.",
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2026-04-18",
+        "lastReviewed": "2026-04-18"
+      },
+      "versionPolicy": "unversioned",
+      "citeAs": "astropy"
+    },
+    {
+      "id": "astroquery",
+      "canonicalName": "astroquery",
+      "aliases": [
+        "astroquery"
+      ],
+      "ecosystem": "pypi",
+      "description": "Collection of tools to access online astronomical data archives.",
+      "homepage": "https://astroquery.readthedocs.io",
+      "repository": "https://github.com/astropy/astroquery",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "astroquery",
+        "authors": [
+          {
+            "family": "Ginsburg",
+            "given": "Adam",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "doi": "10.3847/1538-3881/aafc33"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "bcftools",
+      "canonicalName": "BCFtools",
+      "aliases": [
+        "bcftools"
+      ],
+      "ecosystem": "generic",
+      "description": "Utilities for variant calling and manipulating VCF and BCF files.",
+      "homepage": "https://www.htslib.org",
+      "repository": "https://github.com/samtools/bcftools",
+      "license": "MIT",
+      "citation": {
+        "title": "BCFtools",
+        "authors": [
+          {
+            "family": "Danecek",
+            "given": "Petr",
+            "kind": "person"
+          }
+        ],
+        "year": "2021",
+        "doi": "10.1093/gigascience/giab008"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "biopython",
+      "canonicalName": "Biopython",
+      "aliases": [
+        "biopython",
+        "bio"
+      ],
+      "ecosystem": "pypi",
+      "description": "Tools for computational biology and bioinformatics in Python.",
+      "homepage": "https://biopython.org",
+      "repository": "https://github.com/biopython/biopython",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Biopython",
+        "authors": [
+          {
+            "family": "Cock",
+            "given": "Peter J. A.",
+            "kind": "person"
+          }
+        ],
+        "year": "2009",
+        "doi": "10.1093/bioinformatics/btp163"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "bokeh",
+      "canonicalName": "Bokeh",
+      "aliases": [
+        "bokeh"
+      ],
+      "ecosystem": "pypi",
+      "description": "Interactive visualization library for modern web browsers.",
+      "homepage": "https://bokeh.org",
+      "repository": "https://github.com/bokeh/bokeh",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Bokeh",
+        "authors": [
+          {
+            "family": "Bokeh Development Team",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://bokeh.org"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "broom",
+      "canonicalName": "broom",
+      "aliases": [
+        "broom"
+      ],
+      "ecosystem": "cran",
+      "description": "Convert statistical analysis objects into tidy tibbles in R.",
+      "homepage": "https://broom.tidymodels.org",
+      "repository": "https://github.com/tidymodels/broom",
+      "license": "MIT",
+      "citation": {
+        "title": "broom",
+        "authors": [
+          {
+            "family": "Robinson",
+            "given": "David",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://broom.tidymodels.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "cartopy",
+      "canonicalName": "Cartopy",
+      "aliases": [
+        "cartopy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Cartographic library for Python with Matplotlib support for map projections.",
+      "homepage": "https://scitools.org.uk/cartopy",
+      "repository": "https://github.com/SciTools/cartopy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Cartopy",
+        "authors": [
+          {
+            "family": "Met Office",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://scitools.org.uk/cartopy"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "catboost",
+      "canonicalName": "CatBoost",
+      "aliases": [
+        "catboost"
+      ],
+      "ecosystem": "pypi",
+      "description": "High-performance gradient boosting on decision trees with categorical feature support.",
+      "homepage": "https://catboost.ai",
+      "repository": "https://github.com/catboost/catboost",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "CatBoost",
+        "authors": [
+          {
+            "family": "Prokhorenkova",
+            "given": "Liudmila",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "url": "https://catboost.ai"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "ccdproc",
+      "canonicalName": "ccdproc",
+      "aliases": [
+        "ccdproc"
+      ],
+      "ecosystem": "pypi",
+      "description": "Astropy package for basic data reductions of CCD images.",
+      "homepage": "https://ccdproc.readthedocs.io",
+      "repository": "https://github.com/astropy/ccdproc",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "ccdproc",
+        "authors": [
+          {
+            "family": "Craig",
+            "given": "Matt",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://ccdproc.readthedocs.io"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "cupy",
+      "canonicalName": "CuPy",
+      "aliases": [
+        "cupy"
+      ],
+      "ecosystem": "pypi",
+      "description": "NumPy and SciPy compatible GPU array library for accelerated computing.",
+      "homepage": "https://cupy.dev",
+      "repository": "https://github.com/cupy/cupy",
+      "license": "MIT",
+      "citation": {
+        "title": "CuPy",
+        "authors": [
+          {
+            "family": "Okuta",
+            "given": "Ryosuke",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "url": "https://cupy.dev"
+      },
+      "tags": [
+        "performance"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "cython",
+      "canonicalName": "Cython",
+      "aliases": [
+        "cython"
+      ],
+      "ecosystem": "pypi",
+      "description": "Optimising static compiler for Python that makes writing C extensions easy.",
+      "homepage": "https://cython.org",
+      "repository": "https://github.com/cython/cython",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Cython",
+        "authors": [
+          {
+            "family": "Behnel",
+            "given": "Stefan",
+            "kind": "person"
+          }
+        ],
+        "year": "2011",
+        "doi": "10.1109/MCSE.2010.118"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "dask",
+      "canonicalName": "Dask",
+      "aliases": [
+        "dask"
+      ],
+      "ecosystem": "pypi",
+      "description": "Flexible parallel computing library for analytic computing in Python.",
+      "homepage": "https://www.dask.org",
+      "repository": "https://github.com/dask/dask",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Dask",
+        "authors": [
+          {
+            "family": "Rocklin",
+            "given": "Matthew",
+            "kind": "person"
+          }
+        ],
+        "year": "2015",
+        "doi": "10.25080/Majora-7b98e3ed-013"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "dask-ml",
+      "canonicalName": "Dask-ML",
+      "aliases": [
+        "dask-ml"
+      ],
+      "ecosystem": "pypi",
+      "description": "Scalable machine learning with Dask for distributed computing.",
+      "homepage": "https://ml.dask.org",
+      "repository": "https://github.com/dask/dask-ml",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Dask-ML",
+        "authors": [
+          {
+            "family": "Rocklin",
+            "given": "Matthew",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://ml.dask.org"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "data-table",
+      "canonicalName": "data.table",
+      "aliases": [
+        "data.table"
+      ],
+      "ecosystem": "cran",
+      "description": "Extension of data.frame providing fast aggregation and joins in R.",
+      "homepage": "https://r-datatable.com",
+      "repository": "https://github.com/Rdatatable/data.table",
+      "license": "MPL-2.0",
+      "citation": {
+        "title": "data.table",
+        "authors": [
+          {
+            "family": "Dowle",
+            "given": "Matt",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://r-datatable.com"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "datashader",
+      "canonicalName": "Datashader",
+      "aliases": [
+        "datashader"
+      ],
+      "ecosystem": "pypi",
+      "description": "Accurately render large datasets into images quickly.",
+      "homepage": "https://datashader.org",
+      "repository": "https://github.com/holoviz/datashader",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Datashader",
+        "authors": [
+          {
+            "family": "Bednar",
+            "given": "James A.",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://datashader.org"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "deepvariant",
+      "canonicalName": "DeepVariant",
+      "aliases": [
+        "deepvariant"
+      ],
+      "ecosystem": "generic",
+      "description": "Deep learning-based variant caller for genomic sequencing data.",
+      "homepage": "https://github.com/google/deepvariant",
+      "repository": "https://github.com/google/deepvariant",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "DeepVariant",
+        "authors": [
+          {
+            "family": "Poplin",
+            "given": "Ryan",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "doi": "10.1038/nbt.4235"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "diffusers",
+      "canonicalName": "Diffusers",
+      "aliases": [
+        "diffusers"
+      ],
+      "ecosystem": "pypi",
+      "description": "State-of-the-art diffusion models for image and audio generation in PyTorch.",
+      "homepage": "https://huggingface.co/docs/diffusers",
+      "repository": "https://github.com/huggingface/diffusers",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Diffusers",
+        "authors": [
+          {
+            "family": "von Platen",
+            "given": "Patrick",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/huggingface/diffusers"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "dplyr",
+      "canonicalName": "dplyr",
+      "aliases": [
+        "dplyr"
+      ],
+      "ecosystem": "cran",
+      "description": "Grammar of data manipulation in R providing a consistent set of verbs.",
+      "homepage": "https://dplyr.tidyverse.org",
+      "repository": "https://github.com/tidyverse/dplyr",
+      "license": "MIT",
+      "citation": {
+        "title": "dplyr",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://dplyr.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "edward2",
+      "canonicalName": "Edward2",
+      "aliases": [
+        "edward2"
+      ],
+      "ecosystem": "pypi",
+      "description": "Probabilistic programming language for expressing and training Bayesian models.",
+      "homepage": "https://github.com/google/edward2",
+      "repository": "https://github.com/google/edward2",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Edward2",
+        "authors": [
+          {
+            "family": "Tran",
+            "given": "Dustin",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/google/edward2"
+      },
+      "tags": [
+        "bayesian"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "equinox",
+      "canonicalName": "Equinox",
+      "aliases": [
+        "equinox"
+      ],
+      "ecosystem": "pypi",
+      "description": "Neural network library built on JAX with a PyTorch-like API.",
+      "homepage": "https://docs.kidger.site/equinox/",
+      "repository": "https://github.com/patrick-kidger/equinox",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Equinox",
+        "authors": [
+          {
+            "family": "Kidger",
+            "given": "Patrick",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/patrick-kidger/equinox"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "fastai",
+      "canonicalName": "fastai",
+      "aliases": [
+        "fastai"
+      ],
+      "ecosystem": "pypi",
+      "description": "Deep learning library providing high-level components for practitioners.",
+      "homepage": "https://docs.fast.ai",
+      "repository": "https://github.com/fastai/fastai",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "fastai",
+        "authors": [
+          {
+            "family": "Howard",
+            "given": "Jeremy",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "doi": "10.3390/info11020108"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "fastparquet",
+      "canonicalName": "fastparquet",
+      "aliases": [
+        "fastparquet"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python implementation of the Parquet columnar file format.",
+      "homepage": "https://fastparquet.readthedocs.io",
+      "repository": "https://github.com/dask/fastparquet",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "fastparquet",
+        "authors": [
+          {
+            "family": "Durant",
+            "given": "Martin",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://fastparquet.readthedocs.io"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "fiona",
+      "canonicalName": "Fiona",
+      "aliases": [
+        "fiona"
+      ],
+      "ecosystem": "pypi",
+      "description": "Pythonic interface to OGR for reading and writing geospatial data.",
+      "homepage": "https://fiona.readthedocs.io",
+      "repository": "https://github.com/Toblerity/Fiona",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Fiona",
+        "authors": [
+          {
+            "family": "Gillies",
+            "given": "Sean",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://fiona.readthedocs.io"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "flax",
+      "canonicalName": "Flax",
+      "aliases": [
+        "flax"
+      ],
+      "ecosystem": "pypi",
+      "description": "Neural network library for JAX designed for flexibility.",
+      "homepage": "https://flax.readthedocs.io",
+      "repository": "https://github.com/google/flax",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Flax",
+        "authors": [
+          {
+            "family": "Heek",
+            "given": "Jonathan",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/google/flax"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "forcats",
+      "canonicalName": "forcats",
+      "aliases": [
+        "forcats"
+      ],
+      "ecosystem": "cran",
+      "description": "Tools for working with categorical variables (factors) in R.",
+      "homepage": "https://forcats.tidyverse.org",
+      "repository": "https://github.com/tidyverse/forcats",
+      "license": "MIT",
+      "citation": {
+        "title": "forcats",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://forcats.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "fuzzywuzzy",
+      "canonicalName": "FuzzyWuzzy",
+      "aliases": [
+        "fuzzywuzzy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Fuzzy string matching in Python using Levenshtein distance.",
+      "homepage": "https://github.com/seatgeek/fuzzywuzzy",
+      "repository": "https://github.com/seatgeek/fuzzywuzzy",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "FuzzyWuzzy",
+        "authors": [
+          {
+            "family": "Cohen",
+            "given": "Adam",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/seatgeek/fuzzywuzzy"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "gala",
+      "canonicalName": "Gala",
+      "aliases": [
+        "gala",
+        "astro-gala"
+      ],
+      "ecosystem": "pypi",
+      "description": "Galactic dynamics library for Python in astronomy.",
+      "homepage": "https://gala.adrian.pw",
+      "repository": "https://github.com/adrn/gala",
+      "license": "MIT",
+      "citation": {
+        "title": "Gala",
+        "authors": [
+          {
+            "family": "Price-Whelan",
+            "given": "Adrian",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.21105/joss.00388"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "gatk",
+      "canonicalName": "GATK",
+      "aliases": [
+        "gatk"
+      ],
+      "ecosystem": "generic",
+      "description": "Genome Analysis Toolkit for variant discovery in high-throughput sequencing data.",
+      "homepage": "https://gatk.broadinstitute.org",
+      "repository": "https://github.com/broadinstitute/gatk",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "GATK",
+        "authors": [
+          {
+            "family": "McKenna",
+            "given": "Aaron",
+            "kind": "person"
+          }
+        ],
+        "year": "2010",
+        "doi": "10.1101/gr.107524.110"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "gensim",
+      "canonicalName": "Gensim",
+      "aliases": [
+        "gensim"
+      ],
+      "ecosystem": "pypi",
+      "description": "Topic modelling, document indexing and similarity retrieval with large corpora.",
+      "homepage": "https://radimrehurek.com/gensim/",
+      "repository": "https://github.com/piskvorky/gensim",
+      "license": "LGPL-2.1-only",
+      "citation": {
+        "title": "Gensim",
+        "authors": [
+          {
+            "family": "Rehurek",
+            "given": "Radim",
+            "kind": "person"
+          }
+        ],
+        "year": "2010",
+        "url": "https://radimrehurek.com/gensim/"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "geopandas",
+      "canonicalName": "GeoPandas",
+      "aliases": [
+        "geopandas",
+        "gpd"
+      ],
+      "ecosystem": "pypi",
+      "description": "Extension of pandas for geospatial data operations in Python.",
+      "homepage": "https://geopandas.org",
+      "repository": "https://github.com/geopandas/geopandas",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "GeoPandas",
+        "authors": [
+          {
+            "family": "Jordahl",
+            "given": "Kelsey",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://geopandas.org"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "ggplot2",
+      "canonicalName": "ggplot2",
+      "aliases": [
+        "ggplot2"
+      ],
+      "ecosystem": "cran",
+      "description": "System for declaratively creating graphics based on the Grammar of Graphics in R.",
+      "homepage": "https://ggplot2.tidyverse.org",
+      "repository": "https://github.com/tidyverse/ggplot2",
+      "license": "MIT",
+      "citation": {
+        "title": "ggplot2",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2016",
+        "doi": "10.1007/978-3-319-24277-4",
+        "publisher": "Springer-Verlag New York"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "glm2",
+      "canonicalName": "glm2",
+      "aliases": [
+        "glm2"
+      ],
+      "ecosystem": "cran",
+      "description": "Fitting generalized linear models with improved convergence properties in R.",
+      "homepage": "https://cran.r-project.org/package=glm2",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "glm2",
+        "authors": [
+          {
+            "family": "Marschner",
+            "given": "Ian C.",
+            "kind": "person"
+          }
+        ],
+        "year": "2011",
+        "doi": "10.32614/RJ-2011-012"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "graph-tool",
+      "canonicalName": "graph-tool",
+      "aliases": [
+        "graph-tool",
+        "graph.tool"
+      ],
+      "ecosystem": "generic",
+      "description": "Efficient Python module for manipulation and statistical analysis of graphs.",
+      "homepage": "https://graph-tool.skewed.de",
+      "repository": "https://git.skewed.de/count0/graph-tool",
+      "license": "LGPL-3.0-only",
+      "citation": {
+        "title": "graph-tool",
+        "authors": [
+          {
+            "family": "Peixoto",
+            "given": "Tiago P.",
+            "kind": "person"
+          }
+        ],
+        "year": "2014",
+        "doi": "10.6084/m9.figshare.1164194"
+      },
+      "tags": [
+        "networks"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "gromacs",
+      "canonicalName": "GROMACS",
+      "aliases": [
+        "gromacs"
+      ],
+      "ecosystem": "generic",
+      "description": "Versatile package for molecular dynamics simulation of biomolecular systems.",
+      "homepage": "https://www.gromacs.org",
+      "repository": "https://gitlab.com/gromacs/gromacs",
+      "license": "LGPL-2.1-only",
+      "citation": {
+        "title": "GROMACS",
+        "authors": [
+          {
+            "family": "Abraham",
+            "given": "Mark James",
+            "kind": "person"
+          }
+        ],
+        "year": "2015",
+        "doi": "10.1016/j.softx.2015.06.001"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "h5py",
+      "canonicalName": "h5py",
+      "aliases": [
+        "h5py"
+      ],
+      "ecosystem": "pypi",
+      "description": "Pythonic interface to the HDF5 binary data format.",
+      "homepage": "https://www.h5py.org",
+      "repository": "https://github.com/h5py/h5py",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "h5py",
+        "authors": [
+          {
+            "family": "Collette",
+            "given": "Andrew",
+            "kind": "person"
+          }
+        ],
+        "year": "2023",
+        "url": "https://www.h5py.org"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "healpy",
+      "canonicalName": "healpy",
+      "aliases": [
+        "healpy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python package for HEALPix pixelisation of the sphere in astronomy.",
+      "homepage": "https://healpy.readthedocs.io",
+      "repository": "https://github.com/healpy/healpy",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "healpy",
+        "authors": [
+          {
+            "family": "Zonca",
+            "given": "Andrea",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "doi": "10.21105/joss.01298"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "holoviews",
+      "canonicalName": "HoloViews",
+      "aliases": [
+        "holoviews",
+        "hv"
+      ],
+      "ecosystem": "pypi",
+      "description": "Stop plotting your data; annotate your data and let it visualize itself.",
+      "homepage": "https://holoviews.org",
+      "repository": "https://github.com/holoviz/holoviews",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "HoloViews",
+        "authors": [
+          {
+            "family": "Stevens",
+            "given": "Jean-Luc",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://holoviews.org"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "igraph",
+      "canonicalName": "igraph",
+      "aliases": [
+        "igraph",
+        "python-igraph"
+      ],
+      "ecosystem": "pypi",
+      "description": "High performance graph library with interfaces in R, Python, and C.",
+      "homepage": "https://igraph.org",
+      "repository": "https://github.com/igraph/python-igraph",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "igraph",
+        "authors": [
+          {
+            "family": "Csardi",
+            "given": "Gabor",
+            "kind": "person"
+          }
+        ],
+        "year": "2006",
+        "url": "https://igraph.org"
+      },
+      "tags": [
+        "networks"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "imageio",
+      "canonicalName": "imageio",
+      "aliases": [
+        "imageio"
+      ],
+      "ecosystem": "pypi",
+      "description": "Library for reading and writing a wide range of image, video, and scientific formats.",
+      "homepage": "https://imageio.readthedocs.io",
+      "repository": "https://github.com/imageio/imageio",
+      "license": "BSD-2-Clause",
+      "citation": {
+        "title": "imageio",
+        "authors": [
+          {
+            "family": "Klein",
+            "given": "Almar",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://imageio.readthedocs.io"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "imbalanced-learn",
+      "canonicalName": "imbalanced-learn",
+      "aliases": [
+        "imbalanced-learn",
+        "imblearn"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python module for dealing with imbalanced datasets in machine learning.",
+      "homepage": "https://imbalanced-learn.org",
+      "repository": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+      "license": "MIT",
+      "citation": {
+        "title": "imbalanced-learn",
+        "authors": [
+          {
+            "family": "Lemaitre",
+            "given": "Guillaume",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "url": "https://imbalanced-learn.org"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "ipython",
+      "canonicalName": "IPython",
+      "aliases": [
+        "ipython"
+      ],
+      "ecosystem": "pypi",
+      "description": "Powerful interactive Python shell and kernel for Jupyter.",
+      "homepage": "https://ipython.org",
+      "repository": "https://github.com/ipython/ipython",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "IPython",
+        "authors": [
+          {
+            "family": "Perez",
+            "given": "Fernando",
+            "kind": "person"
+          }
+        ],
+        "year": "2007",
+        "doi": "10.1109/MCSE.2007.53"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "iris",
+      "canonicalName": "Iris",
+      "aliases": [
+        "iris",
+        "scitools-iris"
+      ],
+      "ecosystem": "generic",
+      "description": "Python library for analysis and visualization of earth science data.",
+      "homepage": "https://scitools-iris.readthedocs.io",
+      "repository": "https://github.com/SciTools/iris",
+      "license": "LGPL-3.0-only",
+      "citation": {
+        "title": "Iris",
+        "authors": [
+          {
+            "family": "Met Office",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://scitools-iris.readthedocs.io"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "jax",
+      "canonicalName": "JAX",
+      "aliases": [
+        "jax"
+      ],
+      "ecosystem": "pypi",
+      "description": "Composable transformations of NumPy programs for differentiation, vectorization, and acceleration.",
+      "homepage": "https://jax.readthedocs.io",
+      "repository": "https://github.com/jax-ml/jax",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "JAX",
+        "authors": [
+          {
+            "family": "Bradbury",
+            "given": "James",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "url": "https://github.com/jax-ml/jax"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "joblib",
+      "canonicalName": "joblib",
+      "aliases": [
+        "joblib"
+      ],
+      "ecosystem": "pypi",
+      "description": "Set of tools for lightweight pipelining and parallel computing in Python.",
+      "homepage": "https://joblib.readthedocs.io",
+      "repository": "https://github.com/joblib/joblib",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "joblib",
+        "authors": [
+          {
+            "family": "Varoquaux",
+            "given": "Gael",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://joblib.readthedocs.io"
+      },
+      "tags": [
+        "performance"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "jupyter",
+      "canonicalName": "Jupyter",
+      "aliases": [
+        "jupyter",
+        "jupyter-notebook"
+      ],
+      "ecosystem": "pypi",
+      "description": "Open-source interactive computing across dozens of programming languages.",
+      "homepage": "https://jupyter.org",
+      "repository": "https://github.com/jupyter/notebook",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Jupyter",
+        "authors": [
+          {
+            "family": "Kluyver",
+            "given": "Thomas",
+            "kind": "person"
+          }
+        ],
+        "year": "2016",
+        "url": "https://jupyter.org"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "jupyterlab",
+      "canonicalName": "JupyterLab",
+      "aliases": [
+        "jupyterlab"
+      ],
+      "ecosystem": "pypi",
+      "description": "Next-generation web-based user interface for Project Jupyter.",
+      "homepage": "https://jupyterlab.readthedocs.io",
+      "repository": "https://github.com/jupyterlab/jupyterlab",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "JupyterLab",
+        "authors": [
+          {
+            "family": "Project Jupyter",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://jupyterlab.readthedocs.io"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "keras",
+      "canonicalName": "Keras",
+      "aliases": [
+        "keras"
+      ],
+      "ecosystem": "pypi",
+      "description": "Deep learning API written in Python, running on top of TensorFlow.",
+      "homepage": "https://keras.io",
+      "repository": "https://github.com/keras-team/keras",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Keras",
+        "authors": [
+          {
+            "family": "Chollet",
+            "given": "Francois",
+            "kind": "person"
+          }
+        ],
+        "year": "2015",
+        "url": "https://keras.io"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "kornia",
+      "canonicalName": "Kornia",
+      "aliases": [
+        "kornia"
+      ],
+      "ecosystem": "pypi",
+      "description": "Differentiable computer vision library for PyTorch.",
+      "homepage": "https://kornia.github.io",
+      "repository": "https://github.com/kornia/kornia",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Kornia",
+        "authors": [
+          {
+            "family": "Riba",
+            "given": "Edgar",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "url": "https://kornia.github.io"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "lattice",
+      "canonicalName": "lattice",
+      "aliases": [
+        "lattice"
+      ],
+      "ecosystem": "cran",
+      "description": "Trellis graphics for R, implementing multi-panel conditioning plots.",
+      "homepage": "https://lattice.r-forge.r-project.org",
+      "repository": "https://github.com/deepayan/lattice",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "lattice",
+        "authors": [
+          {
+            "family": "Sarkar",
+            "given": "Deepayan",
+            "kind": "person"
+          }
+        ],
+        "year": "2008",
+        "doi": "10.1007/978-0-387-75969-2",
+        "publisher": "Springer"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "lightgbm",
+      "canonicalName": "LightGBM",
+      "aliases": [
+        "lightgbm"
+      ],
+      "ecosystem": "pypi",
+      "description": "Fast, distributed, high performance gradient boosting framework.",
+      "homepage": "https://lightgbm.readthedocs.io",
+      "repository": "https://github.com/microsoft/LightGBM",
+      "license": "MIT",
+      "citation": {
+        "title": "LightGBM",
+        "authors": [
+          {
+            "family": "Ke",
+            "given": "Guolin",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "url": "https://lightgbm.readthedocs.io"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "lightkurve",
+      "canonicalName": "Lightkurve",
+      "aliases": [
+        "lightkurve"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python package for Kepler and TESS time series analysis in astronomy.",
+      "homepage": "https://docs.lightkurve.org",
+      "repository": "https://github.com/lightkurve/lightkurve",
+      "license": "MIT",
+      "citation": {
+        "title": "Lightkurve",
+        "authors": [
+          {
+            "family": "Lightkurve Collaboration",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://docs.lightkurve.org"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "lubridate",
+      "canonicalName": "lubridate",
+      "aliases": [
+        "lubridate"
+      ],
+      "ecosystem": "cran",
+      "description": "Functions to work with date-times and time-spans in R.",
+      "homepage": "https://lubridate.tidyverse.org",
+      "repository": "https://github.com/tidyverse/lubridate",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "lubridate",
+        "authors": [
+          {
+            "family": "Grolemund",
+            "given": "Garrett",
+            "kind": "person"
+          }
+        ],
+        "year": "2011",
+        "doi": "10.18637/jss.v040.i03"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "magrittr",
+      "canonicalName": "magrittr",
+      "aliases": [
+        "magrittr"
+      ],
+      "ecosystem": "cran",
+      "description": "Forward-pipe operator for R enabling cleaner and more readable code.",
+      "homepage": "https://magrittr.tidyverse.org",
+      "repository": "https://github.com/tidyverse/magrittr",
+      "license": "MIT",
+      "citation": {
+        "title": "magrittr",
+        "authors": [
+          {
+            "family": "Bache",
+            "given": "Stefan Milton",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://magrittr.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "marshmallow",
+      "canonicalName": "marshmallow",
+      "aliases": [
+        "marshmallow"
+      ],
+      "ecosystem": "pypi",
+      "description": "Lightweight library for converting complex datatypes to and from native Python datatypes.",
+      "homepage": "https://marshmallow.readthedocs.io",
+      "repository": "https://github.com/marshmallow-code/marshmallow",
+      "license": "MIT",
+      "citation": {
+        "title": "marshmallow",
+        "authors": [
+          {
+            "family": "Loria",
+            "given": "Steven",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://marshmallow.readthedocs.io"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "matplotlib",
+      "canonicalName": "Matplotlib",
+      "aliases": [
+        "matplotlib",
+        "mpl"
+      ],
+      "ecosystem": "pypi",
+      "description": "Comprehensive library for creating static, animated, and interactive visualizations in Python.",
+      "homepage": "https://matplotlib.org",
+      "repository": "https://github.com/matplotlib/matplotlib",
+      "license": "PSF-2.0",
+      "citation": {
+        "title": "Matplotlib",
+        "authors": [
+          {
+            "family": "Hunter",
+            "given": "John D.",
+            "kind": "person"
+          }
+        ],
+        "year": "2007",
+        "doi": "10.1109/MCSE.2007.55"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mayavi",
+      "canonicalName": "Mayavi",
+      "aliases": [
+        "mayavi"
+      ],
+      "ecosystem": "pypi",
+      "description": "3D scientific data visualization and plotting in Python.",
+      "homepage": "https://docs.enthought.com/mayavi/mayavi/",
+      "repository": "https://github.com/enthought/mayavi",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Mayavi",
+        "authors": [
+          {
+            "family": "Ramachandran",
+            "given": "Prabhu",
+            "kind": "person"
+          }
+        ],
+        "year": "2011",
+        "doi": "10.1109/MCSE.2011.35"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mdanalysis",
+      "canonicalName": "MDAnalysis",
+      "aliases": [
+        "mdanalysis"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python library for analysis of molecular dynamics simulations.",
+      "homepage": "https://www.mdanalysis.org",
+      "repository": "https://github.com/MDAnalysis/mdanalysis",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "MDAnalysis",
+        "authors": [
+          {
+            "family": "Michaud-Agrawal",
+            "given": "Naveen",
+            "kind": "person"
+          }
+        ],
+        "year": "2011",
+        "doi": "10.1002/jcc.21787"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mdtraj",
+      "canonicalName": "MDTraj",
+      "aliases": [
+        "mdtraj"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python library for analysis of molecular dynamics trajectories.",
+      "homepage": "https://mdtraj.org",
+      "repository": "https://github.com/mdtraj/mdtraj",
+      "license": "LGPL-2.1-only",
+      "citation": {
+        "title": "MDTraj",
+        "authors": [
+          {
+            "family": "McGibbon",
+            "given": "Robert T.",
+            "kind": "person"
+          }
+        ],
+        "year": "2015",
+        "doi": "10.1016/j.bpj.2015.08.015"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "metpy",
+      "canonicalName": "MetPy",
+      "aliases": [
+        "metpy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Collection of tools for reading, visualizing, and performing calculations with weather data.",
+      "homepage": "https://unidata.github.io/MetPy",
+      "repository": "https://github.com/Unidata/MetPy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "MetPy",
+        "authors": [
+          {
+            "family": "May",
+            "given": "Ryan M.",
+            "kind": "person"
+          }
+        ],
+        "year": "2022",
+        "url": "https://unidata.github.io/MetPy"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mgcv",
+      "canonicalName": "mgcv",
+      "aliases": [
+        "mgcv"
+      ],
+      "ecosystem": "cran",
+      "description": "Generalized additive models and generalized additive mixed models in R.",
+      "homepage": "https://cran.r-project.org/package=mgcv",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "mgcv",
+        "authors": [
+          {
+            "family": "Wood",
+            "given": "Simon N.",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.1201/9781315370279",
+        "publisher": "Chapman and Hall/CRC"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mlxtend",
+      "canonicalName": "mlxtend",
+      "aliases": [
+        "mlxtend"
+      ],
+      "ecosystem": "pypi",
+      "description": "Extension library of useful tools for day-to-day data science tasks.",
+      "homepage": "https://rasbt.github.io/mlxtend/",
+      "repository": "https://github.com/rasbt/mlxtend",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "mlxtend",
+        "authors": [
+          {
+            "family": "Raschka",
+            "given": "Sebastian",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "doi": "10.21105/joss.00638"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mmcv",
+      "canonicalName": "MMCV",
+      "aliases": [
+        "mmcv"
+      ],
+      "ecosystem": "pypi",
+      "description": "Foundational library for computer vision research from OpenMMLab.",
+      "homepage": "https://mmcv.readthedocs.io",
+      "repository": "https://github.com/open-mmlab/mmcv",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "MMCV",
+        "authors": [
+          {
+            "family": "Chen",
+            "given": "Kai",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/open-mmlab/mmcv"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "modelr",
+      "canonicalName": "modelr",
+      "aliases": [
+        "modelr"
+      ],
+      "ecosystem": "cran",
+      "description": "Functions for modelling that help integrate modelling into tidyverse pipelines.",
+      "homepage": "https://modelr.tidyverse.org",
+      "repository": "https://github.com/tidyverse/modelr",
+      "license": "GPL-3.0-only",
+      "citation": {
+        "title": "modelr",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://modelr.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "modin",
+      "canonicalName": "Modin",
+      "aliases": [
+        "modin"
+      ],
+      "ecosystem": "pypi",
+      "description": "Scale your pandas workflows by changing one line of code.",
+      "homepage": "https://modin.readthedocs.io",
+      "repository": "https://github.com/modin-project/modin",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Modin",
+        "authors": [
+          {
+            "family": "Petersohn",
+            "given": "Devin",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "url": "https://modin.readthedocs.io"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mpi4py",
+      "canonicalName": "mpi4py",
+      "aliases": [
+        "mpi4py"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python bindings for the Message Passing Interface (MPI) standard.",
+      "homepage": "https://mpi4py.readthedocs.io",
+      "repository": "https://github.com/mpi4py/mpi4py",
+      "license": "BSD-2-Clause",
+      "citation": {
+        "title": "mpi4py",
+        "authors": [
+          {
+            "family": "Dalcin",
+            "given": "Lisandro",
+            "kind": "person"
+          }
+        ],
+        "year": "2021",
+        "doi": "10.1109/MCSE.2021.3083216"
+      },
+      "tags": [
+        "performance"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mpmath",
+      "canonicalName": "mpmath",
+      "aliases": [
+        "mpmath"
+      ],
+      "ecosystem": "pypi",
+      "description": "Library for arbitrary-precision floating-point arithmetic in Python.",
+      "homepage": "https://mpmath.org",
+      "repository": "https://github.com/mpmath/mpmath",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "mpmath",
+        "authors": [
+          {
+            "family": "Johansson",
+            "given": "Fredrik",
+            "kind": "person"
+          }
+        ],
+        "year": "2023",
+        "url": "https://mpmath.org"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "mybinder",
+      "canonicalName": "mybinder",
+      "aliases": [
+        "mybinder",
+        "binder"
+      ],
+      "ecosystem": "generic",
+      "description": "Service for sharing reproducible interactive computing environments from repositories.",
+      "homepage": "https://mybinder.org",
+      "repository": "https://github.com/jupyterhub/binderhub",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "mybinder",
+        "authors": [
+          {
+            "family": "Project Jupyter",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://mybinder.org"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "nbformat",
+      "canonicalName": "nbformat",
+      "aliases": [
+        "nbformat"
+      ],
+      "ecosystem": "pypi",
+      "description": "Reference implementation of the Jupyter Notebook format.",
+      "homepage": "https://nbformat.readthedocs.io",
+      "repository": "https://github.com/jupyter/nbformat",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "nbformat",
+        "authors": [
+          {
+            "family": "Project Jupyter",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://nbformat.readthedocs.io"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "netcdf4",
+      "canonicalName": "netCDF4",
+      "aliases": [
+        "netcdf4"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python interface to the netCDF C library for reading and writing scientific data.",
+      "homepage": "https://unidata.github.io/netcdf4-python/",
+      "repository": "https://github.com/Unidata/netcdf4-python",
+      "license": "MIT",
+      "citation": {
+        "title": "netCDF4",
+        "authors": [
+          {
+            "family": "Whitaker",
+            "given": "Jeff",
+            "kind": "person"
+          }
+        ],
+        "year": "2023",
+        "url": "https://unidata.github.io/netcdf4-python/"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "networkx",
+      "canonicalName": "NetworkX",
+      "aliases": [
+        "networkx",
+        "nx"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python package for the creation, manipulation, and study of complex networks.",
+      "homepage": "https://networkx.org",
+      "repository": "https://github.com/networkx/networkx",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "NetworkX",
+        "authors": [
+          {
+            "family": "Hagberg",
+            "given": "Aric A.",
+            "kind": "person"
+          }
+        ],
+        "year": "2008",
+        "url": "https://networkx.org"
+      },
+      "tags": [
+        "networks"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "nextflow",
+      "canonicalName": "Nextflow",
+      "aliases": [
+        "nextflow"
+      ],
+      "ecosystem": "generic",
+      "description": "Data-driven computational pipelines for scalable and reproducible scientific workflows.",
+      "homepage": "https://www.nextflow.io",
+      "repository": "https://github.com/nextflow-io/nextflow",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Nextflow",
+        "authors": [
+          {
+            "family": "Di Tommaso",
+            "given": "Paolo",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.1038/nbt.3820"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "nltk",
+      "canonicalName": "NLTK",
+      "aliases": [
+        "nltk"
+      ],
+      "ecosystem": "pypi",
+      "description": "Leading platform for building Python programs to work with human language data.",
+      "homepage": "https://www.nltk.org",
+      "repository": "https://github.com/nltk/nltk",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "NLTK",
+        "authors": [
+          {
+            "family": "Bird",
+            "given": "Steven",
+            "kind": "person"
+          }
+        ],
+        "year": "2009",
+        "url": "https://www.nltk.org",
+        "publisher": "O'Reilly Media"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "numba",
+      "canonicalName": "Numba",
+      "aliases": [
+        "numba"
+      ],
+      "ecosystem": "pypi",
+      "description": "JIT compiler that translates Python and NumPy code into fast machine code.",
+      "homepage": "https://numba.pydata.org",
+      "repository": "https://github.com/numba/numba",
+      "license": "BSD-2-Clause",
+      "citation": {
+        "title": "Numba",
+        "authors": [
+          {
+            "family": "Lam",
+            "given": "Siu Kwan",
+            "kind": "person"
+          }
+        ],
+        "year": "2015",
+        "doi": "10.1145/2833157.2833162"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "numpy",
+      "canonicalName": "NumPy",
+      "aliases": [
+        "numpy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Fundamental package for scientific computing with Python.",
+      "homepage": "https://numpy.org",
+      "repository": "https://github.com/numpy/numpy",
+      "license": "BSD-3-Clause",
+      "dois": [
+        "10.1038/s41586-020-2649-2"
+      ],
+      "citation": {
+        "title": "NumPy",
+        "authors": [
+          {
+            "family": "Harris",
+            "given": "Charles R.",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "doi": "10.1038/s41586-020-2649-2"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "numpyro",
+      "canonicalName": "NumPyro",
+      "aliases": [
+        "numpyro"
+      ],
+      "ecosystem": "pypi",
+      "description": "Probabilistic programming with NumPy powered by JAX for autograd and JIT compilation.",
+      "homepage": "https://num.pyro.ai",
+      "repository": "https://github.com/pyro-ppl/numpyro",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "NumPyro",
+        "authors": [
+          {
+            "family": "Phan",
+            "given": "Du",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "url": "https://num.pyro.ai"
+      },
+      "tags": [
+        "bayesian"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "openbabel",
+      "canonicalName": "OpenBabel",
+      "aliases": [
+        "openbabel"
+      ],
+      "ecosystem": "generic",
+      "description": "Chemical toolbox for speaking the many languages of chemical data.",
+      "homepage": "https://openbabel.org",
+      "repository": "https://github.com/openbabel/openbabel",
+      "license": "GPL-2.0-only",
+      "citation": {
+        "title": "OpenBabel",
+        "authors": [
+          {
+            "family": "O'Boyle",
+            "given": "Noel M.",
+            "kind": "person"
+          }
+        ],
+        "year": "2011",
+        "doi": "10.1186/1758-2946-3-33"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "opencv-python",
+      "canonicalName": "OpenCV",
+      "aliases": [
+        "opencv",
+        "opencv-python",
+        "cv2"
+      ],
+      "ecosystem": "pypi",
+      "description": "Open source computer vision and machine learning software library.",
+      "homepage": "https://opencv.org",
+      "repository": "https://github.com/opencv/opencv",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "OpenCV",
+        "authors": [
+          {
+            "family": "Bradski",
+            "given": "Gary",
+            "kind": "person"
+          }
+        ],
+        "year": "2000",
+        "url": "https://opencv.org"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "openmm",
+      "canonicalName": "OpenMM",
+      "aliases": [
+        "openmm"
+      ],
+      "ecosystem": "pypi",
+      "description": "High performance toolkit for molecular simulation using GPUs.",
+      "homepage": "https://openmm.org",
+      "repository": "https://github.com/openmm/openmm",
+      "license": "MIT",
+      "citation": {
+        "title": "OpenMM",
+        "authors": [
+          {
+            "family": "Eastman",
+            "given": "Peter",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.1371/journal.pcbi.1005659"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "openpyxl",
+      "canonicalName": "openpyxl",
+      "aliases": [
+        "openpyxl"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python library to read and write Excel 2010 xlsx/xlsm/xltx/xltm files.",
+      "homepage": "https://openpyxl.readthedocs.io",
+      "repository": "https://github.com/theorchard/openpyxl",
+      "license": "MIT",
+      "citation": {
+        "title": "openpyxl",
+        "authors": [
+          {
+            "family": "Gazoni",
+            "given": "Eric",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://openpyxl.readthedocs.io"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pandas",
+      "canonicalName": "pandas",
+      "aliases": [
+        "pandas"
+      ],
+      "ecosystem": "pypi",
+      "description": "Powerful data structures for data analysis and statistics.",
+      "homepage": "https://pandas.pydata.org",
+      "repository": "https://github.com/pandas-dev/pandas",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "pandas",
+        "authors": [
+          {
+            "family": "McKinney",
+            "given": "Wes",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://pandas.pydata.org"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "papermill",
+      "canonicalName": "Papermill",
+      "aliases": [
+        "papermill"
+      ],
+      "ecosystem": "pypi",
+      "description": "Tool for parameterizing and executing Jupyter Notebooks.",
+      "homepage": "https://papermill.readthedocs.io",
+      "repository": "https://github.com/nteract/papermill",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Papermill",
+        "authors": [
+          {
+            "family": "nteract team",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://papermill.readthedocs.io"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "photutils",
+      "canonicalName": "Photutils",
+      "aliases": [
+        "photutils"
+      ],
+      "ecosystem": "pypi",
+      "description": "Astropy package for detection and photometry of astronomical sources.",
+      "homepage": "https://photutils.readthedocs.io",
+      "repository": "https://github.com/astropy/photutils",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Photutils",
+        "authors": [
+          {
+            "family": "Bradley",
+            "given": "Larry",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "doi": "10.3847/1538-4357/ad3238"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pillow",
+      "canonicalName": "Pillow",
+      "aliases": [
+        "pillow",
+        "pil"
+      ],
+      "ecosystem": "pypi",
+      "description": "Friendly fork of PIL, the Python Imaging Library.",
+      "homepage": "https://python-pillow.org",
+      "repository": "https://github.com/python-pillow/Pillow",
+      "license": "HPND",
+      "citation": {
+        "title": "Pillow",
+        "authors": [
+          {
+            "family": "Clark",
+            "given": "Alex",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://python-pillow.org"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "plink",
+      "canonicalName": "PLINK",
+      "aliases": [
+        "plink",
+        "plink2"
+      ],
+      "ecosystem": "generic",
+      "description": "Whole-genome association analysis toolset for population genetics.",
+      "homepage": "https://www.cog-genomics.org/plink/",
+      "repository": "https://github.com/chrchang/plink-ng",
+      "license": "GPL-3.0-only",
+      "citation": {
+        "title": "PLINK",
+        "authors": [
+          {
+            "family": "Chang",
+            "given": "Christopher C.",
+            "kind": "person"
+          }
+        ],
+        "year": "2015",
+        "doi": "10.1186/s13742-015-0047-8"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "plotly",
+      "canonicalName": "Plotly",
+      "aliases": [
+        "plotly"
+      ],
+      "ecosystem": "pypi",
+      "description": "Interactive graphing library for Python supporting over 40 chart types.",
+      "homepage": "https://plotly.com/python/",
+      "repository": "https://github.com/plotly/plotly.py",
+      "license": "MIT",
+      "citation": {
+        "title": "Plotly",
+        "authors": [
+          {
+            "family": "Plotly Technologies Inc.",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://plotly.com"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "polars",
+      "canonicalName": "Polars",
+      "aliases": [
+        "polars",
+        "pl"
+      ],
+      "ecosystem": "pypi",
+      "description": "Blazingly fast DataFrame library for Rust and Python.",
+      "homepage": "https://pola.rs",
+      "repository": "https://github.com/pola-rs/polars",
+      "license": "MIT",
+      "citation": {
+        "title": "Polars",
+        "authors": [
+          {
+            "family": "Vink",
+            "given": "Ritchie",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://pola.rs"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "polyglot",
+      "canonicalName": "Polyglot",
+      "aliases": [
+        "polyglot"
+      ],
+      "ecosystem": "pypi",
+      "description": "Natural language pipeline supporting multilingual text processing.",
+      "homepage": "https://polyglot.readthedocs.io",
+      "repository": "https://github.com/aboSamoor/polyglot",
+      "license": "GPL-3.0-only",
+      "citation": {
+        "title": "Polyglot",
+        "authors": [
+          {
+            "family": "Al-Rfou",
+            "given": "Rami",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://polyglot.readthedocs.io"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "prefect",
+      "canonicalName": "Prefect",
+      "aliases": [
+        "prefect"
+      ],
+      "ecosystem": "pypi",
+      "description": "Modern workflow orchestration framework for data engineering and data science.",
+      "homepage": "https://www.prefect.io",
+      "repository": "https://github.com/PrefectHQ/prefect",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Prefect",
+        "authors": [
+          {
+            "family": "Prefect Technologies",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://www.prefect.io"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "purrr",
+      "canonicalName": "purrr",
+      "aliases": [
+        "purrr"
+      ],
+      "ecosystem": "cran",
+      "description": "Functional programming tools for R enhancing iteration and list manipulation.",
+      "homepage": "https://purrr.tidyverse.org",
+      "repository": "https://github.com/tidyverse/purrr",
+      "license": "MIT",
+      "citation": {
+        "title": "purrr",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://purrr.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pyarrow",
+      "canonicalName": "PyArrow",
+      "aliases": [
+        "pyarrow"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python bindings for Apache Arrow, a cross-language columnar memory format.",
+      "homepage": "https://arrow.apache.org/docs/python/",
+      "repository": "https://github.com/apache/arrow",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "PyArrow",
+        "authors": [
+          {
+            "family": "Apache Arrow Developers",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://arrow.apache.org/docs/python/"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pydantic",
+      "canonicalName": "Pydantic",
+      "aliases": [
+        "pydantic"
+      ],
+      "ecosystem": "pypi",
+      "description": "Data validation using Python type annotations.",
+      "homepage": "https://docs.pydantic.dev",
+      "repository": "https://github.com/pydantic/pydantic",
+      "license": "MIT",
+      "citation": {
+        "title": "Pydantic",
+        "authors": [
+          {
+            "family": "Colvin",
+            "given": "Samuel",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://docs.pydantic.dev"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pymatgen",
+      "canonicalName": "pymatgen",
+      "aliases": [
+        "pymatgen"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python Materials Genomics library for materials analysis.",
+      "homepage": "https://pymatgen.org",
+      "repository": "https://github.com/materialsproject/pymatgen",
+      "license": "MIT",
+      "citation": {
+        "title": "pymatgen",
+        "authors": [
+          {
+            "family": "Ong",
+            "given": "Shyue Ping",
+            "kind": "person"
+          }
+        ],
+        "year": "2013",
+        "doi": "10.1016/j.commatsci.2012.10.028"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pymc",
+      "canonicalName": "PyMC",
+      "aliases": [
+        "pymc",
+        "pymc3"
+      ],
+      "ecosystem": "pypi",
+      "description": "Probabilistic programming framework for Bayesian statistical modeling in Python.",
+      "homepage": "https://www.pymc.io",
+      "repository": "https://github.com/pymc-devs/pymc",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "PyMC",
+        "authors": [
+          {
+            "family": "Salvatier",
+            "given": "John",
+            "kind": "person"
+          }
+        ],
+        "year": "2016",
+        "doi": "10.7717/peerj-cs.55"
+      },
+      "tags": [
+        "bayesian"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pyproj",
+      "canonicalName": "pyproj",
+      "aliases": [
+        "pyproj"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python interface to PROJ for cartographic projections and coordinate transformations.",
+      "homepage": "https://pyproj4.github.io/pyproj",
+      "repository": "https://github.com/pyproj4/pyproj",
+      "license": "MIT",
+      "citation": {
+        "title": "pyproj",
+        "authors": [
+          {
+            "family": "Snow",
+            "given": "Alan D.",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://pyproj4.github.io/pyproj"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pyranges",
+      "canonicalName": "PyRanges",
+      "aliases": [
+        "pyranges"
+      ],
+      "ecosystem": "pypi",
+      "description": "Genomic interval operations in Python for bioinformatics.",
+      "homepage": "https://pyranges.readthedocs.io",
+      "repository": "https://github.com/pyranges/pyranges",
+      "license": "MIT",
+      "citation": {
+        "title": "PyRanges",
+        "authors": [
+          {
+            "family": "Stovner",
+            "given": "Endre Bakken",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "doi": "10.1093/bioinformatics/btz615"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pysam",
+      "canonicalName": "pysam",
+      "aliases": [
+        "pysam"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python module for reading, manipulating, and writing genomic data sets (SAM/BAM/VCF/BCF).",
+      "homepage": "https://pysam.readthedocs.io",
+      "repository": "https://github.com/pysam-developers/pysam",
+      "license": "MIT",
+      "citation": {
+        "title": "pysam",
+        "authors": [
+          {
+            "family": "Heger",
+            "given": "Andreas",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://pysam.readthedocs.io"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pystan",
+      "canonicalName": "PyStan",
+      "aliases": [
+        "pystan"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python interface to Stan for Bayesian inference.",
+      "homepage": "https://pystan.readthedocs.io",
+      "repository": "https://github.com/stan-dev/pystan",
+      "license": "ISC",
+      "citation": {
+        "title": "PyStan",
+        "authors": [
+          {
+            "family": "Riddell",
+            "given": "Allen",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://pystan.readthedocs.io"
+      },
+      "tags": [
+        "bayesian"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pytorch",
+      "canonicalName": "PyTorch",
+      "aliases": [
+        "pytorch",
+        "torch"
+      ],
+      "ecosystem": "pypi",
+      "description": "Tensors and dynamic neural networks in Python with strong GPU acceleration.",
+      "homepage": "https://pytorch.org",
+      "repository": "https://github.com/pytorch/pytorch",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "PyTorch",
+        "authors": [
+          {
+            "family": "Paszke",
+            "given": "Adam",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "url": "https://pytorch.org"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pyvis",
+      "canonicalName": "pyvis",
+      "aliases": [
+        "pyvis"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python library for interactive network visualizations in the browser.",
+      "homepage": "https://pyvis.readthedocs.io",
+      "repository": "https://github.com/WestHealth/pyvis",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "pyvis",
+        "authors": [
+          {
+            "family": "Perrone",
+            "given": "Giancarlo",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://pyvis.readthedocs.io"
+      },
+      "tags": [
+        "networks"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pyvista",
+      "canonicalName": "PyVista",
+      "aliases": [
+        "pyvista"
+      ],
+      "ecosystem": "pypi",
+      "description": "3D plotting and mesh analysis through a streamlined interface for VTK.",
+      "homepage": "https://docs.pyvista.org",
+      "repository": "https://github.com/pyvista/pyvista",
+      "license": "MIT",
+      "citation": {
+        "title": "PyVista",
+        "authors": [
+          {
+            "family": "Sullivan",
+            "given": "C. Bane",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "doi": "10.21105/joss.01450"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "pyvo",
+      "canonicalName": "PyVO",
+      "aliases": [
+        "pyvo"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python library for accessing Virtual Observatory data and services.",
+      "homepage": "https://pyvo.readthedocs.io",
+      "repository": "https://github.com/astropy/pyvo",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "PyVO",
+        "authors": [
+          {
+            "family": "Demleitner",
+            "given": "Markus",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://pyvo.readthedocs.io"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "rapidfuzz",
+      "canonicalName": "RapidFuzz",
+      "aliases": [
+        "rapidfuzz"
+      ],
+      "ecosystem": "pypi",
+      "description": "Fast fuzzy string matching library for Python and C++ using Levenshtein distance.",
+      "homepage": "https://rapidfuzz.github.io/RapidFuzz/",
+      "repository": "https://github.com/rapidfuzz/RapidFuzz",
+      "license": "MIT",
+      "citation": {
+        "title": "RapidFuzz",
+        "authors": [
+          {
+            "family": "Bachmann",
+            "given": "Max",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/rapidfuzz/RapidFuzz"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "rapids-cudf",
+      "canonicalName": "rapids-cudf",
+      "aliases": [
+        "rapids-cudf",
+        "cudf"
+      ],
+      "ecosystem": "pypi",
+      "description": "GPU DataFrame library for loading, joining, aggregating, and filtering data.",
+      "homepage": "https://docs.rapids.ai/api/cudf/stable/",
+      "repository": "https://github.com/rapidsai/cudf",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "rapids-cudf",
+        "authors": [
+          {
+            "family": "NVIDIA RAPIDS Team",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://docs.rapids.ai/api/cudf/stable/"
+      },
+      "tags": [
+        "performance"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "rapids-cuml",
+      "canonicalName": "rapids-cuml",
+      "aliases": [
+        "rapids-cuml",
+        "cuml"
+      ],
+      "ecosystem": "pypi",
+      "description": "GPU-accelerated machine learning algorithms compatible with scikit-learn.",
+      "homepage": "https://docs.rapids.ai/api/cuml/stable/",
+      "repository": "https://github.com/rapidsai/cuml",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "rapids-cuml",
+        "authors": [
+          {
+            "family": "NVIDIA RAPIDS Team",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://docs.rapids.ai/api/cuml/stable/"
+      },
+      "tags": [
+        "performance"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "rasterio",
+      "canonicalName": "Rasterio",
+      "aliases": [
+        "rasterio"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python access to geospatial raster data via GDAL.",
+      "homepage": "https://rasterio.readthedocs.io",
+      "repository": "https://github.com/rasterio/rasterio",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Rasterio",
+        "authors": [
+          {
+            "family": "Gillies",
+            "given": "Sean",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://rasterio.readthedocs.io"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "ray",
+      "canonicalName": "Ray",
+      "aliases": [
+        "ray"
+      ],
+      "ecosystem": "pypi",
+      "description": "Framework for scaling AI and Python applications.",
+      "homepage": "https://www.ray.io",
+      "repository": "https://github.com/ray-project/ray",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Ray",
+        "authors": [
+          {
+            "family": "Moritz",
+            "given": "Philipp",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "url": "https://www.ray.io"
+      },
+      "tags": [
+        "performance"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "rdkit",
+      "canonicalName": "RDKit",
+      "aliases": [
+        "rdkit"
+      ],
+      "ecosystem": "pypi",
+      "description": "Open-source cheminformatics toolkit for chemistry and drug discovery.",
+      "homepage": "https://www.rdkit.org",
+      "repository": "https://github.com/rdkit/rdkit",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "RDKit",
+        "authors": [
+          {
+            "family": "Landrum",
+            "given": "Greg",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://www.rdkit.org"
+      },
+      "tags": [
+        "cheminformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "readr",
+      "canonicalName": "readr",
+      "aliases": [
+        "readr"
+      ],
+      "ecosystem": "cran",
+      "description": "Fast and friendly way to read rectangular data in R.",
+      "homepage": "https://readr.tidyverse.org",
+      "repository": "https://github.com/tidyverse/readr",
+      "license": "MIT",
+      "citation": {
+        "title": "readr",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://readr.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "repo2docker",
+      "canonicalName": "repo2docker",
+      "aliases": [
+        "repo2docker"
+      ],
+      "ecosystem": "generic",
+      "description": "Tool for building Docker images from source code repositories for reproducible research.",
+      "homepage": "https://repo2docker.readthedocs.io",
+      "repository": "https://github.com/jupyterhub/repo2docker",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "repo2docker",
+        "authors": [
+          {
+            "family": "Project Jupyter",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://repo2docker.readthedocs.io"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "salem",
+      "canonicalName": "Salem",
+      "aliases": [
+        "salem"
+      ],
+      "ecosystem": "pypi",
+      "description": "Geoscientific data processing and WRF model output tools for Python.",
+      "homepage": "https://salem.readthedocs.io",
+      "repository": "https://github.com/fmaussion/salem",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Salem",
+        "authors": [
+          {
+            "family": "Maussion",
+            "given": "Fabien",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://salem.readthedocs.io"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "samtools",
+      "canonicalName": "SAMtools",
+      "aliases": [
+        "samtools"
+      ],
+      "ecosystem": "generic",
+      "description": "Suite of programs for interacting with high-throughput sequencing data (SAM/BAM/CRAM).",
+      "homepage": "https://www.htslib.org",
+      "repository": "https://github.com/samtools/samtools",
+      "license": "MIT",
+      "citation": {
+        "title": "SAMtools",
+        "authors": [
+          {
+            "family": "Li",
+            "given": "Heng",
+            "kind": "person"
+          }
+        ],
+        "year": "2009",
+        "doi": "10.1093/bioinformatics/btp352"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "sbpy",
+      "canonicalName": "sbpy",
+      "aliases": [
+        "sbpy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python module for small-body planetary astronomy.",
+      "homepage": "https://sbpy.org",
+      "repository": "https://github.com/NASA-Planetary-Science/sbpy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "sbpy",
+        "authors": [
+          {
+            "family": "Mommert",
+            "given": "Michael",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "doi": "10.21105/joss.01426"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "scanpy",
+      "canonicalName": "Scanpy",
+      "aliases": [
+        "scanpy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Single-cell analysis in Python for large-scale genomics datasets.",
+      "homepage": "https://scanpy.readthedocs.io",
+      "repository": "https://github.com/scverse/scanpy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Scanpy",
+        "authors": [
+          {
+            "family": "Wolf",
+            "given": "F. Alexander",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "doi": "10.1186/s13059-017-1382-0"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "scikit-image",
+      "canonicalName": "scikit-image",
+      "aliases": [
+        "scikit-image",
+        "skimage"
+      ],
+      "ecosystem": "pypi",
+      "description": "Image processing algorithms for SciPy in Python.",
+      "homepage": "https://scikit-image.org",
+      "repository": "https://github.com/scikit-image/scikit-image",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "scikit-image",
+        "authors": [
+          {
+            "family": "van der Walt",
+            "given": "Stefan",
+            "kind": "person"
+          }
+        ],
+        "year": "2014",
+        "doi": "10.7717/peerj.453"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "scikit-learn",
+      "canonicalName": "scikit-learn",
+      "aliases": [
+        "scikit-learn",
+        "sklearn"
+      ],
+      "ecosystem": "pypi",
+      "description": "Machine learning in Python.",
+      "homepage": "https://scikit-learn.org",
+      "repository": "https://github.com/scikit-learn/scikit-learn",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "scikit-learn",
+        "authors": [
+          {
+            "family": "Pedregosa",
+            "given": "Fabian",
+            "kind": "person"
+          }
+        ],
+        "year": "2011",
+        "url": "https://scikit-learn.org"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "scipy",
+      "canonicalName": "SciPy",
+      "aliases": [
+        "scipy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Fundamental algorithms for scientific computing in Python.",
+      "homepage": "https://scipy.org",
+      "repository": "https://github.com/scipy/scipy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "SciPy",
+        "authors": [
+          {
+            "family": "Virtanen",
+            "given": "Pauli",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "doi": "10.1038/s41592-019-0686-2"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "seaborn",
+      "canonicalName": "seaborn",
+      "aliases": [
+        "seaborn",
+        "sns"
+      ],
+      "ecosystem": "pypi",
+      "description": "Statistical data visualization library based on Matplotlib.",
+      "homepage": "https://seaborn.pydata.org",
+      "repository": "https://github.com/mwaskom/seaborn",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "seaborn",
+        "authors": [
+          {
+            "family": "Waskom",
+            "given": "Michael",
+            "kind": "person"
+          }
+        ],
+        "year": "2021",
+        "doi": "10.21105/joss.03021"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "sentence-transformers",
+      "canonicalName": "Sentence-Transformers",
+      "aliases": [
+        "sentence-transformers",
+        "sbert"
+      ],
+      "ecosystem": "pypi",
+      "description": "Framework for computing dense vector representations of sentences and paragraphs.",
+      "homepage": "https://www.sbert.net",
+      "repository": "https://github.com/UKPLab/sentence-transformers",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Sentence-Transformers",
+        "authors": [
+          {
+            "family": "Reimers",
+            "given": "Nils",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "url": "https://www.sbert.net"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "shapely",
+      "canonicalName": "Shapely",
+      "aliases": [
+        "shapely"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python package for manipulation and analysis of planar geometric objects.",
+      "homepage": "https://shapely.readthedocs.io",
+      "repository": "https://github.com/shapely/shapely",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Shapely",
+        "authors": [
+          {
+            "family": "Gillies",
+            "given": "Sean",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://shapely.readthedocs.io"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "simpleitk",
+      "canonicalName": "SimpleITK",
+      "aliases": [
+        "simpleitk"
+      ],
+      "ecosystem": "pypi",
+      "description": "Simplified interface to the Insight Toolkit for image analysis.",
+      "homepage": "https://simpleitk.org",
+      "repository": "https://github.com/SimpleITK/SimpleITK",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "SimpleITK",
+        "authors": [
+          {
+            "family": "Lowekamp",
+            "given": "Bradley C.",
+            "kind": "person"
+          }
+        ],
+        "year": "2013",
+        "doi": "10.3389/fninf.2013.00045"
+      },
+      "tags": [
+        "computer-vision"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "snakemake",
+      "canonicalName": "Snakemake",
+      "aliases": [
+        "snakemake"
+      ],
+      "ecosystem": "generic",
+      "description": "Workflow management system for reproducible and scalable data analyses.",
+      "homepage": "https://snakemake.github.io",
+      "repository": "https://github.com/snakemake/snakemake",
+      "license": "MIT",
+      "citation": {
+        "title": "Snakemake",
+        "authors": [
+          {
+            "family": "Koster",
+            "given": "Johannes",
+            "kind": "person"
+          }
+        ],
+        "year": "2021",
+        "doi": "10.12688/f1000research.29032.2"
+      },
+      "tags": [
+        "bioinformatics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "snap-py",
+      "canonicalName": "SNAP.py",
+      "aliases": [
+        "snap-py",
+        "snap.py"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python interface for Stanford Network Analysis Platform (SNAP) for graph analysis.",
+      "homepage": "https://snap.stanford.edu/snappy/",
+      "repository": "https://github.com/snap-stanford/snap-python",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "SNAP.py",
+        "authors": [
+          {
+            "family": "Leskovec",
+            "given": "Jure",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://snap.stanford.edu/snappy/"
+      },
+      "tags": [
+        "networks"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "sncosmo",
+      "canonicalName": "SNCosmo",
+      "aliases": [
+        "sncosmo"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python library for supernova cosmology analysis.",
+      "homepage": "https://sncosmo.readthedocs.io",
+      "repository": "https://github.com/sncosmo/sncosmo",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "SNCosmo",
+        "authors": [
+          {
+            "family": "Barbary",
+            "given": "Kyle",
+            "kind": "person"
+          }
+        ],
+        "year": "2016",
+        "url": "https://sncosmo.readthedocs.io"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "spacy",
+      "canonicalName": "spaCy",
+      "aliases": [
+        "spacy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Industrial-strength Natural Language Processing library for Python.",
+      "homepage": "https://spacy.io",
+      "repository": "https://github.com/explosion/spaCy",
+      "license": "MIT",
+      "citation": {
+        "title": "spaCy",
+        "authors": [
+          {
+            "family": "Honnibal",
+            "given": "Matthew",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "doi": "10.5281/zenodo.1212303"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "specutils",
+      "canonicalName": "specutils",
+      "aliases": [
+        "specutils"
+      ],
+      "ecosystem": "pypi",
+      "description": "Astropy package for spectroscopic analysis in astronomy.",
+      "homepage": "https://specutils.readthedocs.io",
+      "repository": "https://github.com/astropy/specutils",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "specutils",
+        "authors": [
+          {
+            "family": "Earl",
+            "given": "Nicholas",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://specutils.readthedocs.io"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "sqlalchemy",
+      "canonicalName": "SQLAlchemy",
+      "aliases": [
+        "sqlalchemy"
+      ],
+      "ecosystem": "pypi",
+      "description": "The Python SQL toolkit and Object Relational Mapper.",
+      "homepage": "https://www.sqlalchemy.org",
+      "repository": "https://github.com/sqlalchemy/sqlalchemy",
+      "license": "MIT",
+      "citation": {
+        "title": "SQLAlchemy",
+        "authors": [
+          {
+            "family": "Bayer",
+            "given": "Michael",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://www.sqlalchemy.org"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "stan",
+      "canonicalName": "Stan",
+      "aliases": [
+        "stan"
+      ],
+      "ecosystem": "generic",
+      "description": "Platform for statistical modeling and high-performance statistical computation.",
+      "homepage": "https://mc-stan.org",
+      "repository": "https://github.com/stan-dev/stan",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Stan",
+        "authors": [
+          {
+            "family": "Carpenter",
+            "given": "Bob",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.18637/jss.v076.i01"
+      },
+      "tags": [
+        "bayesian"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "statsmodels",
+      "canonicalName": "statsmodels",
+      "aliases": [
+        "statsmodels"
+      ],
+      "ecosystem": "pypi",
+      "description": "Statistical modeling and econometrics in Python.",
+      "homepage": "https://www.statsmodels.org",
+      "repository": "https://github.com/statsmodels/statsmodels",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "statsmodels",
+        "authors": [
+          {
+            "family": "Seabold",
+            "given": "Skipper",
+            "kind": "person"
+          }
+        ],
+        "year": "2010",
+        "doi": "10.25080/Majora-92bf1922-011"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "stringr",
+      "canonicalName": "stringr",
+      "aliases": [
+        "stringr"
+      ],
+      "ecosystem": "cran",
+      "description": "Consistent wrappers for common string operations in R.",
+      "homepage": "https://stringr.tidyverse.org",
+      "repository": "https://github.com/tidyverse/stringr",
+      "license": "MIT",
+      "citation": {
+        "title": "stringr",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://stringr.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "sunpy",
+      "canonicalName": "SunPy",
+      "aliases": [
+        "sunpy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Python library for solar physics data analysis.",
+      "homepage": "https://sunpy.org",
+      "repository": "https://github.com/sunpy/sunpy",
+      "license": "BSD-2-Clause",
+      "citation": {
+        "title": "SunPy",
+        "authors": [
+          {
+            "family": "SunPy Community",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2020",
+        "doi": "10.3847/1538-4357/ab4f7a"
+      },
+      "tags": [
+        "astronomy"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "sympy",
+      "canonicalName": "SymPy",
+      "aliases": [
+        "sympy"
+      ],
+      "ecosystem": "pypi",
+      "description": "Computer algebra system for symbolic mathematics in Python.",
+      "homepage": "https://www.sympy.org",
+      "repository": "https://github.com/sympy/sympy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "SymPy",
+        "authors": [
+          {
+            "family": "Meurer",
+            "given": "Aaron",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.7717/peerj-cs.103"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "tensorflow",
+      "canonicalName": "TensorFlow",
+      "aliases": [
+        "tensorflow",
+        "tf"
+      ],
+      "ecosystem": "pypi",
+      "description": "Open source platform for machine learning and deep neural networks.",
+      "homepage": "https://www.tensorflow.org",
+      "repository": "https://github.com/tensorflow/tensorflow",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "TensorFlow",
+        "authors": [
+          {
+            "family": "Abadi",
+            "given": "Martin",
+            "kind": "person"
+          }
+        ],
+        "year": "2015",
+        "url": "https://www.tensorflow.org"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "textblob",
+      "canonicalName": "TextBlob",
+      "aliases": [
+        "textblob"
+      ],
+      "ecosystem": "pypi",
+      "description": "Simple API for common natural language processing tasks in Python.",
+      "homepage": "https://textblob.readthedocs.io",
+      "repository": "https://github.com/sloria/TextBlob",
+      "license": "MIT",
+      "citation": {
+        "title": "TextBlob",
+        "authors": [
+          {
+            "family": "Loria",
+            "given": "Steven",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://textblob.readthedocs.io"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "tibble",
+      "canonicalName": "tibble",
+      "aliases": [
+        "tibble"
+      ],
+      "ecosystem": "cran",
+      "description": "Modern reimagining of the data frame in R with better printing and subsetting.",
+      "homepage": "https://tibble.tidyverse.org",
+      "repository": "https://github.com/tidyverse/tibble",
+      "license": "MIT",
+      "citation": {
+        "title": "tibble",
+        "authors": [
+          {
+            "family": "Muller",
+            "given": "Kirill",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://tibble.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "tidyr",
+      "canonicalName": "tidyr",
+      "aliases": [
+        "tidyr"
+      ],
+      "ecosystem": "cran",
+      "description": "Tools for creating tidy data in R where each variable is a column.",
+      "homepage": "https://tidyr.tidyverse.org",
+      "repository": "https://github.com/tidyverse/tidyr",
+      "license": "MIT",
+      "citation": {
+        "title": "tidyr",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://tidyr.tidyverse.org"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "tidyverse",
+      "canonicalName": "tidyverse",
+      "aliases": [
+        "tidyverse"
+      ],
+      "ecosystem": "cran",
+      "description": "Opinionated collection of R packages designed for data science.",
+      "homepage": "https://www.tidyverse.org",
+      "repository": "https://github.com/tidyverse/tidyverse",
+      "license": "MIT",
+      "citation": {
+        "title": "tidyverse",
+        "authors": [
+          {
+            "family": "Wickham",
+            "given": "Hadley",
+            "kind": "person"
+          }
+        ],
+        "year": "2019",
+        "doi": "10.21105/joss.01686"
+      },
+      "tags": [
+        "statistics"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "tokenizers",
+      "canonicalName": "Tokenizers",
+      "aliases": [
+        "tokenizers",
+        "huggingface-tokenizers"
+      ],
+      "ecosystem": "pypi",
+      "description": "Fast state-of-the-art tokenizers optimized for research and production.",
+      "homepage": "https://huggingface.co/docs/tokenizers",
+      "repository": "https://github.com/huggingface/tokenizers",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Tokenizers",
+        "authors": [
+          {
+            "family": "Hugging Face",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://github.com/huggingface/tokenizers"
+      },
+      "tags": [
+        "nlp"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "transformers",
+      "canonicalName": "Transformers",
+      "aliases": [
+        "transformers",
+        "huggingface-transformers"
+      ],
+      "ecosystem": "pypi",
+      "description": "State-of-the-art pretrained models for Natural Language Processing, Computer Vision, and Audio.",
+      "homepage": "https://huggingface.co/docs/transformers",
+      "repository": "https://github.com/huggingface/transformers",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "Transformers",
+        "authors": [
+          {
+            "family": "Wolf",
+            "given": "Thomas",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "url": "https://huggingface.co/docs/transformers"
+      },
+      "tags": [
+        "deep-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "tslearn",
+      "canonicalName": "tslearn",
+      "aliases": [
+        "tslearn"
+      ],
+      "ecosystem": "pypi",
+      "description": "Machine learning toolkit dedicated to time-series data.",
+      "homepage": "https://tslearn.readthedocs.io",
+      "repository": "https://github.com/tslearn-team/tslearn",
+      "license": "BSD-2-Clause",
+      "citation": {
+        "title": "tslearn",
+        "authors": [
+          {
+            "family": "Tavenard",
+            "given": "Romain",
+            "kind": "person"
+          }
+        ],
+        "year": "2020",
+        "url": "https://tslearn.readthedocs.io"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "vaex",
+      "canonicalName": "Vaex",
+      "aliases": [
+        "vaex"
+      ],
+      "ecosystem": "pypi",
+      "description": "Out-of-core DataFrames for lazy and fast visualization and exploration of big datasets.",
+      "homepage": "https://vaex.io",
+      "repository": "https://github.com/vaexio/vaex",
+      "license": "MIT",
+      "citation": {
+        "title": "Vaex",
+        "authors": [
+          {
+            "family": "Breddels",
+            "given": "Maarten",
+            "kind": "person"
+          }
+        ],
+        "year": "2018",
+        "doi": "10.1051/0004-6361/201732493"
+      },
+      "tags": [
+        "data-analysis"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "vispy",
+      "canonicalName": "VisPy",
+      "aliases": [
+        "vispy"
+      ],
+      "ecosystem": "pypi",
+      "description": "High-performance interactive 2D and 3D data visualization library leveraging GPU.",
+      "homepage": "https://vispy.org",
+      "repository": "https://github.com/vispy/vispy",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "VisPy",
+        "authors": [
+          {
+            "family": "Campagnola",
+            "given": "Luke",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://vispy.org"
+      },
+      "tags": [
+        "visualization"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "voila",
+      "canonicalName": "Voila",
+      "aliases": [
+        "voila"
+      ],
+      "ecosystem": "pypi",
+      "description": "Turns Jupyter notebooks into standalone web applications and dashboards.",
+      "homepage": "https://voila.readthedocs.io",
+      "repository": "https://github.com/voila-dashboards/voila",
+      "license": "BSD-3-Clause",
+      "citation": {
+        "title": "Voila",
+        "authors": [
+          {
+            "family": "QuantStack",
+            "given": "",
+            "kind": "organization"
+          }
+        ],
+        "year": "2024",
+        "url": "https://voila.readthedocs.io"
+      },
+      "tags": [
+        "reproducibility"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "xarray",
+      "canonicalName": "xarray",
+      "aliases": [
+        "xarray",
+        "xr"
+      ],
+      "ecosystem": "pypi",
+      "description": "N-D labeled arrays and datasets in Python for scientific computing.",
+      "homepage": "https://xarray.dev",
+      "repository": "https://github.com/pydata/xarray",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "xarray",
+        "authors": [
+          {
+            "family": "Hoyer",
+            "given": "Stephan",
+            "kind": "person"
+          }
+        ],
+        "year": "2017",
+        "doi": "10.5334/jors.148"
+      },
+      "tags": [
+        "scientific-computing"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "xesmf",
+      "canonicalName": "xESMF",
+      "aliases": [
+        "xesmf"
+      ],
+      "ecosystem": "pypi",
+      "description": "Universal regridder for geospatial data using xarray and ESMPy.",
+      "homepage": "https://xesmf.readthedocs.io",
+      "repository": "https://github.com/pangeo-data/xESMF",
+      "license": "MIT",
+      "citation": {
+        "title": "xESMF",
+        "authors": [
+          {
+            "family": "Zhuang",
+            "given": "Jiawei",
+            "kind": "person"
+          }
+        ],
+        "year": "2024",
+        "url": "https://xesmf.readthedocs.io"
+      },
+      "tags": [
+        "geospatial"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    },
+    {
+      "id": "xgboost",
+      "canonicalName": "XGBoost",
+      "aliases": [
+        "xgboost"
+      ],
+      "ecosystem": "pypi",
+      "description": "Scalable and flexible gradient boosting library.",
+      "homepage": "https://xgboost.readthedocs.io",
+      "repository": "https://github.com/dmlc/xgboost",
+      "license": "Apache-2.0",
+      "citation": {
+        "title": "XGBoost",
+        "authors": [
+          {
+            "family": "Chen",
+            "given": "Tianqi",
+            "kind": "person"
+          }
+        ],
+        "year": "2016",
+        "doi": "10.1145/2939672.2939785"
+      },
+      "tags": [
+        "machine-learning"
+      ],
+      "provenance": {
+        "source": "hand-curated",
+        "curator": "citey-team",
+        "dateAdded": "2025-01-01",
+        "lastReviewed": "2025-01-01"
+      },
+      "versionPolicy": "latest"
+    }
+  ],
+  "aliasIndex": {
+    "albumentations": [
+      "albumentations"
+    ],
+    "altair": [
+      "altair"
+    ],
+    "anndata": [
+      "anndata"
+    ],
+    "arviz": [
+      "arviz"
+    ],
+    "ase": [
+      "ase"
+    ],
+    "astro-gala": [
+      "gala"
+    ],
+    "astropy": [
+      "astropy"
+    ],
+    "astropy-cosmology": [
+      "astropy-cosmology"
+    ],
+    "astropy-io-fits": [
+      "astropy-io-fits"
+    ],
+    "astropy.cosmology": [
+      "astropy-cosmology"
+    ],
+    "astropy.io.fits": [
+      "astropy-io-fits"
+    ],
+    "astroquery": [
+      "astroquery"
+    ],
+    "bcftools": [
+      "bcftools"
+    ],
+    "binder": [
+      "mybinder"
+    ],
+    "bio": [
+      "biopython"
+    ],
+    "biopython": [
+      "biopython"
+    ],
+    "bokeh": [
+      "bokeh"
+    ],
+    "broom": [
+      "broom"
+    ],
+    "cartopy": [
+      "cartopy"
+    ],
+    "catboost": [
+      "catboost"
+    ],
+    "ccdproc": [
+      "ccdproc"
+    ],
+    "cudf": [
+      "rapids-cudf"
+    ],
+    "cuml": [
+      "rapids-cuml"
+    ],
+    "cupy": [
+      "cupy"
+    ],
+    "cv2": [
+      "opencv-python"
+    ],
+    "cython": [
+      "cython"
+    ],
+    "dask": [
+      "dask"
+    ],
+    "dask-ml": [
+      "dask-ml"
+    ],
+    "data.table": [
+      "data-table"
+    ],
+    "datashader": [
+      "datashader"
+    ],
+    "deepvariant": [
+      "deepvariant"
+    ],
+    "diffusers": [
+      "diffusers"
+    ],
+    "dplyr": [
+      "dplyr"
+    ],
+    "edward2": [
+      "edward2"
+    ],
+    "equinox": [
+      "equinox"
+    ],
+    "fastai": [
+      "fastai"
+    ],
+    "fastparquet": [
+      "fastparquet"
+    ],
+    "fiona": [
+      "fiona"
+    ],
+    "flax": [
+      "flax"
+    ],
+    "forcats": [
+      "forcats"
+    ],
+    "fuzzywuzzy": [
+      "fuzzywuzzy"
+    ],
+    "gala": [
+      "gala"
+    ],
+    "gatk": [
+      "gatk"
+    ],
+    "gensim": [
+      "gensim"
+    ],
+    "geopandas": [
+      "geopandas"
+    ],
+    "ggplot2": [
+      "ggplot2"
+    ],
+    "glm2": [
+      "glm2"
+    ],
+    "gpd": [
+      "geopandas"
+    ],
+    "graph-tool": [
+      "graph-tool"
+    ],
+    "graph.tool": [
+      "graph-tool"
+    ],
+    "gromacs": [
+      "gromacs"
+    ],
+    "h5py": [
+      "h5py"
+    ],
+    "healpy": [
+      "healpy"
+    ],
+    "holoviews": [
+      "holoviews"
+    ],
+    "huggingface-tokenizers": [
+      "tokenizers"
+    ],
+    "huggingface-transformers": [
+      "transformers"
+    ],
+    "hv": [
+      "holoviews"
+    ],
+    "igraph": [
+      "igraph"
+    ],
+    "imageio": [
+      "imageio"
+    ],
+    "imbalanced-learn": [
+      "imbalanced-learn"
+    ],
+    "imblearn": [
+      "imbalanced-learn"
+    ],
+    "ipython": [
+      "ipython"
+    ],
+    "iris": [
+      "iris"
+    ],
+    "jax": [
+      "jax"
+    ],
+    "joblib": [
+      "joblib"
+    ],
+    "jupyter": [
+      "jupyter"
+    ],
+    "jupyter-notebook": [
+      "jupyter"
+    ],
+    "jupyterlab": [
+      "jupyterlab"
+    ],
+    "keras": [
+      "keras"
+    ],
+    "kornia": [
+      "kornia"
+    ],
+    "lattice": [
+      "lattice"
+    ],
+    "lightgbm": [
+      "lightgbm"
+    ],
+    "lightkurve": [
+      "lightkurve"
+    ],
+    "lubridate": [
+      "lubridate"
+    ],
+    "magrittr": [
+      "magrittr"
+    ],
+    "marshmallow": [
+      "marshmallow"
+    ],
+    "matplotlib": [
+      "matplotlib"
+    ],
+    "mayavi": [
+      "mayavi"
+    ],
+    "mdanalysis": [
+      "mdanalysis"
+    ],
+    "mdtraj": [
+      "mdtraj"
+    ],
+    "metpy": [
+      "metpy"
+    ],
+    "mgcv": [
+      "mgcv"
+    ],
+    "mlxtend": [
+      "mlxtend"
+    ],
+    "mmcv": [
+      "mmcv"
+    ],
+    "modelr": [
+      "modelr"
+    ],
+    "modin": [
+      "modin"
+    ],
+    "mpi4py": [
+      "mpi4py"
+    ],
+    "mpl": [
+      "matplotlib"
+    ],
+    "mpmath": [
+      "mpmath"
+    ],
+    "mybinder": [
+      "mybinder"
+    ],
+    "nbformat": [
+      "nbformat"
+    ],
+    "netcdf4": [
+      "netcdf4"
+    ],
+    "networkx": [
+      "networkx"
+    ],
+    "nextflow": [
+      "nextflow"
+    ],
+    "nltk": [
+      "nltk"
+    ],
+    "numba": [
+      "numba"
+    ],
+    "numpy": [
+      "numpy"
+    ],
+    "numpyro": [
+      "numpyro"
+    ],
+    "nx": [
+      "networkx"
+    ],
+    "openbabel": [
+      "openbabel"
+    ],
+    "opencv": [
+      "opencv-python"
+    ],
+    "opencv-python": [
+      "opencv-python"
+    ],
+    "openmm": [
+      "openmm"
+    ],
+    "openpyxl": [
+      "openpyxl"
+    ],
+    "pandas": [
+      "pandas"
+    ],
+    "papermill": [
+      "papermill"
+    ],
+    "photutils": [
+      "photutils"
+    ],
+    "pil": [
+      "pillow"
+    ],
+    "pillow": [
+      "pillow"
+    ],
+    "pl": [
+      "polars"
+    ],
+    "plink": [
+      "plink"
+    ],
+    "plink2": [
+      "plink"
+    ],
+    "plotly": [
+      "plotly"
+    ],
+    "polars": [
+      "polars"
+    ],
+    "polyglot": [
+      "polyglot"
+    ],
+    "prefect": [
+      "prefect"
+    ],
+    "purrr": [
+      "purrr"
+    ],
+    "pyarrow": [
+      "pyarrow"
+    ],
+    "pydantic": [
+      "pydantic"
+    ],
+    "pymatgen": [
+      "pymatgen"
+    ],
+    "pymc": [
+      "pymc"
+    ],
+    "pymc3": [
+      "pymc"
+    ],
+    "pyproj": [
+      "pyproj"
+    ],
+    "pyranges": [
+      "pyranges"
+    ],
+    "pysam": [
+      "pysam"
+    ],
+    "pystan": [
+      "pystan"
+    ],
+    "python-igraph": [
+      "igraph"
+    ],
+    "pytorch": [
+      "pytorch"
+    ],
+    "pyvis": [
+      "pyvis"
+    ],
+    "pyvista": [
+      "pyvista"
+    ],
+    "pyvo": [
+      "pyvo"
+    ],
+    "rapidfuzz": [
+      "rapidfuzz"
+    ],
+    "rapids-cudf": [
+      "rapids-cudf"
+    ],
+    "rapids-cuml": [
+      "rapids-cuml"
+    ],
+    "rasterio": [
+      "rasterio"
+    ],
+    "ray": [
+      "ray"
+    ],
+    "rdkit": [
+      "rdkit"
+    ],
+    "readr": [
+      "readr"
+    ],
+    "repo2docker": [
+      "repo2docker"
+    ],
+    "salem": [
+      "salem"
+    ],
+    "samtools": [
+      "samtools"
+    ],
+    "sbert": [
+      "sentence-transformers"
+    ],
+    "sbpy": [
+      "sbpy"
+    ],
+    "scanpy": [
+      "scanpy"
+    ],
+    "scikit-image": [
+      "scikit-image"
+    ],
+    "scikit-learn": [
+      "scikit-learn"
+    ],
+    "scipy": [
+      "scipy"
+    ],
+    "scitools-iris": [
+      "iris"
+    ],
+    "seaborn": [
+      "seaborn"
+    ],
+    "sentence-transformers": [
+      "sentence-transformers"
+    ],
+    "shapely": [
+      "shapely"
+    ],
+    "simpleitk": [
+      "simpleitk"
+    ],
+    "skimage": [
+      "scikit-image"
+    ],
+    "sklearn": [
+      "scikit-learn"
+    ],
+    "snakemake": [
+      "snakemake"
+    ],
+    "snap-py": [
+      "snap-py"
+    ],
+    "snap.py": [
+      "snap-py"
+    ],
+    "sncosmo": [
+      "sncosmo"
+    ],
+    "sns": [
+      "seaborn"
+    ],
+    "spacy": [
+      "spacy"
+    ],
+    "specutils": [
+      "specutils"
+    ],
+    "sqlalchemy": [
+      "sqlalchemy"
+    ],
+    "stan": [
+      "stan"
+    ],
+    "statsmodels": [
+      "statsmodels"
+    ],
+    "stringr": [
+      "stringr"
+    ],
+    "sunpy": [
+      "sunpy"
+    ],
+    "sympy": [
+      "sympy"
+    ],
+    "tensorflow": [
+      "tensorflow"
+    ],
+    "textblob": [
+      "textblob"
+    ],
+    "tf": [
+      "tensorflow"
+    ],
+    "tibble": [
+      "tibble"
+    ],
+    "tidyr": [
+      "tidyr"
+    ],
+    "tidyverse": [
+      "tidyverse"
+    ],
+    "tokenizers": [
+      "tokenizers"
+    ],
+    "torch": [
+      "pytorch"
+    ],
+    "transformers": [
+      "transformers"
+    ],
+    "tslearn": [
+      "tslearn"
+    ],
+    "vaex": [
+      "vaex"
+    ],
+    "vispy": [
+      "vispy"
+    ],
+    "voila": [
+      "voila"
+    ],
+    "xarray": [
+      "xarray"
+    ],
+    "xesmf": [
+      "xesmf"
+    ],
+    "xgboost": [
+      "xgboost"
+    ],
+    "xr": [
+      "xarray"
+    ]
+  }
+}

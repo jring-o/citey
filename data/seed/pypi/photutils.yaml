@@ -1,0 +1,25 @@
+id: photutils
+canonicalName: Photutils
+aliases:
+  - photutils
+ecosystem: pypi
+description: Astropy package for detection and photometry of astronomical sources.
+homepage: https://photutils.readthedocs.io
+repository: https://github.com/astropy/photutils
+license: BSD-3-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Photutils
+  authors:
+    - family: Bradley
+      given: Larry
+      kind: person
+  year: "2024"
+  doi: 10.3847/1538-4357/ad3238

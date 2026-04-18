@@ -1,0 +1,24 @@
+id: glm2
+canonicalName: glm2
+aliases:
+  - glm2
+ecosystem: cran
+description: Fitting generalized linear models with improved convergence properties in R.
+homepage: https://cran.r-project.org/package=glm2
+license: GPL-2.0-only
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: glm2
+  authors:
+    - family: Marschner
+      given: Ian C.
+      kind: person
+  year: "2011"
+  doi: 10.32614/RJ-2011-012

@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "paths": {
+      "@citey/citation-model": ["../citation-model/src/index.ts"]
+    }
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../citation-model" }
+  ]
+}

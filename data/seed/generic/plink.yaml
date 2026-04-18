@@ -1,0 +1,26 @@
+id: plink
+canonicalName: PLINK
+aliases:
+  - plink
+  - plink2
+ecosystem: generic
+description: Whole-genome association analysis toolset for population genetics.
+homepage: https://www.cog-genomics.org/plink/
+repository: https://github.com/chrchang/plink-ng
+license: GPL-3.0-only
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PLINK
+  authors:
+    - family: Chang
+      given: Christopher C.
+      kind: person
+  year: "2015"
+  doi: 10.1186/s13742-015-0047-8

@@ -1,0 +1,26 @@
+id: rapids-cuml
+canonicalName: rapids-cuml
+aliases:
+  - rapids-cuml
+  - cuml
+ecosystem: pypi
+description: GPU-accelerated machine learning algorithms compatible with scikit-learn.
+homepage: https://docs.rapids.ai/api/cuml/stable/
+repository: https://github.com/rapidsai/cuml
+license: Apache-2.0
+tags:
+  - performance
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: rapids-cuml
+  authors:
+    - family: NVIDIA RAPIDS Team
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://docs.rapids.ai/api/cuml/stable/

@@ -1,0 +1,25 @@
+id: pymatgen
+canonicalName: pymatgen
+aliases:
+  - pymatgen
+ecosystem: pypi
+description: Python Materials Genomics library for materials analysis.
+homepage: https://pymatgen.org
+repository: https://github.com/materialsproject/pymatgen
+license: MIT
+tags:
+  - cheminformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: pymatgen
+  authors:
+    - family: Ong
+      given: Shyue Ping
+      kind: person
+  year: "2013"
+  doi: 10.1016/j.commatsci.2012.10.028

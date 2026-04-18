@@ -1,0 +1,25 @@
+id: lubridate
+canonicalName: lubridate
+aliases:
+  - lubridate
+ecosystem: cran
+description: Functions to work with date-times and time-spans in R.
+homepage: https://lubridate.tidyverse.org
+repository: https://github.com/tidyverse/lubridate
+license: GPL-2.0-only
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: lubridate
+  authors:
+    - family: Grolemund
+      given: Garrett
+      kind: person
+  year: "2011"
+  doi: 10.18637/jss.v040.i03

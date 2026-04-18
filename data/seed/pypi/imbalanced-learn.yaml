@@ -1,0 +1,26 @@
+id: imbalanced-learn
+canonicalName: imbalanced-learn
+aliases:
+  - imbalanced-learn
+  - imblearn
+ecosystem: pypi
+description: Python module for dealing with imbalanced datasets in machine learning.
+homepage: https://imbalanced-learn.org
+repository: https://github.com/scikit-learn-contrib/imbalanced-learn
+license: MIT
+tags:
+  - machine-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: imbalanced-learn
+  authors:
+    - family: Lemaitre
+      given: Guillaume
+      kind: person
+  year: "2017"
+  url: https://imbalanced-learn.org

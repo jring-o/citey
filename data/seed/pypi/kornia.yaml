@@ -1,0 +1,25 @@
+id: kornia
+canonicalName: Kornia
+aliases:
+  - kornia
+ecosystem: pypi
+description: Differentiable computer vision library for PyTorch.
+homepage: https://kornia.github.io
+repository: https://github.com/kornia/kornia
+license: Apache-2.0
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Kornia
+  authors:
+    - family: Riba
+      given: Edgar
+      kind: person
+  year: "2020"
+  url: https://kornia.github.io

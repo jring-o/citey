@@ -1,0 +1,25 @@
+id: textblob
+canonicalName: TextBlob
+aliases:
+  - textblob
+ecosystem: pypi
+description: Simple API for common natural language processing tasks in Python.
+homepage: https://textblob.readthedocs.io
+repository: https://github.com/sloria/TextBlob
+license: MIT
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: TextBlob
+  authors:
+    - family: Loria
+      given: Steven
+      kind: person
+  year: "2024"
+  url: https://textblob.readthedocs.io

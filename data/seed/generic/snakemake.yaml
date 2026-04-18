@@ -1,0 +1,25 @@
+id: snakemake
+canonicalName: Snakemake
+aliases:
+  - snakemake
+ecosystem: generic
+description: Workflow management system for reproducible and scalable data analyses.
+homepage: https://snakemake.github.io
+repository: https://github.com/snakemake/snakemake
+license: MIT
+tags:
+  - bioinformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Snakemake
+  authors:
+    - family: Koster
+      given: Johannes
+      kind: person
+  year: "2021"
+  doi: 10.12688/f1000research.29032.2

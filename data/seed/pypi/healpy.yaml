@@ -1,0 +1,25 @@
+id: healpy
+canonicalName: healpy
+aliases:
+  - healpy
+ecosystem: pypi
+description: Python package for HEALPix pixelisation of the sphere in astronomy.
+homepage: https://healpy.readthedocs.io
+repository: https://github.com/healpy/healpy
+license: GPL-2.0-only
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: healpy
+  authors:
+    - family: Zonca
+      given: Andrea
+      kind: person
+  year: "2019"
+  doi: 10.21105/joss.01298

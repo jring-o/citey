@@ -1,0 +1,25 @@
+id: dask-ml
+canonicalName: Dask-ML
+aliases:
+  - dask-ml
+ecosystem: pypi
+description: Scalable machine learning with Dask for distributed computing.
+homepage: https://ml.dask.org
+repository: https://github.com/dask/dask-ml
+license: BSD-3-Clause
+tags:
+  - machine-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Dask-ML
+  authors:
+    - family: Rocklin
+      given: Matthew
+      kind: person
+  year: "2024"
+  url: https://ml.dask.org

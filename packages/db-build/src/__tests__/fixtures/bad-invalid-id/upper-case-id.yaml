@@ -1,0 +1,21 @@
+id: Bad_Package
+canonicalName: Bad_Package
+aliases:
+  - bad_package
+ecosystem: pypi
+description: A package with an invalid id.
+homepage: https://example.com
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Bad_Package
+  authors:
+    - family: Doe
+      given: Jane
+      kind: person
+  year: "2024"
+  url: https://example.com

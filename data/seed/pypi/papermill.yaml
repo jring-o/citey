@@ -1,0 +1,25 @@
+id: papermill
+canonicalName: Papermill
+aliases:
+  - papermill
+ecosystem: pypi
+description: Tool for parameterizing and executing Jupyter Notebooks.
+homepage: https://papermill.readthedocs.io
+repository: https://github.com/nteract/papermill
+license: BSD-3-Clause
+tags:
+  - reproducibility
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Papermill
+  authors:
+    - family: nteract team
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://papermill.readthedocs.io

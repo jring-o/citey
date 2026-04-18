@@ -1,0 +1,26 @@
+id: jupyter
+canonicalName: Jupyter
+aliases:
+  - jupyter
+  - jupyter-notebook
+ecosystem: pypi
+description: Open-source interactive computing across dozens of programming languages.
+homepage: https://jupyter.org
+repository: https://github.com/jupyter/notebook
+license: BSD-3-Clause
+tags:
+  - reproducibility
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Jupyter
+  authors:
+    - family: Kluyver
+      given: Thomas
+      kind: person
+  year: "2016"
+  url: https://jupyter.org

@@ -1,0 +1,25 @@
+id: pyvis
+canonicalName: pyvis
+aliases:
+  - pyvis
+ecosystem: pypi
+description: Python library for interactive network visualizations in the browser.
+homepage: https://pyvis.readthedocs.io
+repository: https://github.com/WestHealth/pyvis
+license: BSD-3-Clause
+tags:
+  - networks
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: pyvis
+  authors:
+    - family: Perrone
+      given: Giancarlo
+      kind: person
+  year: "2024"
+  url: https://pyvis.readthedocs.io

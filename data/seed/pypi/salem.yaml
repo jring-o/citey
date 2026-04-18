@@ -1,0 +1,25 @@
+id: salem
+canonicalName: Salem
+aliases:
+  - salem
+ecosystem: pypi
+description: Geoscientific data processing and WRF model output tools for Python.
+homepage: https://salem.readthedocs.io
+repository: https://github.com/fmaussion/salem
+license: BSD-3-Clause
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Salem
+  authors:
+    - family: Maussion
+      given: Fabien
+      kind: person
+  year: "2024"
+  url: https://salem.readthedocs.io

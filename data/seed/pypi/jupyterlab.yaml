@@ -1,0 +1,25 @@
+id: jupyterlab
+canonicalName: JupyterLab
+aliases:
+  - jupyterlab
+ecosystem: pypi
+description: Next-generation web-based user interface for Project Jupyter.
+homepage: https://jupyterlab.readthedocs.io
+repository: https://github.com/jupyterlab/jupyterlab
+license: BSD-3-Clause
+tags:
+  - reproducibility
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: JupyterLab
+  authors:
+    - family: Project Jupyter
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://jupyterlab.readthedocs.io

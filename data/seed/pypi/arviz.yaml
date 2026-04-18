@@ -1,0 +1,25 @@
+id: arviz
+canonicalName: ArviZ
+aliases:
+  - arviz
+ecosystem: pypi
+description: Exploratory analysis of Bayesian models with visualization and diagnostics.
+homepage: https://python.arviz.org
+repository: https://github.com/arviz-devs/arviz
+license: Apache-2.0
+tags:
+  - bayesian
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: ArviZ
+  authors:
+    - family: Kumar
+      given: Ravin
+      kind: person
+  year: "2019"
+  doi: 10.21105/joss.01143

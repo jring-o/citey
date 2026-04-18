@@ -1,0 +1,25 @@
+id: tidyr
+canonicalName: tidyr
+aliases:
+  - tidyr
+ecosystem: cran
+description: Tools for creating tidy data in R where each variable is a column.
+homepage: https://tidyr.tidyverse.org
+repository: https://github.com/tidyverse/tidyr
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: tidyr
+  authors:
+    - family: Wickham
+      given: Hadley
+      kind: person
+  year: "2024"
+  url: https://tidyr.tidyverse.org

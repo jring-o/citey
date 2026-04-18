@@ -1,0 +1,125 @@
+# ============================================================================
+# Citey Seed-Data Template
+# ============================================================================
+# Copy this file to the appropriate ecosystem subdirectory and rename it:
+#   data/seed/pypi/<package-id>.yaml
+#   data/seed/cran/<package-id>.yaml
+#   data/seed/npm/<package-id>.yaml
+#   data/seed/julia/<package-id>.yaml
+#   data/seed/generic/<package-id>.yaml
+#
+# Then fill in every required field below. Remove comments when done.
+# Validate with:  pnpm --filter db-build build
+#
+# Citey enforces a single, opinionated citation model: cite the software
+# itself (FORCE11 Software Citation Principles). There is no entry type
+# selection — every citation is a software citation.
+# ============================================================================
+
+# --- REQUIRED --- Unique package identifier.
+# Must be kebab-case: lowercase alphanumeric segments separated by hyphens.
+# Regex: ^[a-z0-9]+(-[a-z0-9]+)*$   Max: 64 characters.
+# Examples: numpy, scikit-learn, opencv-python
+id: my-package
+
+# --- REQUIRED --- Human-readable display name.
+# 1-80 characters. May include mixed case, dots, spaces.
+# Examples: NumPy, scikit-learn, OpenCV, data.table
+canonicalName: My Package
+
+# --- REQUIRED --- Search aliases (1-32 entries).
+# Each alias: ^[a-z0-9][a-z0-9._+-]{0,63}$
+# MUST include the lowercased canonicalName as one entry.
+# Add common import names, abbreviations, PyPI slugs, etc.
+aliases:
+  - my-package  # <-- lowercased canonicalName (required)
+  - mypackage   # <-- optional alternate spellings
+
+# --- REQUIRED --- Package ecosystem.
+# One of: pypi | cran | npm | julia | generic
+ecosystem: pypi
+
+# --- REQUIRED --- Short description of the package.
+# 1-280 characters. One-liner explaining what the package does.
+description: A brief, accurate description of the package.
+
+# --- REQUIRED --- Official homepage URL (must be a valid URL).
+homepage: https://example.com
+
+# --- OPTIONAL --- Source repository URL.
+repository: https://github.com/org/repo
+
+# --- OPTIONAL --- SPDX 3.x license identifier.
+# Examples: MIT, BSD-3-Clause, Apache-2.0, GPL-2.0-only, GPL-3.0-only
+license: MIT
+
+# --- OPTIONAL --- DOIs associated with the package.
+# Format: ^10\.\d{4,9}\/[-._;()/:A-Z0-9]+$/i
+# dois:
+#   - "10.1234/example.5678"
+
+# --- REQUIRED --- Software citation block.
+#   title     : software name (string, required)
+#   authors   : 1+ authors, same shape as the old top-level authors
+#   year      : 4-digit string in [1970, currentYear+1]
+#   doi OR url: at least one is required (resolvable pointer)
+#   version   : optional (semver, date, etc.)
+#   publisher : optional (e.g. "Zenodo", "GitHub", "JOSS")
+citation:
+  title: My Package
+  authors:
+    - family: Doe
+      given: Jane
+      kind: person       # person | organization
+      # orcid: "0000-0001-2345-6789"   # optional
+      # affiliation: "University X"     # optional
+  year: "2024"
+  doi: "10.5281/zenodo.1234567"   # preferred persistent identifier
+  # url: "https://example.com"     # required if no DOI
+  # version: "1.2.3"                # optional
+  # publisher: "Zenodo"             # optional
+
+# --- OPTIONAL --- Tags for categorization (max 10).
+# Each tag must be kebab-case: ^[a-z0-9]+(-[a-z0-9]+)*$
+tags:
+  - my-domain
+
+# --- REQUIRED --- Provenance metadata.
+provenance:
+  source: hand-curated         # hand-curated | imported
+  curator: citey-team          # who curated this entry
+  dateAdded: "2025-01-01"      # ISO 8601 date (YYYY-MM-DD)
+  lastReviewed: "2025-01-01"   # ISO 8601 date (YYYY-MM-DD)
+  # sourceUrl: "https://..."   # optional, origin of the data
+
+# --- REQUIRED --- Version policy.
+# latest            : always cite the latest version
+# preferred-version : cite a specific version (requires preferredVersion field)
+# unversioned       : no version tracking
+versionPolicy: latest
+# preferredVersion: "1.2.3"   # required iff versionPolicy is "preferred-version"
+
+# --- OPTIONAL --- Free-form notes (max 500 chars).
+# notes: "Any additional context about this entry."
+
+# ============================================================================
+# Alias / sub-module entries
+# ============================================================================
+# If this package is just an alias for another (e.g. a sub-module that should
+# cite the parent), set `citeAs` instead of `citation`. Alias entries:
+#   - MUST set citeAs to a valid kebab-case package id (not this package's id)
+#   - MUST omit citation, dois, preferredVersion
+#   - MUST set versionPolicy to "unversioned"
+#   - SHOULD omit homepage, repository, license
+#
+# Example:
+# id: astropy-cosmology
+# canonicalName: astropy.cosmology
+# aliases:
+#   - astropy.cosmology
+#   - astropy-cosmology
+# ecosystem: pypi
+# description: Cosmology calculations sub-package of Astropy; cite Astropy.
+# provenance: { ... }
+# versionPolicy: unversioned
+# citeAs: astropy

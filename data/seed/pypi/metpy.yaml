@@ -1,0 +1,25 @@
+id: metpy
+canonicalName: MetPy
+aliases:
+  - metpy
+ecosystem: pypi
+description: Collection of tools for reading, visualizing, and performing calculations with weather data.
+homepage: https://unidata.github.io/MetPy
+repository: https://github.com/Unidata/MetPy
+license: BSD-3-Clause
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: MetPy
+  authors:
+    - family: May
+      given: Ryan M.
+      kind: person
+  year: "2022"
+  url: https://unidata.github.io/MetPy

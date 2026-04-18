@@ -1,0 +1,25 @@
+id: mdtraj
+canonicalName: MDTraj
+aliases:
+  - mdtraj
+ecosystem: pypi
+description: Python library for analysis of molecular dynamics trajectories.
+homepage: https://mdtraj.org
+repository: https://github.com/mdtraj/mdtraj
+license: LGPL-2.1-only
+tags:
+  - cheminformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: MDTraj
+  authors:
+    - family: McGibbon
+      given: Robert T.
+      kind: person
+  year: "2015"
+  doi: 10.1016/j.bpj.2015.08.015

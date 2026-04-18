@@ -1,0 +1,25 @@
+id: modin
+canonicalName: Modin
+aliases:
+  - modin
+ecosystem: pypi
+description: Scale your pandas workflows by changing one line of code.
+homepage: https://modin.readthedocs.io
+repository: https://github.com/modin-project/modin
+license: Apache-2.0
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Modin
+  authors:
+    - family: Petersohn
+      given: Devin
+      kind: person
+  year: "2020"
+  url: https://modin.readthedocs.io

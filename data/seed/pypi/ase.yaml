@@ -1,0 +1,25 @@
+id: ase
+canonicalName: ASE
+aliases:
+  - ase
+ecosystem: pypi
+description: Atomic Simulation Environment for setting up, running, and analyzing atomistic simulations.
+homepage: https://wiki.fysik.dtu.dk/ase/
+repository: https://gitlab.com/ase/ase
+license: LGPL-2.1-only
+tags:
+  - cheminformatics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: ASE
+  authors:
+    - family: Larsen
+      given: Ask Hjorth
+      kind: person
+  year: "2017"
+  doi: 10.1088/1361-648X/aa680e

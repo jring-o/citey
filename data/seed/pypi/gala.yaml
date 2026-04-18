@@ -1,0 +1,26 @@
+id: gala
+canonicalName: Gala
+aliases:
+  - gala
+  - astro-gala
+ecosystem: pypi
+description: Galactic dynamics library for Python in astronomy.
+homepage: https://gala.adrian.pw
+repository: https://github.com/adrn/gala
+license: MIT
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Gala
+  authors:
+    - family: Price-Whelan
+      given: Adrian
+      kind: person
+  year: "2017"
+  doi: 10.21105/joss.00388

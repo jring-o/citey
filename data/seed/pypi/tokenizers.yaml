@@ -1,0 +1,26 @@
+id: tokenizers
+canonicalName: Tokenizers
+aliases:
+  - tokenizers
+  - huggingface-tokenizers
+ecosystem: pypi
+description: Fast state-of-the-art tokenizers optimized for research and production.
+homepage: https://huggingface.co/docs/tokenizers
+repository: https://github.com/huggingface/tokenizers
+license: Apache-2.0
+tags:
+  - nlp
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Tokenizers
+  authors:
+    - family: Hugging Face
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://github.com/huggingface/tokenizers

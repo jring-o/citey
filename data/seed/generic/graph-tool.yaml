@@ -1,0 +1,26 @@
+id: graph-tool
+canonicalName: graph-tool
+aliases:
+  - graph-tool
+  - graph.tool
+ecosystem: generic
+description: Efficient Python module for manipulation and statistical analysis of graphs.
+homepage: https://graph-tool.skewed.de
+repository: https://git.skewed.de/count0/graph-tool
+license: LGPL-3.0-only
+tags:
+  - networks
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: graph-tool
+  authors:
+    - family: Peixoto
+      given: Tiago P.
+      kind: person
+  year: "2014"
+  doi: 10.6084/m9.figshare.1164194

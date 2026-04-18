@@ -1,0 +1,26 @@
+id: transformers
+canonicalName: Transformers
+aliases:
+  - transformers
+  - huggingface-transformers
+ecosystem: pypi
+description: State-of-the-art pretrained models for Natural Language Processing, Computer Vision, and Audio.
+homepage: https://huggingface.co/docs/transformers
+repository: https://github.com/huggingface/transformers
+license: Apache-2.0
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Transformers
+  authors:
+    - family: Wolf
+      given: Thomas
+      kind: person
+  year: "2020"
+  url: https://huggingface.co/docs/transformers

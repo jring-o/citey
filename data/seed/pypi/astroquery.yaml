@@ -1,0 +1,25 @@
+id: astroquery
+canonicalName: astroquery
+aliases:
+  - astroquery
+ecosystem: pypi
+description: Collection of tools to access online astronomical data archives.
+homepage: https://astroquery.readthedocs.io
+repository: https://github.com/astropy/astroquery
+license: BSD-3-Clause
+tags:
+  - astronomy
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: astroquery
+  authors:
+    - family: Ginsburg
+      given: Adam
+      kind: person
+  year: "2019"
+  doi: 10.3847/1538-3881/aafc33

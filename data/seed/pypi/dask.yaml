@@ -1,0 +1,25 @@
+id: dask
+canonicalName: Dask
+aliases:
+  - dask
+ecosystem: pypi
+description: Flexible parallel computing library for analytic computing in Python.
+homepage: https://www.dask.org
+repository: https://github.com/dask/dask
+license: BSD-3-Clause
+tags:
+  - scientific-computing
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Dask
+  authors:
+    - family: Rocklin
+      given: Matthew
+      kind: person
+  year: "2015"
+  doi: 10.25080/Majora-7b98e3ed-013

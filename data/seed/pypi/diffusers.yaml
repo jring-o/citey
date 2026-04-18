@@ -1,0 +1,25 @@
+id: diffusers
+canonicalName: Diffusers
+aliases:
+  - diffusers
+ecosystem: pypi
+description: State-of-the-art diffusion models for image and audio generation in PyTorch.
+homepage: https://huggingface.co/docs/diffusers
+repository: https://github.com/huggingface/diffusers
+license: Apache-2.0
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Diffusers
+  authors:
+    - family: von Platen
+      given: Patrick
+      kind: person
+  year: "2024"
+  url: https://github.com/huggingface/diffusers

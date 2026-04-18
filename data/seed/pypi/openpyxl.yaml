@@ -1,0 +1,25 @@
+id: openpyxl
+canonicalName: openpyxl
+aliases:
+  - openpyxl
+ecosystem: pypi
+description: Python library to read and write Excel 2010 xlsx/xlsm/xltx/xltm files.
+homepage: https://openpyxl.readthedocs.io
+repository: https://github.com/theorchard/openpyxl
+license: MIT
+tags:
+  - data-analysis
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: openpyxl
+  authors:
+    - family: Gazoni
+      given: Eric
+      kind: person
+  year: "2024"
+  url: https://openpyxl.readthedocs.io

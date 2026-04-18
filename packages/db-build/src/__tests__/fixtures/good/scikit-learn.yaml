@@ -1,0 +1,26 @@
+id: scikit-learn
+canonicalName: scikit-learn
+aliases:
+  - scikit-learn
+  - sklearn
+ecosystem: pypi
+description: Machine learning in Python.
+homepage: https://scikit-learn.org
+repository: https://github.com/scikit-learn/scikit-learn
+license: BSD-3-Clause
+tags:
+  - machine-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: scikit-learn
+  authors:
+    - family: Pedregosa
+      given: Fabian
+      kind: person
+  year: "2011"
+  url: https://scikit-learn.org

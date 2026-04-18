@@ -1,0 +1,26 @@
+id: sentence-transformers
+canonicalName: Sentence-Transformers
+aliases:
+  - sentence-transformers
+  - sbert
+ecosystem: pypi
+description: Framework for computing dense vector representations of sentences and paragraphs.
+homepage: https://www.sbert.net
+repository: https://github.com/UKPLab/sentence-transformers
+license: Apache-2.0
+tags:
+  - deep-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Sentence-Transformers
+  authors:
+    - family: Reimers
+      given: Nils
+      kind: person
+  year: "2019"
+  url: https://www.sbert.net

@@ -1,0 +1,25 @@
+id: pyvista
+canonicalName: PyVista
+aliases:
+  - pyvista
+ecosystem: pypi
+description: 3D plotting and mesh analysis through a streamlined interface for VTK.
+homepage: https://docs.pyvista.org
+repository: https://github.com/pyvista/pyvista
+license: MIT
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: PyVista
+  authors:
+    - family: Sullivan
+      given: C. Bane
+      kind: person
+  year: "2019"
+  doi: 10.21105/joss.01450

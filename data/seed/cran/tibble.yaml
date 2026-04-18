@@ -1,0 +1,25 @@
+id: tibble
+canonicalName: tibble
+aliases:
+  - tibble
+ecosystem: cran
+description: Modern reimagining of the data frame in R with better printing and subsetting.
+homepage: https://tibble.tidyverse.org
+repository: https://github.com/tidyverse/tibble
+license: MIT
+tags:
+  - statistics
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: tibble
+  authors:
+    - family: Muller
+      given: Kirill
+      kind: person
+  year: "2024"
+  url: https://tibble.tidyverse.org

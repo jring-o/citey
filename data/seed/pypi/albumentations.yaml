@@ -1,0 +1,25 @@
+id: albumentations
+canonicalName: Albumentations
+aliases:
+  - albumentations
+ecosystem: pypi
+description: Fast image augmentation library for machine learning and deep learning.
+homepage: https://albumentations.ai
+repository: https://github.com/albumentations-team/albumentations
+license: MIT
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Albumentations
+  authors:
+    - family: Buslaev
+      given: Alexander
+      kind: person
+  year: "2020"
+  doi: 10.3390/info11020125

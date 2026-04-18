@@ -1,0 +1,25 @@
+id: mlxtend
+canonicalName: mlxtend
+aliases:
+  - mlxtend
+ecosystem: pypi
+description: Extension library of useful tools for day-to-day data science tasks.
+homepage: https://rasbt.github.io/mlxtend/
+repository: https://github.com/rasbt/mlxtend
+license: BSD-3-Clause
+tags:
+  - machine-learning
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: mlxtend
+  authors:
+    - family: Raschka
+      given: Sebastian
+      kind: person
+  year: "2018"
+  doi: 10.21105/joss.00638

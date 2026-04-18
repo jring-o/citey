@@ -1,0 +1,26 @@
+id: pillow
+canonicalName: Pillow
+aliases:
+  - pillow
+  - pil
+ecosystem: pypi
+description: Friendly fork of PIL, the Python Imaging Library.
+homepage: https://python-pillow.org
+repository: https://github.com/python-pillow/Pillow
+license: HPND
+tags:
+  - computer-vision
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Pillow
+  authors:
+    - family: Clark
+      given: Alex
+      kind: person
+  year: "2024"
+  url: https://python-pillow.org

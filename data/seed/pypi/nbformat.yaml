@@ -1,0 +1,25 @@
+id: nbformat
+canonicalName: nbformat
+aliases:
+  - nbformat
+ecosystem: pypi
+description: Reference implementation of the Jupyter Notebook format.
+homepage: https://nbformat.readthedocs.io
+repository: https://github.com/jupyter/nbformat
+license: BSD-3-Clause
+tags:
+  - reproducibility
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: nbformat
+  authors:
+    - family: Project Jupyter
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://nbformat.readthedocs.io

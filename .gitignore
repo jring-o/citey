@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.next/
+
+# Release artifacts (auto-built by CI on v* tags)
+*.zip
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Test coverage
+coverage/
+
+# Vite
+.vite/
+
+# pnpm
+.pnpm-debug.log*
+
+# Private — MUST NEVER be committed
+/docs/
+/.agent-teams-v2/
+/.claude/

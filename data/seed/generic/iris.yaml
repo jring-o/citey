@@ -1,0 +1,26 @@
+id: iris
+canonicalName: Iris
+aliases:
+  - iris
+  - scitools-iris
+ecosystem: generic
+description: Python library for analysis and visualization of earth science data.
+homepage: https://scitools-iris.readthedocs.io
+repository: https://github.com/SciTools/iris
+license: LGPL-3.0-only
+tags:
+  - geospatial
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: Iris
+  authors:
+    - family: Met Office
+      given: ""
+      kind: organization
+  year: "2024"
+  url: https://scitools-iris.readthedocs.io

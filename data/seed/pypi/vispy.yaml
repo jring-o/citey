@@ -1,0 +1,25 @@
+id: vispy
+canonicalName: VisPy
+aliases:
+  - vispy
+ecosystem: pypi
+description: High-performance interactive 2D and 3D data visualization library leveraging GPU.
+homepage: https://vispy.org
+repository: https://github.com/vispy/vispy
+license: BSD-3-Clause
+tags:
+  - visualization
+provenance:
+  source: hand-curated
+  curator: citey-team
+  dateAdded: 2025-01-01
+  lastReviewed: 2025-01-01
+versionPolicy: latest
+citation:
+  title: VisPy
+  authors:
+    - family: Campagnola
+      given: Luke
+      kind: person
+  year: "2024"
+  url: https://vispy.org
