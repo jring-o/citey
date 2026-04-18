@@ -11,7 +11,7 @@ _Coming soon._ The Chrome Web Store link will be added here once the extension i
 ### Install from source
 
 ```bash
-git clone https://github.com/scios-tech/citey.git
+git clone https://github.com/jring-o/citey.git
 cd citey
 pnpm install --frozen-lockfile
 pnpm build

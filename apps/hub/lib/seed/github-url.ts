@@ -1,6 +1,6 @@
 import type { Ecosystem } from "./state";
 
-const REPO = "scios-tech/citey";
+const REPO = "jring-o/citey";
 const BRANCH = "main";
 
 /**

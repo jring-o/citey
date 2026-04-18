@@ -174,7 +174,7 @@ export function Options() {
             CiteAs
           </a>
           . No personal data is collected or transmitted. Source code is available on{' '}
-          <a href="https://github.com/scios-tech/citey" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/jring-o/citey" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           . For questions, contact <a href="mailto:citey@scios.tech">citey@scios.tech</a>.
