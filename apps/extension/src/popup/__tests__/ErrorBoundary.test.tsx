@@ -24,7 +24,7 @@ beforeEach(() => {
 // Helper: a component that throws on render
 // ---------------------------------------------------------------------------
 
-function ThrowingChild({ message }: { message: string }) {
+function ThrowingChild({ message }: { message: string }): never {
   throw new Error(message);
 }
 
@@ -135,7 +135,7 @@ describe('ErrorBoundary', () => {
   });
 
   it('handles non-Error thrown values via getDerivedStateFromError', () => {
-    function ThrowsString() {
+    function ThrowsString(): never {
       throw 'string error'; // eslint-disable-line no-throw-literal
     }
 

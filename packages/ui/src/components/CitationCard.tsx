@@ -16,7 +16,7 @@ export interface CitationCardProps {
    * When present, rendered as a small "matched via" subtitle so the
    * researcher can see why this parent citation appeared.
    */
-  matchedVia?: readonly string[];
+  matchedVia?: readonly string[] | undefined;
 }
 
 function formatAuthorByline(authors: readonly Author[]): string {

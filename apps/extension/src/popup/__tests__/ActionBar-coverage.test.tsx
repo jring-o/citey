@@ -88,7 +88,7 @@ describe('ActionBar — packagesForExport filtering', () => {
     });
 
     // The copied text should contain 'numpy' (high) but NOT 'numpyish' (low)
-    const copiedText = writeTextMock.mock.calls[0][0] as string;
+    const copiedText = writeTextMock.mock.calls[0]![0] as string;
     expect(copiedText).toContain('numpy');
     expect(copiedText).not.toContain('numpyish');
   });
@@ -108,7 +108,7 @@ describe('ActionBar — packagesForExport filtering', () => {
       copyButton.click();
     });
 
-    const copiedText = writeTextMock.mock.calls[0][0] as string;
+    const copiedText = writeTextMock.mock.calls[0]![0] as string;
     expect(copiedText).toContain('numpyish');
   });
 });
@@ -186,7 +186,7 @@ describe('ActionBar — Copy with plain text format', () => {
     });
 
     // Plain text format should NOT contain BibTeX markers like @software{
-    const copiedText = writeTextMock.mock.calls[0][0] as string;
+    const copiedText = writeTextMock.mock.calls[0]![0] as string;
     expect(copiedText).not.toContain('@software{');
   });
 });
