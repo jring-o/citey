@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { ImageLightbox } from "./_ui/ImageLightbox";
+
 interface Step {
 	number: number;
 	title: string;
@@ -55,6 +57,29 @@ export default function Landing() {
 					into a single-button action for researchers. Get your software into
 					the database in four steps.
 				</p>
+			</section>
+
+			<section className="mb-14">
+				<p className="mb-6 text-center text-sm font-semibold uppercase tracking-wider text-text-muted">
+					Citey, where researchers already work
+				</p>
+				<div className="grid gap-5 sm:grid-cols-2">
+					<ImageLightbox
+						src="/demo-arxiv.png"
+						alt="Citey popup on an arXiv PDF, matching Astropy, Ray, and NumPy in the paper."
+						width={1919}
+						height={1060}
+						caption="On arXiv — match the software cited in a paper as you read."
+						priority
+					/>
+					<ImageLightbox
+						src="/demo-overleaf.png"
+						alt="Citey popup on an Overleaf LaTeX project, ready to export .bib entries."
+						width={1919}
+						height={1075}
+						caption="In Overleaf — drop citations straight into your .bib as you write."
+					/>
+				</div>
 			</section>
 
 			<ol className="flex flex-col gap-6">
