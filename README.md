@@ -67,6 +67,12 @@ If you'd rather edit YAML directly:
 4. Run `pnpm --filter db-build build` to validate and regenerate `db.json`.
 5. Open a pull request.
 
+## Acknowledgements
+
+Citey was developed at the [2026 Software Citation Workshop](https://softwarecitationworkshop.ucsd.edu/).
+
+This work was initiated at, and possible solely because of the 2026 Software Citation Workshop supported by NASA under award No (TWSC-24) 24-TWSC24-0068.
+
 ## License
 
 [MIT](./LICENSE)

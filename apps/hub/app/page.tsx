@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { ImageLightbox } from "./_ui/ImageLightbox";
@@ -15,7 +16,7 @@ const STEPS: Step[] = [
 		number: 1,
 		title: "Read about software citation",
 		description:
-			"Why software citation matters, what to cite, and which standards Citey enforces. Skim it once — five minutes.",
+			"Why software citation matters, what to cite, and which standards Citey enforces.",
 		href: "/whitepaper",
 		cta: "Read the guide →",
 	},
@@ -23,7 +24,7 @@ const STEPS: Step[] = [
 		number: 2,
 		title: "Generate a CITATION.cff for your repo",
 		description:
-			"Create the standard Citation File Format file. GitHub renders a “Cite this repository” button when this file is present at the root of your repo.",
+			"Create the standard Citation File Format file.",
 		href: "/cff",
 		cta: "Open CFF generator →",
 	},
@@ -49,14 +50,32 @@ export default function Landing() {
 	return (
 		<main className="mx-auto max-w-4xl px-6 py-16">
 			<section className="mb-14 text-center">
+				<Image
+					src="/citey-hero.png"
+					alt="Citey, a friendly square-bracket mascot, popping up on a research paper to offer one-click citations for the software it mentions."
+					width={1376}
+					height={768}
+					priority
+					sizes="(min-width: 768px) 768px, 100vw"
+					className="mx-auto mb-8 h-auto w-full max-w-2xl rounded-xl"
+				/>
 				<h1 className="mb-5 text-4xl font-bold leading-tight tracking-tight text-text sm:text-5xl">
-					Make your software citable in 5 minutes
+					Making software citation as easy as
+					<br />
+					1, 2, 3.
 				</h1>
-				<p className="mx-auto max-w-prose text-lg leading-relaxed text-text-muted">
+				<p className="mx-auto mb-5 max-w-prose text-lg leading-relaxed text-text-muted">
 					Citey is a browser extension and toolkit that turns software citation
-					into a single-button action for researchers. Get your software into
-					the database in four steps.
+					into a single-button action for researchers.
 				</p>
+				<video
+					src="/citey-hero.mp4"
+					autoPlay
+					loop
+					muted
+					playsInline
+					className="mx-auto h-auto w-full max-w-2xl rounded-xl"
+				/>
 			</section>
 
 			<section className="mb-14">
@@ -80,6 +99,37 @@ export default function Landing() {
 						caption="In Overleaf — drop citations straight into your .bib as you write."
 					/>
 				</div>
+			</section>
+
+			<section className="mb-14">
+				<div className="mx-auto max-w-2xl rounded-xl border border-border bg-surface p-5 text-center">
+					<p className="m-0 text-[0.95rem] leading-relaxed text-text-muted">
+						<span className="font-semibold text-text">
+							Citey isn&rsquo;t in the Chrome Web Store yet.
+						</span>{" "}
+						To use it today, clone the repo and load the unpacked extension in
+						Chrome —{" "}
+						<a
+							href="https://github.com/jring-o/citey#install-from-source"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="font-semibold text-accent no-underline hover:text-accent-hover hover:underline"
+						>
+							follow the install instructions on GitHub →
+						</a>
+					</p>
+				</div>
+			</section>
+
+			<hr className="my-20 border-0 border-t-2 border-text" />
+
+			<section className="mb-8 text-center">
+				<h2 className="mb-3 text-2xl font-bold leading-tight tracking-tight text-text sm:text-3xl">
+					Citey currently runs on a static database of software mapping
+				</h2>
+				<p className="mx-auto max-w-prose text-lg leading-relaxed text-text-muted">
+					Get your software into the database in four steps.
+				</p>
 			</section>
 
 			<ol className="flex flex-col gap-6">

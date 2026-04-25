@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 
 const REPO_URL = "https://github.com/jring-o/citey";
+const WORKSHOP_URL = "https://softwarecitationworkshop.ucsd.edu/";
 
 export const metadata: Metadata = {
 	title: "Citey — Make your software citable",
@@ -48,6 +49,27 @@ export default function RootLayout({
 					</div>
 				</header>
 				{children}
+				<footer className="mt-16 border-t border-border bg-surface">
+					<div className="mx-auto max-w-4xl px-6 py-8 text-sm leading-relaxed text-text-muted">
+						<p className="m-0">
+							Citey was developed at the{" "}
+							<a
+								href={WORKSHOP_URL}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="font-medium text-accent no-underline hover:text-accent-hover hover:underline"
+							>
+								2026 Software Citation Workshop
+							</a>
+							.
+						</p>
+						<p className="m-0 mt-2">
+							This work was initiated at, and possible solely because of the 2026
+							Software Citation Workshop supported by NASA under award No
+							(TWSC-24) 24-TWSC24-0068.
+						</p>
+					</div>
+				</footer>
 				<Analytics />
 			</body>
 		</html>
