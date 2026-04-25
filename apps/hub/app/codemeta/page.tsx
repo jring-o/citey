@@ -177,8 +177,7 @@ export default function CodemetaGenerator() {
 			<h1 className="mb-2 text-3xl font-bold text-text">CodeMeta Generator</h1>
 			<p className="mb-8 max-w-prose text-lg text-text-muted">
 				Generate a valid <code className="rounded bg-code-bg px-1.5 py-0.5 font-mono text-[0.875em]">codemeta.json</code>{" "}
-				file for your software project. All processing happens in your browser
-				&mdash; nothing is sent to a server.
+				file for your software project.
 			</p>
 
 			<div className="grid items-start gap-10 lg:grid-cols-2">
