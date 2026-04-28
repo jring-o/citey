@@ -97,6 +97,18 @@ export function initialCffFormState(): CffFormState {
 	};
 }
 
+export type PopulatePayload = {
+	title?: string;
+	version?: string;
+	dateReleased?: string;
+	repositoryCode?: string;
+	url?: string;
+	license?: string;
+	keywords?: string;
+	abstract?: string;
+	authors?: AuthorFormState[];
+};
+
 export function useCffForm() {
 	const [state, setState] = useState<CffFormState>(initialCffFormState);
 
@@ -196,6 +208,16 @@ export function useCffForm() {
 		}));
 	}, []);
 
+	const populateFromExtract = useCallback((payload: PopulatePayload) => {
+		setState((prev) => ({
+			...prev,
+			...payload,
+			advancedOpen:
+				prev.advancedOpen ||
+				(typeof payload.abstract === "string" && payload.abstract.trim() !== ""),
+		}));
+	}, []);
+
 	return {
 		state,
 		setField,
@@ -210,5 +232,6 @@ export function useCffForm() {
 		setPcAuthor,
 		addPcAuthor,
 		removePcAuthor,
+		populateFromExtract,
 	};
 }

@@ -7,7 +7,8 @@
     "build": "pnpm --filter @citey/citation-model build && next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --root ../.. --config vitest.config.ts apps/hub"
   },
   "dependencies": {
     "@citey/citation-model": "workspace:*",

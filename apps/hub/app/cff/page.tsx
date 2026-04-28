@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useRef } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { KNOWN_LICENSES } from "@citey/citation-model";
 import {
 	Banner,
@@ -122,7 +122,13 @@ export default function CffGenerator() {
 		setPcAuthor,
 		addPcAuthor,
 		removePcAuthor,
+		populateFromExtract,
 	} = useCffForm();
+
+	const [fromUrl, setFromUrl] = useState("");
+	const [loading, setLoading] = useState(false);
+	const [generateError, setGenerateError] = useState<string | null>(null);
+	const [generateNotice, setGenerateNotice] = useState<string | null>(null);
 
 	const yaml = useMemo(() => toCffYaml(state), [state]);
 	const validation = useMemo(() => validate(state), [state]);
@@ -158,6 +164,36 @@ export default function CffGenerator() {
 		}
 	}, [yaml]);
 
+	async function handleGenerate() {
+		const url = fromUrl.trim();
+		if (!url) return; // button is disabled in this state, but defensive
+		setLoading(true);
+		setGenerateError(null);
+		setGenerateNotice(null);
+		try {
+			const res = await fetch(
+				`/api/cff/from-url?url=${encodeURIComponent(url)}`,
+				{ cache: "no-store" }
+			);
+			const json = await res.json();
+			if (!res.ok) {
+				const msg = typeof json?.message === "string" && json.message
+					? `${json.error}: ${json.message}`
+					: json?.error ?? "Generate failed";
+				setGenerateError(msg);
+				return;
+			}
+			populateFromExtract(json);
+			if (Array.isArray(json.authors) && json.authors.length === 0) {
+				setGenerateNotice("Couldn’t auto-fill authors — add manually");
+			}
+		} catch (e) {
+			setGenerateError("Could not reach the generator");
+		} finally {
+			setLoading(false);
+		}
+	}
+
 	return (
 		<main className="mx-auto max-w-6xl px-6 py-10">
 			<h1 className="mb-2 text-3xl font-bold text-text">CFF Generator</h1>
@@ -169,6 +205,28 @@ export default function CffGenerator() {
 			<div className="grid items-start gap-10 lg:grid-cols-2">
 				{/* Form */}
 				<div className="flex flex-col gap-5">
+					<div className="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4">
+						<Field htmlFor="cff-from-url" label="Generate from repo URL">
+							<div className="flex gap-2">
+								<TextInput
+									id="cff-from-url"
+									value={fromUrl}
+									onChange={(e) => setFromUrl(e.target.value)}
+									placeholder="https://github.com/owner/repo"
+								/>
+								<Button
+									variant="primary"
+									onClick={handleGenerate}
+									disabled={loading || !fromUrl.trim()}
+								>
+									{loading ? "Working…" : "Generate"}
+								</Button>
+							</div>
+						</Field>
+						{generateError && <Banner>{generateError}</Banner>}
+						{generateNotice && <Banner>{generateNotice}</Banner>}
+					</div>
+
 					<h2 className="border-b border-border pb-2 text-lg font-semibold text-text">
 						Essential Fields
 					</h2>
