@@ -11,6 +11,7 @@ import {
   toPlainText,
   copyToClipboard,
   bibFilename,
+  type SwhExtras,
 } from '../exporters/index.js';
 
 export interface ActionBarProps {
@@ -18,15 +19,23 @@ export interface ActionBarProps {
 }
 
 /**
- * Resolve the set of packages to export.
+ * Resolve the set of hits to export.
  *
  * Per spec: high-confidence hits are exported; low-confidence hits are included
  * only when there are no high-confidence hits.
  */
-function packagesForExport(hits: PackageHit[]) {
+function hitsForExport(hits: PackageHit[]): PackageHit[] {
   const high = hits.filter((h) => h.confidence === 'high');
-  const source = high.length > 0 ? high : hits;
-  return source.map((h) => h.package);
+  return high.length > 0 ? high : hits;
+}
+
+/** Extract live SWH data from hits keyed by package id for the exporter. */
+function swhMapForExport(hits: PackageHit[]): Map<string, SwhExtras> {
+  const map = new Map<string, SwhExtras>();
+  for (const h of hits) {
+    if (h.swh !== undefined) map.set(h.package.id, h.swh);
+  }
+  return map;
 }
 
 function getMeta() {
@@ -43,14 +52,16 @@ export function ActionBar({ hits }: ActionBarProps) {
   const [copyLabel, setCopyLabel] = useState<string>('Copy');
   const [copyError, setCopyError] = useState<string | null>(null);
 
-  const packages = packagesForExport(hits);
+  const exportHits = hitsForExport(hits);
+  const packages = exportHits.map((h) => h.package);
+  const swhMap = swhMapForExport(exportHits);
 
   const handleZotero = useCallback(() => {
     openZoteroHtml(packages, getMeta());
   }, [packages]);
 
   const handleBib = useCallback(() => {
-    const bib = toBibTeX(packages, getMeta());
+    const bib = toBibTeX(packages, getMeta(), swhMap);
     const blob = new Blob([bib], { type: 'application/x-bibtex;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -60,7 +71,7 @@ export function ActionBar({ hits }: ActionBarProps) {
     a.click();
     document.body.removeChild(a);
     setTimeout(() => URL.revokeObjectURL(url), 10_000);
-  }, [packages]);
+  }, [packages, swhMap]);
 
   const handleCopy = useCallback(async () => {
     setCopyError(null);
@@ -76,9 +87,7 @@ export function ActionBar({ hits }: ActionBarProps) {
       // Default to bibtex if storage unavailable
     }
 
-    const text = format === 'plain'
-      ? toPlainText(packages)
-      : toBibTeX(packages, getMeta());
+    const text = format === 'plain' ? toPlainText(packages) : toBibTeX(packages, getMeta(), swhMap);
 
     const result = await copyToClipboard(text);
 
@@ -88,7 +97,7 @@ export function ActionBar({ hits }: ActionBarProps) {
     } else {
       setCopyError(result.reason);
     }
-  }, [packages]);
+  }, [packages, swhMap]);
 
   return (
     <div className="citey-action-bar" role="toolbar" aria-label="Citation actions">

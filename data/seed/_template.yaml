@@ -32,8 +32,8 @@ canonicalName: My Package
 # MUST include the lowercased canonicalName as one entry.
 # Add common import names, abbreviations, PyPI slugs, etc.
 aliases:
-  - my-package  # <-- lowercased canonicalName (required)
-  - mypackage   # <-- optional alternate spellings
+  - my-package # <-- lowercased canonicalName (required)
+  - mypackage # <-- optional alternate spellings
 
 # --- REQUIRED --- Package ecosystem.
 # One of: pypi | cran | npm | julia | generic
@@ -70,11 +70,11 @@ citation:
   authors:
     - family: Doe
       given: Jane
-      kind: person       # person | organization
+      kind: person # person | organization
       # orcid: "0000-0001-2345-6789"   # optional
       # affiliation: "University X"     # optional
-  year: "2024"
-  doi: "10.5281/zenodo.1234567"   # preferred persistent identifier
+  year: '2024'
+  doi: '10.5281/zenodo.1234567' # preferred persistent identifier
   # url: "https://example.com"     # required if no DOI
   # version: "1.2.3"                # optional
   # publisher: "Zenodo"             # optional
@@ -86,10 +86,10 @@ tags:
 
 # --- REQUIRED --- Provenance metadata.
 provenance:
-  source: hand-curated         # hand-curated | imported
-  curator: citey-team          # who curated this entry
-  dateAdded: "2025-01-01"      # ISO 8601 date (YYYY-MM-DD)
-  lastReviewed: "2025-01-01"   # ISO 8601 date (YYYY-MM-DD)
+  source: hand-curated # hand-curated | imported
+  curator: citey-team # who curated this entry
+  dateAdded: '2025-01-01' # ISO 8601 date (YYYY-MM-DD)
+  lastReviewed: '2025-01-01' # ISO 8601 date (YYYY-MM-DD)
   # sourceUrl: "https://..."   # optional, origin of the data
 
 # --- REQUIRED --- Version policy.
@@ -101,6 +101,24 @@ versionPolicy: latest
 
 # --- OPTIONAL --- Free-form notes (max 500 chars).
 # notes: "Any additional context about this entry."
+
+# ============================================================================
+# Software Heritage integration (managed automatically — do not hand-edit
+# unless you know what you're doing).
+# ============================================================================
+# When a contributor submits via the hub, Citey calls Software Heritage's
+# Save Code Now API. The hub writes `swhPending: true` and `swhSubmittedAt`
+# to mark the entry as awaiting archival. The backfill cron polls SWH and:
+#   - on success, writes `swhid` and clears swhPending/swhSubmittedAt
+#   - after 72h with no archival, writes `swhFailed: true` and stops polling
+#
+# Invariant: at most one of {swhid, swhPending: true, swhFailed: true} may
+# be set at a time.
+#
+# swhid: "swh:1:snp:..."           # SWHID captured when first archived
+# swhPending: true                  # awaiting SWH ingestion (cron polls)
+# swhSubmittedAt: "2026-04-30T11:11:27Z"   # required when swhPending: true
+# swhFailed: true                   # SWH never archived within 72h
 
 # ============================================================================
 # Alias / sub-module entries

@@ -17,6 +17,14 @@ export interface CitationCardProps {
    * researcher can see why this parent citation appeared.
    */
   matchedVia?: readonly string[] | undefined;
+  /**
+   * Software Heritage Persistent IDentifier to display alongside the DOI.
+   * May be a core (`swh:1:snp:<hex>`) or qualified
+   * (`swh:1:rev:<hex>;origin=...;visit=...`) SWHID. When provided, renders
+   * a chip linking to the SWH archive page for verification. Sourced from
+   * either the live SWH lookup or the as-of-admission `pkg.swhid`.
+   */
+  swhid?: string | undefined;
 }
 
 function formatAuthorByline(authors: readonly Author[]): string {
@@ -86,24 +94,35 @@ const doiBadgeStyle: React.CSSProperties = {
   whiteSpace: 'nowrap',
 };
 
+/** Short display label for a SWHID — "swh:1:rev:1589193…". */
+function shortSwhid(swhid: string): string {
+  // Strip qualifiers (anything after the first `;`) to keep the chip compact.
+  const core = swhid.split(';')[0] ?? swhid;
+  const parts = core.split(':');
+  if (parts.length < 4) return core;
+  const hash = parts[3] ?? '';
+  return `${parts.slice(0, 3).join(':')}:${hash.slice(0, 7)}…`;
+}
+
 export function CitationCard({
   pkg,
   confidence,
   onCopy,
   copyIcon,
   matchedVia,
+  swhid,
 }: CitationCardProps) {
   const byline = formatAuthorByline(pkg.citation?.authors ?? []);
   const doi = pkg.citation?.doi ?? pkg.dois?.[0];
+  // Live SWHID > as-of-admission stored on the package.
+  const effectiveSwhid = swhid ?? pkg.swhid;
 
   return (
     <div style={cardStyle}>
       <h3 style={titleStyle}>{pkg.canonicalName}</h3>
 
       {matchedVia && matchedVia.length > 0 && (
-        <p style={matchedViaStyle}>
-          Matched via: {matchedVia.join(', ')}
-        </p>
+        <p style={matchedViaStyle}>Matched via: {matchedVia.join(', ')}</p>
       )}
 
       <p style={descriptionStyle}>{pkg.description}</p>
@@ -121,6 +140,18 @@ export function CitationCard({
             style={doiBadgeStyle}
           >
             DOI: {doi}
+          </a>
+        )}
+
+        {effectiveSwhid != null && (
+          <a
+            href={`https://archive.softwareheritage.org/${encodeURIComponent(effectiveSwhid)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={effectiveSwhid}
+            style={doiBadgeStyle}
+          >
+            {shortSwhid(effectiveSwhid)}
           </a>
         )}
 

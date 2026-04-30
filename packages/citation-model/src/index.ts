@@ -8,6 +8,7 @@ export type {
   PackageHit,
   Provenance,
   SoftwareCitation,
+  SwhLive,
   VersionPolicy,
 } from './types.js';
 
@@ -32,3 +33,6 @@ export { FUZZY_BLOCKLIST } from './fuzzy-blocklist.js';
 
 // SPDX license list
 export { KNOWN_LICENSES } from './spdx.js';
+
+// Software Heritage Persistent IDentifier
+export { SWHID_RE, isValidSwhid } from './swhid.js';
