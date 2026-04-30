@@ -1,47 +1,46 @@
-import { defineManifest } from "@crxjs/vite-plugin";
-import packageJson from "./package.json";
+import { defineManifest } from '@crxjs/vite-plugin';
+import packageJson from './package.json';
 
 const { version } = packageJson;
 
 export default defineManifest({
   manifest_version: 3,
-  name: "Citey",
+  name: 'Citey',
   version,
-  description: "Spellcheck, but for software citations.",
+  description: 'Spellcheck, but for software citations.',
   icons: {
-    "16": "icons/16.png",
-    "48": "icons/48.png",
-    "128": "icons/128.png",
+    '16': 'icons/16.png',
+    '48': 'icons/48.png',
+    '128': 'icons/128.png',
   },
   action: {
-    default_popup: "index.html",
-    default_title: "Citey \u2014 cite the software you highlighted",
+    default_popup: 'index.html',
+    default_title: 'Citey \u2014 cite the software you highlighted',
   },
   options_ui: {
-    page: "options.html",
+    page: 'options.html',
     open_in_tab: true,
   },
   background: {
-    service_worker: "src/background/index.ts",
-    type: "module",
+    service_worker: 'src/background/index.ts',
+    type: 'module',
   },
   content_scripts: [
     {
-      matches: ["<all_urls>"],
-      js: ["src/content/index.ts"],
-      run_at: "document_idle",
+      matches: ['<all_urls>'],
+      js: ['src/content/index.ts'],
+      run_at: 'document_idle',
     },
   ],
-  permissions: [
-    "activeTab",
-    "scripting",
-    "clipboardWrite",
-    "storage",
-    "contextMenus",
-  ],
+  permissions: ['activeTab', 'scripting', 'clipboardWrite', 'storage', 'contextMenus'],
   // host_permissions:
   //   - api.citeas.org for the online fallback
+  //   - archive.softwareheritage.org for the live SWH citation/SWHID lookup
   //   - file:///* lets users opt in (via chrome://extensions → "Allow access
   //     to file URLs") to selecting text from PDFs they open locally
-  host_permissions: ["https://api.citeas.org/*", "file:///*"],
+  host_permissions: [
+    'https://api.citeas.org/*',
+    'https://archive.softwareheritage.org/*',
+    'file:///*',
+  ],
 });

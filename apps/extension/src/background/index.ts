@@ -7,6 +7,12 @@ import { lookupCiteAs } from './citeas';
 import { useCiteAsFallback, initFallbackFlag } from './fallback-flag';
 import { normalize } from '../match/normalize';
 import { match } from '../match/engine';
+import { enrichHitsWithSwh } from './swh';
+
+// Bound the per-hit SWH lookup so popup latency stays predictable. A warm
+// SWH response is ~500 ms; 1500 ms gives one retry headroom before we fall
+// back to the locally-constructed citation.
+const SWH_TIMEOUT_MS = 1500;
 
 // ---------------------------------------------------------------------------
 // Context-menu entry — "Cite with Citey"
@@ -154,9 +160,15 @@ async function handleMatchQuery(
       aliasIndex: db.aliasIndex,
     });
 
-    // If we got hits, reply immediately
+    // If we got hits, augment with live SWH data before replying. Missing
+    // or slow SWH responses leave hits unchanged, so this never blocks the
+    // local-match path beyond SWH_TIMEOUT_MS.
     if (result.kind === 'hits') {
-      reply(requestId, result, normalized, sendResponse);
+      const [high, low] = await Promise.all([
+        enrichHitsWithSwh(result.high, SWH_TIMEOUT_MS),
+        enrichHitsWithSwh(result.low, SWH_TIMEOUT_MS),
+      ]);
+      reply(requestId, { kind: 'hits', high, low }, normalized, sendResponse);
       return;
     }
 

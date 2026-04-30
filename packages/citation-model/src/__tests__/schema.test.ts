@@ -1,9 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import {
-  packageSchema,
-  softwareCitationSchema,
-  authorSchema,
-} from '../index.js';
+import { packageSchema, softwareCitationSchema, authorSchema } from '../index.js';
 
 // ---------------------------------------------------------------------------
 // authorSchema
@@ -81,9 +77,10 @@ describe('softwareCitationSchema', () => {
   });
 
   it('accepts a minimal valid citation with URL instead of DOI', () => {
-    const { doi, ...rest } = validCitation;
     const r = softwareCitationSchema.safeParse({
-      ...rest,
+      title: validCitation.title,
+      authors: validCitation.authors,
+      year: validCitation.year,
       url: 'https://example.com',
     });
     expect(r.success).toBe(true);
@@ -222,13 +219,15 @@ describe('packageSchema', () => {
   });
 
   it('rejects primary package without citation', () => {
-    const { citation, ...withoutCitation } = validPkg;
+    const withoutCitation: Record<string, unknown> = { ...validPkg };
+    delete withoutCitation['citation'];
     const r = packageSchema.safeParse(withoutCitation);
     expect(r.success).toBe(false);
   });
 
   it('rejects primary package without homepage', () => {
-    const { homepage, ...withoutHomepage } = validPkg;
+    const withoutHomepage: Record<string, unknown> = { ...validPkg };
+    delete withoutHomepage['homepage'];
     const r = packageSchema.safeParse(withoutHomepage);
     expect(r.success).toBe(false);
   });
@@ -262,6 +261,77 @@ describe('packageSchema', () => {
 
   it('rejects citeAs alias with versionPolicy other than "unversioned"', () => {
     const r = packageSchema.safeParse({ ...aliasPkg, versionPolicy: 'latest' });
+    expect(r.success).toBe(false);
+  });
+
+  // ---- Software Heritage fields ----
+
+  const validSwhid = 'swh:1:snp:' + 'a'.repeat(40);
+
+  it('accepts a package with a valid swhid', () => {
+    const r = packageSchema.safeParse({ ...validPkg, swhid: validSwhid });
+    expect(r.success).toBe(true);
+  });
+
+  it('rejects a package with a malformed swhid', () => {
+    const r = packageSchema.safeParse({ ...validPkg, swhid: 'not-a-swhid' });
+    expect(r.success).toBe(false);
+  });
+
+  it('accepts swhPending: true with swhSubmittedAt', () => {
+    const r = packageSchema.safeParse({
+      ...validPkg,
+      swhPending: true,
+      swhSubmittedAt: '2026-04-30T11:11:27Z',
+    });
+    expect(r.success).toBe(true);
+  });
+
+  it('rejects swhPending: true without swhSubmittedAt', () => {
+    const r = packageSchema.safeParse({ ...validPkg, swhPending: true });
+    expect(r.success).toBe(false);
+  });
+
+  it('rejects malformed swhSubmittedAt', () => {
+    const r = packageSchema.safeParse({
+      ...validPkg,
+      swhPending: true,
+      swhSubmittedAt: '2026-04-30',
+    });
+    expect(r.success).toBe(false);
+  });
+
+  it('accepts swhFailed: true alone', () => {
+    const r = packageSchema.safeParse({ ...validPkg, swhFailed: true });
+    expect(r.success).toBe(true);
+  });
+
+  it('rejects swhid and swhPending together', () => {
+    const r = packageSchema.safeParse({
+      ...validPkg,
+      swhid: validSwhid,
+      swhPending: true,
+      swhSubmittedAt: '2026-04-30T11:11:27Z',
+    });
+    expect(r.success).toBe(false);
+  });
+
+  it('rejects swhid and swhFailed together', () => {
+    const r = packageSchema.safeParse({
+      ...validPkg,
+      swhid: validSwhid,
+      swhFailed: true,
+    });
+    expect(r.success).toBe(false);
+  });
+
+  it('rejects swhPending and swhFailed together', () => {
+    const r = packageSchema.safeParse({
+      ...validPkg,
+      swhPending: true,
+      swhSubmittedAt: '2026-04-30T11:11:27Z',
+      swhFailed: true,
+    });
     expect(r.success).toBe(false);
   });
 });

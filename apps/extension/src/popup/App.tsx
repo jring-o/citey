@@ -23,8 +23,8 @@ const TIMEOUT_MS = 4500;
 
 /** Substrings in chrome.scripting errors that indicate a page we can't inject into. */
 const RESTRICTED_INJECT_ERRORS = [
-  'Cannot access',           // e.g., "Cannot access a chrome:// URL"
-  'Cannot access contents',  // older Chrome wording
+  'Cannot access', // e.g., "Cannot access a chrome:// URL"
+  'Cannot access contents', // older Chrome wording
   'Extension manifest must request permission',
   'The extensions gallery cannot be scripted',
 ];
@@ -88,15 +88,14 @@ export function App() {
         //    active tab. allFrames:true is required for selections inside
         //    HTML iframes (e.g. PDF.js renderings on Overleaf, arXiv HTML).
         if (!text) {
+          const tabId = tab?.id;
+          if (tabId === undefined) return;
           const results = await chrome.scripting.executeScript({
-            target: { tabId: tab!.id!, allFrames: true },
+            target: { tabId, allFrames: true },
             func: () => window.getSelection()?.toString().trim() ?? '',
           });
           if (cancelled) return;
-          text =
-            results.find(
-              (r) => typeof r.result === 'string' && r.result !== '',
-            )?.result ?? '';
+          text = results.find((r) => typeof r.result === 'string' && r.result !== '')?.result ?? '';
         }
 
         if (cancelled) return;
@@ -161,8 +160,6 @@ export function App() {
     dispatch({ type: 'FALLBACK_CANCELLED' });
   }, []);
 
-  const query = 'query' in state ? state.query : '';
-
   return (
     <div className="citey-popup">
       <Header />
@@ -182,15 +179,7 @@ function pluralize(n: number, singular: string, plural?: string): string {
   return n === 1 ? singular : (plural ?? `${singular}s`);
 }
 
-function HitsSummary({
-  high,
-  low,
-  citeas,
-}: {
-  high: number;
-  low: number;
-  citeas: number;
-}) {
+function HitsSummary({ high, low, citeas }: { high: number; low: number; citeas: number }) {
   const parts: string[] = [];
   if (high > 0) parts.push(`${high} high-confidence ${pluralize(high, 'match', 'matches')}`);
   if (low > 0) parts.push(`${low} possible ${pluralize(low, 'match', 'matches')}`);
@@ -235,6 +224,7 @@ function renderHitList(
             pkg={hit.package}
             confidence={confidence}
             matchedVia={hit.matchedVia}
+            swhid={hit.swh?.swhid}
           />
         ))}
       </div>
@@ -246,11 +236,7 @@ function renderHitList(
 // Body renderer (one branch per state)
 // ---------------------------------------------------------------------------
 
-function renderBody(
-  state: PopupState,
-  onRetry: () => void,
-  onCancelFallback: () => void,
-) {
+function renderBody(state: PopupState, onRetry: () => void, onCancelFallback: () => void) {
   switch (state.name) {
     // State 1: Loading
     case 'loading':
@@ -270,11 +256,7 @@ function renderBody(
       return (
         <div className="citey-state citey-state--hits">
           <ActionBar hits={[...state.high, ...state.low]} />
-          <HitsSummary
-            high={state.high.length}
-            low={state.low.length}
-            citeas={0}
-          />
+          <HitsSummary high={state.high.length} low={state.low.length} citeas={0} />
           <div className="citey-results">
             {state.high.map((hit) => (
               <CitationCard
@@ -282,6 +264,7 @@ function renderBody(
                 pkg={hit.package}
                 confidence="high"
                 matchedVia={hit.matchedVia}
+                swhid={hit.swh?.swhid}
               />
             ))}
             <div className="citey-divider" role="separator">
@@ -293,6 +276,7 @@ function renderBody(
                 pkg={hit.package}
                 confidence="low"
                 matchedVia={hit.matchedVia}
+                swhid={hit.swh?.swhid}
               />
             ))}
           </div>
@@ -320,9 +304,8 @@ function renderBody(
       return (
         <div className="citey-state citey-state--empty">
           <p>
-            That selection is too large ({state.length.toLocaleString()}{' '}
-            characters). Highlight just the software name &mdash; or a short
-            sentence containing it &mdash; and try again.
+            That selection is too large ({state.length.toLocaleString()} characters). Highlight just
+            the software name &mdash; or a short sentence containing it &mdash; and try again.
           </p>
         </div>
       );
@@ -331,9 +314,7 @@ function renderBody(
     case 'restricted_page':
       return (
         <div className="citey-state citey-state--restricted">
-          <p>
-            Citey can&apos;t read selections on this page (Chrome restricts access).
-          </p>
+          <p>Citey can&apos;t read selections on this page (Chrome restricts access).</p>
           <a
             href="https://citey.scios.tech/help/restricted-pages"
             target="_blank"
@@ -377,9 +358,7 @@ function renderBody(
     case 'error':
       return (
         <div className="citey-state citey-state--error" role="alert">
-          <p>
-            Something went wrong. Try again, or contribute the missing package.
-          </p>
+          <p>Something went wrong. Try again, or contribute the missing package.</p>
           <Button variant="primary" onClick={onRetry}>
             Retry
           </Button>

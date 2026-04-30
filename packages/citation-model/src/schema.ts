@@ -1,13 +1,8 @@
 import { z } from 'zod';
 import { ORCID_RE, verifyOrcidChecksum } from './orcid.js';
 import { KNOWN_LICENSES } from './spdx.js';
-import type {
-  Author,
-  Ecosystem,
-  Package,
-  Provenance,
-  SoftwareCitation,
-} from './types.js';
+import { SWHID_RE } from './swhid.js';
+import type { Author, Ecosystem, Package, Provenance, SoftwareCitation } from './types.js';
 
 // ---------------------------------------------------------------------------
 // Shared patterns
@@ -17,13 +12,16 @@ import type {
 const ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 /** Alias: starts with lowercase alphanumeric, then up to 63 more of [a-z0-9._+-]. */
-const ALIAS_RE = /^[a-z0-9][a-z0-9._+\-]{0,63}$/;
+const ALIAS_RE = /^[a-z0-9][a-z0-9._+-]{0,63}$/;
 
 /** DOI canonical form. */
 const DOI_RE = /^10\.\d{4,9}\/[-._;()/:A-Z0-9]+$/i;
 
 /** ISO 8601 date (YYYY-MM-DD). */
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+/** ISO 8601 datetime in UTC, with seconds. */
+const ISO_DATETIME_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$/;
 
 // ---------------------------------------------------------------------------
 // Ecosystem & VersionPolicy
@@ -37,11 +35,7 @@ export const ecosystemSchema = z.enum([
   'generic',
 ]) satisfies z.ZodType<Ecosystem>;
 
-export const versionPolicySchema = z.enum([
-  'latest',
-  'preferred-version',
-  'unversioned',
-]);
+export const versionPolicySchema = z.enum(['latest', 'preferred-version', 'unversioned']);
 
 // ---------------------------------------------------------------------------
 // Author
@@ -75,11 +69,7 @@ const yearString = z
     { message: 'Year out of allowed range [1970, current year + 1]' },
   );
 
-export const softwareCitationSchema: z.ZodType<
-  SoftwareCitation,
-  z.ZodTypeDef,
-  unknown
-> = z
+export const softwareCitationSchema: z.ZodType<SoftwareCitation, z.ZodTypeDef, unknown> = z
   .object({
     title: z.string().min(1),
     authors: z.array(authorSchema).min(1),
@@ -117,10 +107,7 @@ export const provenanceSchema: z.ZodType<Provenance, z.ZodTypeDef, unknown> = z.
 
 export const packageSchema: z.ZodType<Package, z.ZodTypeDef, unknown> = z
   .object({
-    id: z
-      .string()
-      .max(64)
-      .regex(ID_RE, 'id must be kebab-case ASCII, max 64 chars'),
+    id: z.string().max(64).regex(ID_RE, 'id must be kebab-case ASCII, max 64 chars'),
     canonicalName: z.string().min(1).max(80),
     aliases: z
       .array(z.string().regex(ALIAS_RE, 'alias must match ^[a-z0-9][a-z0-9._+-]{0,63}$'))
@@ -138,23 +125,21 @@ export const packageSchema: z.ZodType<Package, z.ZodTypeDef, unknown> = z
         message: 'License must be a valid SPDX 3.x identifier',
       })
       .optional(),
-    dois: z
-      .array(z.string().regex(DOI_RE, 'DOI must match canonical format'))
-      .optional(),
+    dois: z.array(z.string().regex(DOI_RE, 'DOI must match canonical format')).optional(),
     citation: softwareCitationSchema.optional(),
-    tags: z
-      .array(z.string().regex(ID_RE, 'Tag must be lowercase kebab-case'))
-      .max(10)
-      .optional(),
+    tags: z.array(z.string().regex(ID_RE, 'Tag must be lowercase kebab-case')).max(10).optional(),
     provenance: provenanceSchema,
     versionPolicy: versionPolicySchema,
     preferredVersion: z.string().optional(),
     notes: z.string().max(500).optional(),
-    citeAs: z
+    citeAs: z.string().max(64).regex(ID_RE, 'citeAs must be a kebab-case package id').optional(),
+    swhid: z.string().regex(SWHID_RE, 'swhid must match SWHID format').optional(),
+    swhPending: z.boolean().optional(),
+    swhSubmittedAt: z
       .string()
-      .max(64)
-      .regex(ID_RE, 'citeAs must be a kebab-case package id')
+      .regex(ISO_DATETIME_RE, 'swhSubmittedAt must be ISO 8601 datetime in UTC')
       .optional(),
+    swhFailed: z.boolean().optional(),
   })
   .superRefine((pkg, ctx) => {
     // aliases must include the lowercased canonicalName
@@ -170,14 +155,16 @@ export const packageSchema: z.ZodType<Package, z.ZodTypeDef, unknown> = z
     // aliases must be unique within the package
     const seen = new Set<string>();
     for (let i = 0; i < pkg.aliases.length; i++) {
-      if (seen.has(pkg.aliases[i]!)) {
+      const alias = pkg.aliases[i];
+      if (alias === undefined) continue;
+      if (seen.has(alias)) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: `Duplicate alias: "${pkg.aliases[i]}"`,
+          message: `Duplicate alias: "${alias}"`,
           path: ['aliases', i],
         });
       }
-      seen.add(pkg.aliases[i]!);
+      seen.add(alias);
     }
 
     if (pkg.citeAs !== undefined) {
@@ -221,5 +208,26 @@ export const packageSchema: z.ZodType<Package, z.ZodTypeDef, unknown> = z
           path: ['citation'],
         });
       }
+    }
+
+    // SWH state invariants: at most one of {swhid, swhPending, swhFailed}.
+    const swhStates = [
+      pkg.swhid !== undefined,
+      pkg.swhPending === true,
+      pkg.swhFailed === true,
+    ].filter(Boolean).length;
+    if (swhStates > 1) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'At most one of swhid, swhPending: true, swhFailed: true may be set',
+        path: [],
+      });
+    }
+    if (pkg.swhPending === true && pkg.swhSubmittedAt === undefined) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'swhSubmittedAt is required when swhPending is true',
+        path: ['swhSubmittedAt'],
+      });
     }
   });
