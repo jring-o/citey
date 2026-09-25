@@ -1,0 +1,45 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Citey",
+  "description": "Citey is a Chrome extension for citing software: highlight text on a web page and it shows export-ready citations (BibTeX, plain text or Zotero HTML) for software named there. Its hub generates CITATION.cff and codemeta.json files and helps authors add packages to its catalog.",
+  "codeRepository": "https://github.com/jring-o/citey",
+  "url": "https://citey.scios.tech",
+  "issueTracker": "https://github.com/jring-o/citey/issues",
+  "relatedLink": [
+    "https://citey.scios.tech/whitepaper",
+    "https://archive.softwareheritage.org/swh:1:rev:0c55785d2aa59efbe0b60dba426f66adc79210fb"
+  ],
+  "dateCreated": "2026-04-18",
+  "datePublished": "2026-04-30",
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "1.0.0",
+  "author": [
+    {
+      "@type": "Person",
+      "familyName": "Starr",
+      "givenName": "Jonathan",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "SciOS"
+      }
+    }
+  ],
+  "programmingLanguage": ["TypeScript"],
+  "runtimePlatform": ["Google Chrome"],
+  "applicationCategory": "Research software citation",
+  "keywords": [
+    "software citation",
+    "research software",
+    "browser extension",
+    "Chrome extension",
+    "BibTeX",
+    "Zotero",
+    "CITATION.cff",
+    "CodeMeta",
+    "Software Heritage",
+    "FORCE11"
+  ],
+  "funding": "Developed at the 2026 Software Citation Workshop, supported by NASA under award No. 24-TWSC24-0068.",
+  "developmentStatus": "active"
+}

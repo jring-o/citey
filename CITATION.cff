@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: If you use Citey, please cite it using the metadata from this file.
+type: software
+title: Citey
+abstract: >-
+  Citey is a Chrome extension for citing software: highlight text on a web page and it shows
+  export-ready citations (BibTeX, plain text or Zotero HTML) for software named there. Its hub
+  generates CITATION.cff and codemeta.json files and helps authors add packages to its catalog.
+authors:
+  - family-names: Starr
+    given-names: Jonathan
+    affiliation: SciOS
+version: 1.0.0
+commit: 0c55785d2aa59efbe0b60dba426f66adc79210fb
+date-released: '2026-04-30'
+identifiers:
+  - type: swh
+    value: swh:1:rev:0c55785d2aa59efbe0b60dba426f66adc79210fb
+    description: Software Heritage archive of the Citey 1.0.0 source (main, 30 April 2026).
+url: https://citey.scios.tech
+repository-code: https://github.com/jring-o/citey
+license: MIT
+keywords:
+  - software citation
+  - research software
+  - browser extension
+  - Chrome extension
+  - BibTeX
+  - Zotero
+  - CITATION.cff
+  - CodeMeta
+  - Software Heritage
+  - FORCE11
