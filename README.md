@@ -8,7 +8,16 @@ Citey is a Chrome (Manifest V3) browser extension that turns software citation f
 
 _Coming soon._ The Chrome Web Store link will be added here once the extension is published.
 
+### Download a release (no build tools needed)
+
+1. Download `citey-vX.Y.Z.zip` from the [latest release](https://github.com/jring-o/citey/releases/latest) and unzip it.
+2. Open `chrome://extensions`.
+3. Enable **Developer mode** (toggle in the top-right corner).
+4. Click **Load unpacked** and select the unzipped folder (the one that contains `manifest.json`).
+
 ### Install from source
+
+Requires Node 20 or later and pnpm 9.
 
 ```bash
 git clone https://github.com/jring-o/citey.git
@@ -21,7 +30,7 @@ Then load the extension in Chrome:
 
 1. Open `chrome://extensions`.
 2. Enable **Developer mode** (toggle in the top-right corner).
-3. Click **Load unpacked** and select the `apps/extension/dist/` directory.
+3. Click **Load unpacked** and select the `apps/extension/dist/` directory. `pnpm build` creates it, together with the `manifest.json` Chrome asks for.
 
 ## Develop
 
