@@ -53,16 +53,16 @@ Citey ships with a curated database of software packages. The fastest way to add
 
 Anyone with a GitHub account can contribute a package straight from <https://citey.scios.tech/packages>:
 
-1. **Make sure your repo has both `CITATION.cff` and `codemeta.json` at its root.** Don't have them yet? Generate them in your browser:
+1. **Make sure your repo has a `CITATION.cff` or a `codemeta.json` at its root, ideally both.** Don't have them yet? Generate them in your browser:
    - <https://citey.scios.tech/cff> — produces a downloadable `CITATION.cff`
    - <https://citey.scios.tech/codemeta> — produces a downloadable `codemeta.json`
    - Commit both files to your repo.
 2. Go to <https://citey.scios.tech/packages> → click **+ Add package**.
 3. Paste your GitHub repo URL → **Submit**.
-4. Citey reads your `CITATION.cff` and `codemeta.json`, builds a citation in our model, and opens a prefilled pull request against this repo. GitHub forks the repo for you if needed.
+4. Citey reads your `CITATION.cff` and `codemeta.json`, builds a citation in our model, and opens GitHub's new-file editor with the entry filled in. Review it and click **Commit new file → Propose changes** to open the pull request. GitHub forks the repo for you if needed.
 5. CI validates the schema. A maintainer reviews and merges.
 
-That's the whole flow — paste a URL, click submit, the PR is opened for you. The hub at <https://citey.scios.tech> walks through it as a numbered checklist on the landing page.
+That's the whole flow — paste a URL, click submit, and propose the prefilled file on GitHub. The hub at <https://citey.scios.tech> walks through it as a numbered checklist on the landing page.
 
 Citey enforces an opinionated software-citation model (per [FORCE11](https://doi.org/10.7717/peerj-cs.86)): every entry needs a title, ≥1 author, a 4-digit year, and either a DOI or a stable URL. See the [whitepaper](https://citey.scios.tech/whitepaper) for the full rationale.
 
