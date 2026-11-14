@@ -167,9 +167,11 @@ export function Options() {
         <p className="citey-options__about">
           Citey is a free, open-source Chrome extension that helps researchers and developers cite
           the software they use. It works by matching highlighted text against a curated database of
-          software packages and their preferred citations. All local matches happen entirely on your
-          device with zero network traffic. When the online fallback is enabled and a local match is
-          not found, your query is sent to{' '}
+          software packages and their preferred citations. Matching happens entirely on your
+          device. When a match is found, Citey asks Software Heritage for that package&apos;s
+          citation and archive identifier, sending only the package&apos;s repository address,
+          never the text you highlighted. When the online fallback is enabled and a local match
+          is not found, your query is sent to{' '}
           <a href="https://citeas.org" target="_blank" rel="noopener noreferrer">
             CiteAs
           </a>
